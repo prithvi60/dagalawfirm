@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cormorant: "var(--font-cormorant)",
+        merriWeather: "var(--font-merriWeather)",
         montserrat: "var(--font-montserrat)",
       },
       colors: {

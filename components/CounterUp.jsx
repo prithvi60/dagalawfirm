@@ -47,11 +47,11 @@ const Stat1 = ({ num, suffix, decimals = 0, subheading }) => {
 
     return (
         <div className="flex flex-col items-center w-full sm:w-3/5 bg-primary">
-            <p className="mb-2 text-center text-info text-2xl md:text-3xl xl:text-[48px] font-cormorant font-medium">
+            <p className="mb-2 text-center text-info text-2xl md:text-3xl xl:text-[48px] font-merriWeather font-medium">
                 <span ref={ref}></span>
                 <span className="text-lg lg:text-[48px]">{suffix}</span>
             </p>
-            <p className="text-center text-2xl md:text-3xl xl:text-[48px] text-info font-cormorant font-medium">{subheading}</p>
+            <p className="text-center text-2xl md:text-3xl xl:text-[48px] text-info font-merriWeather font-medium">{subheading}</p>
         </div>
     );
 };

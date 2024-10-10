@@ -16,7 +16,7 @@ const Navbar = () => {
                     <Image priority alt="daga logo" fill src={"/daga-logo.png"} className={"object-cover object-center"} />
                 </Link>
                 <ul
-                    className="relative items-center hidden gap-4 p-1 font-bold md:gap-8 md:flex xl:gap-14 w-max font-cormorant"
+                    className="relative items-center hidden gap-4 p-1 font-bold md:gap-8 md:flex xl:gap-14 w-max font-merriWeather"
                 >
                     {navbarLinks.map((list, idx) => (
                         <div key={idx} >
@@ -35,7 +35,7 @@ const Navbar = () => {
                     </div>
                     {isMenuOpen && (
                         <ul
-                            className="relative flex md:hidden flex-col items-center justify-center gap-3.5 p-1 mx-auto font-normal w-max font-cormorant"
+                            className="relative flex md:hidden flex-col items-center justify-center gap-3.5 p-1 mx-auto font-normal w-max font-merriWeather"
                         >
                             {navbarLinks.map((list, idx) => (
                                 <div key={idx}>

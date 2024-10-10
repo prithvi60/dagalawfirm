@@ -1,11 +1,12 @@
+import LawFirmSpecialization from '@/components/services/LawFirmSpecialization'
+import ServiceHero from '@/components/services/ServiceHero'
 import React from 'react'
 
 const Page = () => {
     return (
         <main>
-            <div className="w-full h-[80vh] flex justify-center items-center text-2xl">
-                Services
-            </div>
+            <ServiceHero />
+            <LawFirmSpecialization />
         </main>
     )
 }

@@ -5,7 +5,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
 const Testimonial = () => {
     return (
         <section className="px-5 space-y-5 py-7 lg:px-16 lg:py-12">
-            <h4 className="text-xl font-medium tracking-wide capitalize font-cormorant text-info sm:text-2xl lg:text-3xl">Testimonials tag line</h4>
+            <h4 className="text-xl font-medium tracking-wide capitalize font-merriWeather text-info sm:text-2xl lg:text-3xl">Testimonials tag line</h4>
             <div className="flex flex-col items-start md:flex-row gap-9">
                 <div className="relative w-full md:h-[320px] h-[280px] overflow-hidden md:basis-2/5">
                     <Image alt="sample-image" src={"/sample-4.jpeg"} fill className="object-cover object-center" />

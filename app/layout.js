@@ -1,11 +1,11 @@
 import Navbar from "@/components/Navbar";
-import { Montserrat, Cormorant } from "next/font/google";
+import { Montserrat, Merriweather } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
-const cormorant = Cormorant({
+const merriWeather = Merriweather({
   subsets: ["latin"],
-  variable: "--font-cormorant",
+  variable: "--font-merriweather",
   weight: ["700"],
 });
 
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${cormorant.variable} ${montserrat.variable} antialiased`}
+        className={`${merriWeather.variable} ${montserrat.variable} antialiased`}
       >
         <Navbar />
         {children}
