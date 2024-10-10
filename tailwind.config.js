@@ -7,11 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        cormorant: "var(--font-cormorant)",
+        montserrat: "var(--font-montserrat)",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#FEFEFE",
+        secondary: "#FDF7ED",
+        info: "#F40003",
       },
     },
   },
   plugins: [],
 };
+
+// info: "#6C0716",
