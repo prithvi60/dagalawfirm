@@ -3,7 +3,7 @@ import React from 'react'
 
 const TeamHero = () => {
     return (
-        <section className="relative flex flex-col sm:flex-row w-full h-full md:h-[75vh] xl:h-[85vh] mt-24 overflow-hidden xl:mt-20">
+        <section className="relative flex flex-col sm:flex-row w-full h-full md:h-[75vh] xl:h-[85vh] overflow-hidden mt-20">
             <div className="w-full h-full">
                 <div className="absolute z-20 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
                     <h3 className='font-medium tracking-wide capitalize text-xl md:text-4xl lg:text-[48px] font-merriWeather text-primary leading-8 lg:!leading-[50px]'>Advocacy Excellence Team</h3>

@@ -29,12 +29,12 @@ export const ContactDetailsAddress = () => {
             <div className="relative w-full md:h-[370px] h-[280px] overflow-hidden md:basis-2/5">
                 <Image alt="sample-image" src={"/contact-sample-3.jpeg"} fill className="object-cover object-center" />
             </div>
-            <div className={`block m-auto w-max px-5 py-5 basis-3/5 lg:px-16 "}`}>
+            <div className={`block m-auto w-full px-5 py-5 basis-3/5 lg:px-16 "}`}>
                 <div className='flex flex-col items-center justify-center gap-5'>
                     <h4 className="text-lg font-medium tracking-wide capitalize md:text-xl font-merriWeather text-info">Office Address</h4>
-                    <ul className='space-y-2 text-base font-normal list-inside w-max md:text-lg font-montserrat'>
+                    <ul className='w-full space-y-2 text-base font-normal list-inside md:text-lg font-montserrat'>
                         <li>Daga & Daga Law Firm</li>
-                        <li>3rd floor, Swarna shree complex, Sowcarpet, 36, Veerappan St</li>
+                        <li>3rd floor, Swarna shree complex, 36, Veerappan St</li>
                         <li>Sowcarpet,</li>
                         <li>Chennai - 600001,</li>
                         <li>Tamil Nadu, India.</li>

@@ -18,7 +18,6 @@ const LawFirmSpecialization = () => {
                     your ideas, designs, and brand, giving you the peace of mind to focus
                     on innovation.
                 </p>
-                <div></div>
             </div>
             <div>
                 {specializations.map((item, idx) => (

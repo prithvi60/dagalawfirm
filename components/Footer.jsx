@@ -6,7 +6,7 @@ import { FaSquareWhatsapp } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col items-center justify-between gap-10 p-5 border-t-2 sm:flex-row lg:px-16 lg:py-8 border-info">
+        <footer className="flex flex-col items-center justify-between gap-10 p-5 mt-5 border-t-2 md:mt-0 sm:flex-row lg:px-16 lg:py-8 border-info">
             <div className="block space-y-5">
                 <div className={"w-48 h-10 relative overflow-hidden"}>
                     <Image alt="daga logo" fill src={"/daga-logo.png"} className={"object-cover object-center"} />

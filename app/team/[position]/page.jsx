@@ -11,7 +11,7 @@ const Page = ({ params }) => {
 
     return (
         <main>
-            <TeamHero />
+            {/* <TeamHero /> */}
             <PersonDescription data={FilteredList[0]} />
         </main>
     )
