@@ -20,7 +20,7 @@ const ContactForm = () => {
                             <input
                                 type="text"
                                 placeholder="Enter your User Name"
-                                className="w-full py-2 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
+                                className="w-full py-2 pl-6 pr-10 text-white bg-transparent border  outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                             />
                             <FaRegUser className="absolute text-xl right-4 top-3 text-neutral-200" />
                         </div>
@@ -34,7 +34,7 @@ const ContactForm = () => {
                             <input
                                 type="email"
                                 placeholder="Enter your User Name"
-                                className="w-full py-2 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
+                                className="w-full py-2 pl-6 pr-10 text-white bg-transparent border  outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                             />
                             <BsEnvelopeAtFill className="absolute text-xl right-4 top-3 text-neutral-200" />
                         </div>
@@ -48,7 +48,7 @@ const ContactForm = () => {
                             <input
                                 type="text"
                                 placeholder="Enter your User Name"
-                                className="w-full py-2 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
+                                className="w-full py-2 pl-6 pr-10 text-white bg-transparent border  outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                             />
                             <FaPhoneAlt className="absolute text-xl right-4 top-3 text-neutral-200" />
                         </div>
@@ -62,7 +62,7 @@ const ContactForm = () => {
                             <textarea
                                 placeholder="Enter Your Message"
                                 rows={3}
-                                className="w-full py-2 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
+                                className="w-full py-2 pl-6 pr-10 text-white bg-transparent border  outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                             />
                             <MdOutlineMessage className="absolute text-xl right-4 top-8 text-neutral-200" />
                         </div>

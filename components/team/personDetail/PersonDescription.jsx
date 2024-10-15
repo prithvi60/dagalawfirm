@@ -5,12 +5,12 @@ export const PersonDescription = ({ data }) => {
     return (
         <section className="relative flex flex-col gap-5 px-5 mt-20 border-t-2 md:flex-row lg:pl-16 border-info py-7 lg:px-16 lg:py-12 md:gap-10">
             <div className='basis-full md:basis-2/5'>
-                <div className="relative w-full md:h-[320px] h-[280px] overflow-hidden group z-0 contrast-100 rounded-lg md:sticky md:top-32">
+                <div className="relative w-full md:h-[320px] h-[280px] overflow-hidden group z-0 contrast-100  md:sticky md:top-32">
                     <Image alt="sample-image" src={data.img} fill className="object-cover object-top transition-all duration-200 ease-in-out group-hover:scale-110" />
                     <div className="absolute left-0 z-10 flex items-center justify-between w-full gap-4 px-5 bottom-4 lg:px-8">
                         <div className="block">
                             <h3 className="mb-4 text-xl font-medium text-white md:text-xl xl:text-2xl font-montserrat">{data.name}</h3>
-                            <div className='p-2 text-sm font-normal tracking-wide rounded-lg bg-info text-primary font-montserrat w-max'>{data.position}</div>
+                            <div className='px-4 py-2 text-sm font-normal tracking-wide  bg-[#1a1a1a] text-primary font-montserrat w-max'>{data.position}</div>
                         </div>
                     </div>
                 </div>

@@ -21,8 +21,8 @@ const EventLaw = ({ mainTitle, title, img, bgImg, data, styles }) => {
           className="object-cover object-center"
         />
       </div>
-      <div className={`${styles} h-full gap-10 mb-5 px-5 pb-6 md:gap-6 basis-2/5 lg:px-16 lg:pb-8`}>
-        <div className="relative z-0 w-full h-72 md:h-[400px]">
+      <div className={`${styles} h-full gap-10 mb-5 px-5 pb-6 md:gap-6 lg:px-16 lg:pb-8`}>
+        <div className="relative z-0 w-full h-72 md:w-[400px] md:h-[400px]">
           <Image
             alt="bg image"
             src={img}
@@ -30,13 +30,13 @@ const EventLaw = ({ mainTitle, title, img, bgImg, data, styles }) => {
             className="object-cover object-center"
           />
         </div>
-        <div className="relative px-5 sm:px-0">
-          <ul className="w-full mx-auto space-y-5 text-sm font-normal md:text-base font-montserrat md:w-4/5">
-            <FaQuoteLeft className="absolute text-xl md:text-2xl -top-6 sm:-top-4 -left-2 sm:left-6 text-info" />
+        <div className="w-full md:px-5 sm:px-0 ">
+          <ul className="relative w-4/5 mx-auto space-y-5 text-sm font-normal md:w-3/4 md:text-base font-montserrat">
+            <FaQuoteLeft className="absolute text-xl -left-7 -top-3 lg:text-2xl xl:-top-2 xl:-left-10 text-info" />
             {data.map((list, idx) => (
               <li key={idx}>{list}</li>
             ))}
-            <FaQuoteRight className="absolute right-0 text-2xl -bottom-6 sm:right-6 text-info" />
+            <FaQuoteRight className="absolute text-xl -right-6 lg:text-2xl -bottom-3 xl:-right-4 xl:-bottom-4 text-info" />
           </ul>
         </div>
       </div>

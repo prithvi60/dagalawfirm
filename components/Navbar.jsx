@@ -51,12 +51,12 @@ const Navbar = () => {
                                         className={`absolute hidden ${isMenuOpen === false
                                             ? "hidden"
                                             : "group-hover:block transition-all duration-500 ease-in-out"
-                                            } group-hover:block top-[78px] left-0 bg-info p-4 shadow-md font-merriWeather`}
+                                            } group-hover:block top-[78px] left-0 bg-info py-4 px-8 shadow-md font-merriWeather`}
                                     >
                                         {list?.subMenu?.map((l, index) => (
                                             <Link
                                                 title={l.menu}
-                                                className={`flex items-center gap-2 mb-2 text-primary text-sm cursor-pointer lg:text-lg w-full h-full font-normal z-10 hover:text-white/80 capitalize`}
+                                                className={`flex items-center gap-2 mb-2 text-primary text-sm cursor-pointer lg:text-lg w-full h-full font-semibold z-10 hover:text-white/80 capitalize`}
                                                 key={index}
                                                 href={`${l.ref}`}
                                                 onClick={() => setIsMenuOpen(false)}
@@ -73,7 +73,7 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div
-                    className={`block p-1 rounded-lg cursor-pointer md:hidden bg-primary  ${isMenuOpen ? "opacity-0" : "opacity-100"
+                    className={`block p-1  cursor-pointer md:hidden bg-primary  ${isMenuOpen ? "opacity-0" : "opacity-100"
                         }`}
                     onClick={() => setIsMenuOpen(true)}
                 >
@@ -86,7 +86,7 @@ const Navbar = () => {
                         }`}
                 >
                     <div
-                        className="absolute block p-1 rounded-lg cursor-pointer w-max bg-secondary top-5 right-6"
+                        className="absolute block p-1 cursor-pointer w-max bg-secondary top-5 right-6"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         <RiCloseLargeLine className="text-2xl text-info" />

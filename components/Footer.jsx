@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import React from 'react'
 import { FaFacebookSquare } from "react-icons/fa";
-import { FaSquareWhatsapp } from 'react-icons/fa6';
+import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
     return (
@@ -22,7 +22,7 @@ const Footer = () => {
                         <FaFacebookSquare className="text-2xl md:text-4xl text-info" />
                     </Link>
                     <Link href="" className="hover:animate-pulse">
-                        <FaSquareWhatsapp className="text-2xl md:text-4xl text-info" />
+                        <FaLinkedin className="text-2xl md:text-4xl text-info" />
                     </Link>
                 </div>
                 <div className="flex items-center gap-10 font-medium font-montserrat">

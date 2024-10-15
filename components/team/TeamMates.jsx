@@ -17,7 +17,7 @@ const TeamMates = () => {
                             <Link
                                 key={idx}
                                 href={`/team/${list.ref}`}
-                                className="relative w-full md:h-[320px] h-[280px] overflow-hidden group z-0 contrast-100 rounded-lg"
+                                className="relative w-full md:h-[320px] h-[280px] overflow-hidden group z-0 contrast-100 "
                             >
                                 <Image
                                     alt="sample-image"
@@ -30,7 +30,7 @@ const TeamMates = () => {
                                         <h3 className="mb-4 text-xl font-medium text-white md:text-xl xl:text-2xl font-montserrat">
                                             {list.name}
                                         </h3>
-                                        <div className="p-2 text-sm font-normal tracking-wide rounded-lg bg-info text-primary font-montserrat w-max">
+                                        <div className="px-4 py-2 text-sm font-normal tracking-wide bg-[#1a1a1a] text-primary font-montserrat w-max">
                                             {list.position}
                                         </div>
                                     </div>
@@ -42,7 +42,7 @@ const TeamMates = () => {
                         ) : (
                             <div
                                 key={idx}
-                                className="relative w-full md:h-[320px] h-[280px] overflow-hidden group z-0 contrast-100 rounded-lg"
+                                className="relative w-full md:h-[320px] h-[280px] overflow-hidden group z-0 contrast-100 "
                             >
                                 <Image
                                     alt="sample-image"
@@ -55,7 +55,7 @@ const TeamMates = () => {
                                         <h3 className="mb-4 text-xl font-medium text-white md:text-xl xl:text-2xl font-montserrat">
                                             {list.name}
                                         </h3>
-                                        <div className="p-2 text-sm font-normal tracking-wide rounded-lg bg-info text-primary font-montserrat w-max">
+                                        <div className="px-4 py-2 text-sm font-normal tracking-wide  bg-[#1a1a1a] text-primary font-montserrat w-max">
                                             {list.position}
                                         </div>
                                     </div>

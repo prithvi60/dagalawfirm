@@ -2,22 +2,26 @@ import { specializations } from "@/libs/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRightLong, FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
 
 const LawFirmSpecialization = () => {
     return (
-        <section className="relative flex flex-col px-5 border-t-2 md:px-0 md:pl-5 md:flex-row lg:pl-16 border-info">
-            <div className="h-full p-5 space-y-4 md:p-0 md:pr-10 md:pt-10 basis-2/5 md:space-y-8 lg:sticky lg:top-20">
+        <section className="relative flex flex-col px-5 border-t-2 md:px-0 md:pl-5 lg:flex-row lg:pl-16 border-info">
+            <div className="h-full p-5 space-y-4 lg:p-0 lg:pr-10 lg:pt-10 basis-2/5 lg:space-y-8 lg:sticky lg:top-20">
                 <h1 className="font-bold tracking-wide capitalize text-xl lg:text-2xl xl:text-[36px] font-merriWeather text-info">
                     Protecting Your Ideas, Innovations, and Brands.
                 </h1>
-                <p className="text-sm font-normal font-montserrat">
-                    From patent filings to trademark protection and litigation, our
-                    specialized legal services cover every aspect of intellectual
-                    property. Our experienced attorneys work relentlessly to safeguard
-                    your ideas, designs, and brand, giving you the peace of mind to focus
-                    on innovation.
-                </p>
+                <div className="relative w-full">
+                    <FaQuoteLeft className="absolute text-xl lg:text-2xl -top-3 -left-7 lg:-left-10 text-info" />
+                    <p className="text-sm font-normal font-montserrat">
+                        From patent filings to trademark protection and litigation, our
+                        specialized legal services cover every aspect of intellectual
+                        property. Our experienced attorneys work relentlessly to safeguard
+                        your ideas, designs, and brand, giving you the peace of mind to focus
+                        on innovation.
+                    </p>
+                    <FaQuoteRight className="absolute text-xl lg:text-2xl -bottom-3 -right-1 lg:-right-4 text-info" />
+                </div>
             </div>
             <div>
                 {specializations.map((item, idx) => (
@@ -46,7 +50,7 @@ const LawFirmSpecialization = () => {
                                 <div className="flex items-center justify-end gap-2">
                                     <Link
                                         href={`/services/${item.specialize}`}
-                                        className="text-sm font-normal tracking-wide hover:bg-opacity-70 text-info font-montserrat"
+                                        className="text-sm font-normal tracking-wide underline hover:bg-opacity-70 text-info font-montserrat underline-offset-4 decoration-info "
                                     >
                                         Learn more
                                     </Link>
