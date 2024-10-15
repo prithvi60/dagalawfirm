@@ -9,7 +9,7 @@ const ContactDetails = ({ style, src, title, data }) => {
             </div>
             <div className={`block m-auto w-max px-5 py-5 basis-3/5 lg:px-16 "}`}>
                 <div className='flex flex-col items-center justify-center gap-5'>
-                    <h4 className="text-lg font-medium tracking-wide capitalize md:text-xl font-montserrat text-info">{title}</h4>
+                    <h4 className="text-lg font-medium tracking-wide capitalize md:text-xl font-merriWeather text-info">{title}</h4>
                     <ul className='space-y-2 text-base font-normal list-disc list-inside w-max md:text-lg font-merriWeather'>
                         {data.map((list, idx) => (
                             <li key={idx}>{list}</li>
@@ -32,7 +32,7 @@ export const ContactDetailsAddress = () => {
             <div className={`block m-auto w-full px-5 py-5 basis-3/5 lg:px-16 "}`}>
                 <div className='flex flex-col items-center justify-center gap-5'>
                     <h4 className="text-lg font-medium tracking-wide capitalize md:text-xl font-merriWeather text-info">Office Address</h4>
-                    <ul className='w-full space-y-2 text-base font-normal list-inside md:text-lg font-montserrat'>
+                    <ul className='w-full space-y-2 text-base font-normal list-inside md:text-lg font-merriWeather'>
                         <li>Daga & Daga Law Firm</li>
                         <li>3rd floor, Swarna shree complex, 36, Veerappan St</li>
                         <li>Sowcarpet,</li>

@@ -7,7 +7,7 @@ const InitiativeHero = () => {
             <div className="basis-full md:basis-2/5 bg-[#B28A42]">
                 <div className='h-full px-10 py-16 space-y-4 xl:py-36 md:space-y-8 text-primary'>
                     <h1 className='font-bold tracking-wide capitalize text-2xl lg:text-4xl xl:text-[48px] font-merriWeather leading-8 lg:!leading-[42px]'>Experienced Legal Counsel for Every Step of the Way</h1>
-                    <p className='text-sm font-normal md:text-base font-montserrat'>Whether you need guidance through complex litigation or personalized legal advice, our experienced attorneys are here to support you every step of the way</p>
+                    <p className='text-sm font-normal md:text-base font-merriWeather'>Whether you need guidance through complex litigation or personalized legal advice, our experienced attorneys are here to support you every step of the way</p>
                 </div>
             </div>
             <div className="basis-full md:basis-3/5">

@@ -1,5 +1,6 @@
+import AboutUs from "@/components/AboutUs";
 import Contact from "@/components/Contact";
-import FirmIntro from "@/components/FirmIntro";;
+import FirmIntro from "@/components/FirmIntro";
 import Hero from "@/components/Hero";
 import Modal from "@/components/Modal";
 import PracticesComponent from "@/components/PracticesComponent";
@@ -11,9 +12,10 @@ export default function Home() {
     <main>
       <Hero />
       <FirmIntro />
+      <AboutUs />
       <PracticesComponent
         style={
-          "flex flex-col md:flex-row h-full border-2 mt-7 lg:mt-12 border-info"
+          "flex flex-col md:flex-row h-full border-2 mt-7 lg:mt-0 border-info"
         }
         src={"/sample-1.jpeg"}
         title={true}

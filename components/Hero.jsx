@@ -5,7 +5,7 @@ import { CounterUp } from './CounterUp'
 
 const Hero = () => {
     return (
-        <section className="relative flex flex-col sm:flex-row w-full h-screen md:h-[75vh] xl:h-[85vh] overflow-hidden mt-20 mb-8 lg:mb-12">
+        <section className="relative flex flex-col w-full h-screen overflow-hidden border-b-2 sm:flex-row border-info mt-14">
             <div className="z-0 w-full h-full md:bg-fixed basis-full sm:basis-4/5" style={{
                 backgroundImage: `url("/hero-bg.jpeg")`,
                 backgroundSize: "cover",
@@ -15,8 +15,8 @@ const Hero = () => {
                     <div className='flex flex-col md:justify-between items-start gap-6 md:gap-14 p-2 w-[90%]'>
                         <h1 className='font-medium tracking-wide uppercase text-xl md:text-4xl lg:text-[48px] font-merriWeather text-secondary leading-8 lg:!leading-[50px]'>Expert legal solution with INTEGRITY</h1>
                         <div className='flex items-center justify-center gap-5 pb-3.5'>
-                            <Link href={"/contact"} className='px-4 py-2 text-sm font-normal tracking-wide md:p-3 bg-info text-primary md:text-lg font-montserrat'>Contact us</Link>
-                            <Link href={"/services"} className='px-4 py-2 text-sm font-normal tracking-wide bg-transparent border-2 text-s text-primary md:text-lg border-secondary font-montserrat '>Our Services</Link>
+                            <Link href={"/contact"} className='px-4 py-2 text-sm font-normal tracking-wide md:p-3 bg-info text-primary md:text-lg font-merriWeather'>Contact us</Link>
+                            <Link href={"/services"} className='px-4 py-2 text-sm font-normal tracking-wide bg-transparent border-2 text-s text-primary md:text-lg border-secondary font-merriWeather '>Our Services</Link>
                         </div>
                     </div>
                 </div>

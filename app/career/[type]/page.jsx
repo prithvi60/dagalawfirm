@@ -6,10 +6,10 @@ const Page = ({ params }) => {
     const { type } = params;
     return (
         <main>
-            {type === "apprentice" ? (
-                <ApprenticeForm type={type} desc={"As an apprentice advocate, you'll support experienced advocates with research, drafting, and case preparation, gaining essential skills for a successful legal career."} />
+            {type === "interns" ? (
+                <ApprenticeForm type={type} title={"the foundation for future success"} desc={"Interns are temporary team members who gain practical experience while contributing to projects under guidance."} />
             ) : (
-                <BusinessForm type={type} desc={"Meeting with an advocate provides expert legal guidance to help protect and advance your business interests effectively."} />
+                <BusinessForm type={type} title={"Employees are the backbone of an organization"} desc={"Employees are individuals hired by an organization to perform specific roles and contribute to its goals in exchange for compensation."} />
             )}
         </main>
     );

@@ -5,7 +5,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 const EventLaw = ({ mainTitle, title, img, bgImg, data, styles }) => {
   return (
     <section className="w-full h-full space-y-4 border border-info">
-      <div className="flex flex-col items-center justify-center gap-1 my-8 md:flex-row text-info">
+      <div className="flex flex-col items-center justify-center gap-1 my-8 lg:flex-row text-info">
         <h1 className="px-3 text-3xl tracking-wider text-center uppercase md:text-4xl xl:text-6xl">
           {mainTitle}
         </h1>
@@ -31,7 +31,7 @@ const EventLaw = ({ mainTitle, title, img, bgImg, data, styles }) => {
           />
         </div>
         <div className="w-full md:px-5 sm:px-0 ">
-          <ul className="relative w-4/5 mx-auto space-y-5 text-sm font-normal md:w-3/4 md:text-base font-montserrat">
+          <ul className="relative w-4/5 mx-auto space-y-5 text-sm font-normal md:w-3/4 md:text-base font-merriWeather">
             <FaQuoteLeft className="absolute text-xl -left-7 -top-3 lg:text-2xl xl:-top-2 xl:-left-10 text-info" />
             {data.map((list, idx) => (
               <li key={idx}>{list}</li>

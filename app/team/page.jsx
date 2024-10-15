@@ -5,7 +5,7 @@ import React from 'react'
 const Page = () => {
     return (
         <main>
-            <TeamHero />
+            {/* <TeamHero /> */}
             <TeamMates />
         </main>
     )

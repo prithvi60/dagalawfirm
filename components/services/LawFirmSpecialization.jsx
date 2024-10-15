@@ -13,7 +13,7 @@ const LawFirmSpecialization = () => {
                 </h1>
                 <div className="relative w-full">
                     <FaQuoteLeft className="absolute text-xl lg:text-2xl -top-3 -left-7 lg:-left-10 text-info" />
-                    <p className="text-sm font-normal font-montserrat">
+                    <p className="text-sm font-normal font-merriWeather">
                         From patent filings to trademark protection and litigation, our
                         specialized legal services cover every aspect of intellectual
                         property. Our experienced attorneys work relentlessly to safeguard
@@ -44,13 +44,13 @@ const LawFirmSpecialization = () => {
                                 <h1 className="font-bold tracking-wide capitalize text-lg lg:text-xl font-merriWeather text-info leading-8 lg:!leading-[50px]">
                                     {item.specialize}
                                 </h1>
-                                <p className="text-sm font-normal lg:text-base md:text-lg font-montserrat">
+                                <p className="text-sm font-normal lg:text-base md:text-lg font-merriWeather">
                                     {item.note}
                                 </p>
                                 <div className="flex items-center justify-end gap-2">
                                     <Link
                                         href={`/services/${item.specialize}`}
-                                        className="text-sm font-normal tracking-wide underline hover:bg-opacity-70 text-info font-montserrat underline-offset-4 decoration-info "
+                                        className="text-sm font-normal tracking-wide underline hover:bg-opacity-70 text-info font-merriWeather underline-offset-4 decoration-info "
                                     >
                                         Learn more
                                     </Link>

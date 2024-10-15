@@ -4,7 +4,7 @@ import { animate, useInView } from "framer-motion";
 
 export const CounterUp = () => {
     return (
-        <div className="w-full h-full px-4 pt-6 sm:pt-0">
+        <div className="w-full h-full px-4 py-6 sm:pt-0">
             <div className="flex flex-col items-center justify-center w-full h-full gap-8 md:gap-10 xl:gap-14">
                 <Stat1
                     num={8000}
@@ -16,6 +16,7 @@ export const CounterUp = () => {
                     num={4000}
                     suffix="+"
                     subheading="Clients"
+                    styles="font-bold"
                 />
                 {/* <div className="h-[1px] w-12 sm:h-6 sm:w-[1px]" /> */}
                 <Stat1
@@ -28,7 +29,7 @@ export const CounterUp = () => {
     );
 };
 
-const Stat1 = ({ num, suffix, decimals = 0, subheading }) => {
+const Stat1 = ({ num, suffix, decimals = 0, subheading, styles }) => {
     const ref = useRef(null);
     const isInView = useInView(ref);
 
@@ -46,12 +47,12 @@ const Stat1 = ({ num, suffix, decimals = 0, subheading }) => {
     }, [num, decimals, isInView]);
 
     return (
-        <div className="flex flex-col items-center w-full sm:w-3/5 bg-primary">
-            <p className="mb-2 text-center text-info text-2xl md:text-3xl xl:text-[48px] font-merriWeather font-medium">
+        <div className={`${styles} flex flex-col items-center w-full sm:w-3/5 bg-primary`}>
+            <p className="mb-2 text-center text-info text-2xl md:text-3xl xl:text-[48px] font-merriWeather">
                 <span ref={ref}></span>
                 <span className="text-lg lg:text-[48px]">{suffix}</span>
             </p>
-            <p className="text-center text-2xl md:text-3xl xl:text-[48px] text-info font-merriWeather font-medium">{subheading}</p>
+            <p className="text-center text-2xl md:text-3xl xl:text-[48px] text-info font-merriWeather">{subheading}</p>
         </div>
     );
 };

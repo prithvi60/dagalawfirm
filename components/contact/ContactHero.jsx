@@ -4,7 +4,7 @@ import ContactForm from './ContactForm'
 
 const ContactHero = () => {
     return (
-        <section className="relative flex flex-col w-full h-screen overflow-hidden mt-14 sm:flex-row md:mt-20">
+        <section className="relative flex flex-col w-full h-screen overflow-hidden mt-14 sm:flex-row">
             <div className="w-full h-full">
                 <div className="absolute z-20 w-full -translate-x-1/2 -translate-y-1/2 md:w-3/5 top-1/2 left-1/2">
                     {/* <h3 className='font-medium tracking-wide capitalize text-xl md:text-4xl lg:text-[48px] font-merriWeather text-primary leading-8 lg:!leading-[50px]'>Let’s Connect!</h3>

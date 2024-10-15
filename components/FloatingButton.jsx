@@ -6,8 +6,7 @@ export default function FloatingButton() {
       style={{ zIndex: "1000" }}
     >
       <a
-        // href="https://wa.me/9840884460?text=Hi%20team,%20I'd%20like%20your%20assistance"
-        href="https://wa.me/1234567890?text=Hi"
+        href="https://wa.me/9551028280?text=Hey%20Jayesh,%20We%20need%20to%20connect%20now%20!"
         target="_blank"
         rel="noopener noreferrer"
         title="whatsapp"

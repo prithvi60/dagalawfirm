@@ -16,8 +16,8 @@ const PracticesComponent = ({ style, src, title }) => {
             <div className={`block px-5 py-5  space-y-5  basis-3/5 lg:px-16 ${!title && "mt-4 md:mt-14"}`}>
                 {title === true && (<h2 className="text-2xl font-medium tracking-wide capitalize lg:text-center md:text-3xl text-info font-merriWeather">Practice areas where we excel</h2>)}
 
-                <h4 className="text-lg font-medium tracking-wide capitalize md:text-xl font-montserrat text-info">Practice</h4>
-                <p className="text-base font-normal md:text-lg font-montserrat">Lorem ipsum dolor sit amet consectetur. Suscipit erat neque nulla pulvinar massa gravida volutpat libero. Purus id nibh urna ac. Facilisis purus diam urna mattis phasellus mauris. Sem nec vel ultricies nunc.Lorem ipsum dolor sit amet consectetur. Suscipit erat neque nulla pulvinar massa gravida volutpat libero. Purus id nibh urna ac. </p>
+                <h4 className="text-lg font-medium tracking-wide capitalize md:text-xl font-merriWeather text-info">Practice</h4>
+                <p className="text-base font-normal md:text-lg font-merriWeather">Lorem ipsum dolor sit amet consectetur. Suscipit erat neque nulla pulvinar massa gravida volutpat libero. Purus id nibh urna ac. Facilisis purus diam urna mattis phasellus mauris. Sem nec vel ultricies nunc.Lorem ipsum dolor sit amet consectetur. Suscipit erat neque nulla pulvinar massa gravida volutpat libero. Purus id nibh urna ac. </p>
             </div>
         </section>
     )

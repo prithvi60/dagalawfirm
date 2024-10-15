@@ -6,28 +6,28 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col items-center justify-between gap-10 p-5 mt-5 border-t-2 md:mt-0 sm:flex-row lg:px-16 lg:py-8 border-info">
+        <footer className="flex flex-col items-center justify-between p-5 mt-5 border-t-2 gap-7 lg:gap-10 md:mt-0 sm:flex-row lg:px-16 lg:py-8 border-info">
             <div className="block space-y-5">
                 <div className={"w-48 h-10 relative overflow-hidden"}>
                     <Image alt="daga logo" fill src={"/daga-logo.png"} className={"object-cover object-center"} />
                 </div>
-                <div className="flex items-center gap-10 font-medium font-montserrat">
-                    <h4>XXXX @gmail.com</h4>
-                    <p>8327483298</p>
+                <div className="flex items-center gap-5 text-sm font-medium md:gap-10 md:text-base font-merriWeather">
+                    <h4>jayeshdaga03@gmail.com</h4>
+                    <p>+91- 9551028280</p>
                 </div>
             </div>
             <div className="block mt-4 space-y-5">
-                <div className={"flex justify-center items-center gap-4"}>
+                {/* <div className={"flex justify-center items-center gap-4"}>
                     <Link href="" className="hover:animate-pulse">
                         <FaFacebookSquare className="text-2xl md:text-4xl text-info" />
                     </Link>
                     <Link href="" className="hover:animate-pulse">
                         <FaLinkedin className="text-2xl md:text-4xl text-info" />
                     </Link>
-                </div>
-                <div className="flex items-center gap-10 font-medium font-montserrat">
+                </div> */}
+                <div className="flex items-center gap-6 text-sm font-medium md:text-base font-merriWeather">
+                    <p>Copyrights © {new Date().getFullYear()}</p>
                     <p>All rights reserved</p>
-                    {/* <p>8327483298</p> */}
                 </div>
             </div>
         </footer>

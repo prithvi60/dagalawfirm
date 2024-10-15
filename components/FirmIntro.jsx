@@ -4,7 +4,7 @@ const FirmIntro = () => {
     return (
         <section className="px-5 space-y-8 py-7 lg:px-16 lg:py-12">
             <h4 className="text-xl font-medium tracking-wide capitalize font-merriWeather text-info sm:text-2xl lg:text-3xl">Tag line for introducing about the firm</h4>
-            <p className="text-base font-normal md:text-lg font-montserrat">Lorem ipsum dolor sit amet consectetur. Suscipit erat neque nulla pulvinar massa gravida volutpat libero. Purus id nibh urna ac. Facilisis purus diam urna mattis phasellus mauris. Sem nec vel ultricies nunc.Lorem ipsum dolor sit amet consectetur. Suscipit erat neque nulla pulvinar massa gravida volutpat libero. Purus id nibh urna ac. Facilisis purus diam urna mattis phasellus mauris. Sem nec vel ultricies nunc.Lorem ipsum dolor sit amet consectetur. Suscipit erat neque nulla pulvinar massa gravida volutpat libero. Purus id nibh urna ac. Facilisis purus diam urna mattis phasellus mauris. Sem nec vel ultricies nunc.</p>
+            <p className="text-base font-normal md:text-lg font-merriWeather">A <span className='text-xl lg:text-2xl xl:text-[36px] !leading-[36px] text-info font-semibold'>34</span>-year-old Intellectual Property law boutique, dedicated to advancing innovation, stands as a steadfast guardian of its clients&apos; most valuable assets. With an unwavering commitment to transparency, integrity, and accountability, the firm operates on an iron-clad ethical foundation. Its mission is not only to protect intellectual property but to empower creators and innovators by providing cutting-edge legal solutions, fostering trust, and ensuring the long-term success of those they serve.</p>
         </section>
     )
 }

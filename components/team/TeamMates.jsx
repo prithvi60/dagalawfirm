@@ -2,11 +2,11 @@ import { teamDetails } from "@/libs/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { LuArrowUpRightFromCircle } from "react-icons/lu";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const TeamMates = () => {
     return (
-        <section className="px-5 space-y-8 py-7 lg:px-16 lg:py-12">
+        <section className="px-5 space-y-8 mt-14 py-7 lg:px-16 lg:py-12">
             <h4 className="font-bold tracking-wide capitalize text-xl lg:text-2xl xl:text-[36px] md:!leading-snug font-merriWeather text-info">
                 Our team comprises of the following individuals
             </h4>
@@ -25,17 +25,17 @@ const TeamMates = () => {
                                     fill
                                     className="object-cover object-top transition-all duration-200 ease-in-out group-hover:scale-110"
                                 />
-                                <div className="absolute left-0 z-10 flex items-center justify-between w-full gap-4 px-5 bottom-4 lg:px-8">
+                                <div className="absolute bottom-0 left-0 z-10 flex items-center justify-between w-full gap-4 pb-2 px-5 lg:px-8 backdrop-brightness-[0.70]">
                                     <div className="block">
-                                        <h3 className="mb-4 text-xl font-medium text-white md:text-xl xl:text-2xl font-montserrat">
+                                        <h3 className="mb-4 text-xl font-medium text-white md:text-xl xl:text-2xl font-merriWeather">
                                             {list.name}
                                         </h3>
-                                        <div className="px-4 py-2 text-sm font-normal tracking-wide bg-[#1a1a1a] text-primary font-montserrat w-max">
+                                        <div className="px-4 py-2 text-sm font-normal tracking-wide bg-[#1a1a1a] text-primary font-merriWeather w-max">
                                             {list.position}
                                         </div>
                                     </div>
                                     <div className="p-1 transition-all duration-200 ease-in-out rounded-full bg-secondary w-max group-hover:scale-110 group-hover:animate-bounce">
-                                        <LuArrowUpRightFromCircle className="text-xl text-info" />
+                                        <FaArrowRightLong className="text-xl -rotate-45 text-info" />
                                     </div>
                                 </div>
                             </Link>
@@ -50,12 +50,12 @@ const TeamMates = () => {
                                     fill
                                     className="object-cover object-top transition-all duration-200 ease-in-out group-hover:scale-110"
                                 />
-                                <div className="absolute left-0 z-10 flex items-center justify-between w-full gap-4 px-5 bottom-4 lg:px-8">
+                                <div className="absolute left-0 z-10 flex items-center justify-between w-full gap-4 px-5 bottom-0 pb-2 lg:px-8 backdrop-brightness-[0.70]">
                                     <div className="block">
-                                        <h3 className="mb-4 text-xl font-medium text-white md:text-xl xl:text-2xl font-montserrat">
+                                        <h3 className="mb-4 text-xl font-medium text-white md:text-xl xl:text-2xl font-merriWeather">
                                             {list.name}
                                         </h3>
-                                        <div className="px-4 py-2 text-sm font-normal tracking-wide  bg-[#1a1a1a] text-primary font-montserrat w-max">
+                                        <div className="px-4 py-2 text-sm font-normal tracking-wide  bg-[#1a1a1a] text-primary font-merriWeather w-max">
                                             {list.position}
                                         </div>
                                     </div>
