@@ -3,7 +3,7 @@ import React from 'react'
 
 const TeamHero = () => {
     return (
-        <section className="relative flex flex-col sm:flex-row w-full h-full md:h-[75vh] xl:h-[85vh] overflow-hidden mt-14">
+        <section className="relative flex flex-col sm:flex-row w-full h-full md:h-[75vh] xl:h-[85vh] overflow-hidden mt-14 font-merriWeather">
             <div className="w-full h-[55vh] md:h-[75vh] xl:h-[85vh] bg-fixed" style={{
                 backgroundImage: `url("/team-bg.jpg")`,
                 backgroundSize: "cover",

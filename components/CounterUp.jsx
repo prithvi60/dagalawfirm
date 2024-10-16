@@ -4,7 +4,7 @@ import { animate, useInView } from "framer-motion";
 
 export const CounterUp = () => {
     return (
-        <div className="w-full h-full px-4 py-6 sm:pt-0">
+        <div className="w-full h-full px-4 py-6 sm:pt-0 font-merriWeather">
             <div className="flex flex-col items-center justify-center w-full h-full gap-8 md:gap-10 xl:gap-14">
                 <Stat1
                     num={8000}

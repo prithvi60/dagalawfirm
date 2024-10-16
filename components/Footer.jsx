@@ -6,13 +6,13 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col items-center justify-between p-5 mt-5 border-t-2 gap-7 lg:gap-10 md:mt-0 sm:flex-row lg:px-16 lg:py-8 border-info">
+        <footer className="flex flex-col items-center justify-between p-5 mt-5 border-t-2 gap-7 font-merriWeather lg:gap-10 md:mt-0 sm:flex-row lg:px-16 lg:py-8 border-info">
             <div className="block space-y-5">
                 <div className={"w-48 h-10 relative overflow-hidden"}>
                     <Image alt="daga logo" fill src={"/daga-logo.png"} className={"object-cover object-center"} />
                 </div>
                 <div className="flex items-center gap-5 text-sm font-medium md:gap-10 md:text-base font-merriWeather">
-                    <h4>jayeshdaga03@gmail.com</h4>
+                    <h4>enquiry@dagaanddaga.com</h4>
                     <p>+91- 9551028280</p>
                 </div>
             </div>

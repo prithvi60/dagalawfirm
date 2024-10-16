@@ -19,10 +19,10 @@ const Navbar = () => {
 
     return (
         <nav className="w-full h-full mx-auto">
-            <div className="flex items-center justify-between md:justify-start gap-3 sm:gap-8 lg:gap-16 px-5 lg:px-16 z-[999] shadow-sm border-b-2 border-info fixed bg-primary top-0 left-0 w-full">
+            <div className="flex items-center justify-between md:justify-start gap-3 sm:gap-8 lg:gap-16 px-5 lg:px-16 z-[999] shadow-sm border-b-2 border-info fixed bg-primary top-0 left-0 w-full font-merriWeather">
                 <Link
                     href="/"
-                    className={"w-64 md:w-60 h-14 ml-12 sm:ml-0 cursor-pointer relative overflow-hidden"}
+                    className={"hidden md:block w-60 h-14 cursor-pointer relative overflow-hidden"}
                 >
                     <Image
                         priority
@@ -32,7 +32,19 @@ const Navbar = () => {
                         className={"object-cover object-center"}
                     />
                 </Link>
-                <div className="relative items-center hidden gap-4 p-1 font-bold md:gap-8 md:flex xl:gap-14 w-max font-merriWeather">
+                <Link
+                    href="/"
+                    className={"block md:hidden w-10 h-14 sm:ml-0 cursor-pointer relative overflow-hidden"}
+                >
+                    <Image
+                        priority
+                        alt="daga logo"
+                        fill
+                        src={"/daga-new-logo.png"}
+                        className={"object-contain object-center"}
+                    />
+                </Link>
+                <div className="relative items-center hidden gap-6 p-1 font-bold lg:gap-8 md:flex xl:gap-14 w-max font-merriWeather">
                     {navbarLinks.map((list, idx) => (
                         <div key={idx} className="relative py-4 group">
                             <div>
@@ -41,7 +53,7 @@ const Navbar = () => {
                                         className={`${isActive === list.menu && pathname !== "/"
                                             ? "underline underline-offset-8 decoration-info"
                                             : ""
-                                            } text-base font-medium uppercase font-libreCaslonDisplay hover:underline decoration-info underline-offset-4 transition-all duration-500 ease-linear hover:text-info hover:scale-105`}
+                                            } text-sm lg:text-base font-medium uppercase font-libreCaslonDisplay hover:underline decoration-info underline-offset-4 transition-all duration-500 ease-linear hover:text-info hover:scale-105`}
                                     >
                                         {list.menu}
                                     </h4>
@@ -100,7 +112,7 @@ const Navbar = () => {
                                             className={` ${isActive === list.menu && pathname !== "/"
                                                 ? "underline underline-offset-8 decoration-[#c20003]"
                                                 : ""
-                                                } text-base font-medium uppercase font-libreCaslonDisplay decoration-primary`}
+                                                } text-base font-medium uppercase font-libreCaslonDisplay`}
                                         >
                                             {list.menu}
                                         </h4>

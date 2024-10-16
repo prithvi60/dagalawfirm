@@ -6,10 +6,10 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const TeamMates = () => {
     return (
-        <section className="px-5 space-y-8 mt-14 py-7 lg:px-16 lg:py-12">
-            <h4 className="font-bold tracking-wide capitalize text-xl lg:text-2xl xl:text-[36px] md:!leading-snug font-merriWeather text-info">
+        <section className="px-5 space-y-8 mt-14 py-7 lg:px-16 lg:py-12 font-merriWeather">
+            {/* <h4 className="font-bold tracking-wide capitalize text-xl lg:text-2xl xl:text-[36px] md:!leading-snug font-merriWeather text-info">
                 Our team comprises of the following individuals
-            </h4>
+            </h4> */}
             <div className="grid grid-cols-1 gap-4 md:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {teamDetails.map((list, idx) => (
                     <>
@@ -17,7 +17,7 @@ const TeamMates = () => {
                             <Link
                                 key={idx}
                                 href={`/team/${list.ref}`}
-                                className="relative w-full md:h-[320px] h-[280px] overflow-hidden group z-0 contrast-100 "
+                                className="relative w-full md:h-[280px] h-[250px] overflow-hidden group z-0 contrast-100 "
                             >
                                 <Image
                                     alt="sample-image"
@@ -27,7 +27,7 @@ const TeamMates = () => {
                                 />
                                 <div className="absolute bottom-0 left-0 z-10 flex items-center justify-between w-full gap-4 pb-2 px-5 lg:px-8 backdrop-brightness-[0.70]">
                                     <div className="block">
-                                        <h3 className="mb-4 text-xl font-medium text-white md:text-xl xl:text-2xl font-merriWeather">
+                                        <h3 className="mb-4 text-xl font-medium text-white md:text-xl font-merriWeather">
                                             {list.name}
                                         </h3>
                                         <div className="px-4 py-2 text-sm font-normal tracking-wide bg-[#1a1a1a] text-primary font-merriWeather w-max">

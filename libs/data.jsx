@@ -14,57 +14,57 @@ export const navbarLinks = [
         ],
     },
     { menu: "Initiatives", ref: "/initiatives" },
-    { menu: "Contact us", ref: "/contact" },
     {
         menu: "Career",
         ref: "",
         subMenu: [
-            { menu: "Interns", ref: "/career/interns" },
-            { menu: "Employees", ref: "/career/employees" },
+            { menu: "Internship", ref: "/career/internship" },
+            { menu: "Jobs", ref: "/career/jobs" },
         ],
     },
+    { menu: "Contact us", ref: "/contact" },
 ];
 
 export const specializations = [
     {
         specialize: "copyright",
         note: "Safeguard your creative works with our expert copyright services, ensuring your intellectual property is protected against unauthorized use",
-        src: "/service-sample-1.png",
+        src: "/icon-4.svg",
         lists: [],
         shortNote: "",
     },
     {
         specialize: "industrial design",
         note: "Defend your unique designs with our comprehensive design rights services, helping you secure legal protection for your creative assets.",
-        src: "/service-sample-2.png",
+        src: "/icon-5.svg",
         lists: [],
         shortNote: "",
     },
     {
         specialize: "patents",
         note: "Trust our experienced attorneys to represent you in legal disputes, offering strategic litigation solutions to defend your rights and interests.",
-        src: "/service-sample-3.png",
+        src: "/icon-6.svg",
         lists: [],
         shortNote: "",
     },
     {
         specialize: "trademarks",
         note: "Turn your inventions into protected assets with our patent services, guiding you through the complex filing process to secure your intellectual property.",
-        src: "/service-sample-4.png",
+        src: "/icon-7.svg",
         lists: [],
         shortNote: "",
     },
     {
         specialize: "commercial litigation",
         note: "Establish and protect your brand identity with our trademark services, from filing to enforcement, ensuring your mark stays yours.",
-        src: "/service-sample-5.png",
+        src: "/icon-8.svg",
         lists: [],
         shortNote: "",
     },
     {
         specialize: "dispute resolution",
         note: "Establish and protect your brand identity with our trademark services, from filing to enforcement, ensuring your mark stays yours.",
-        src: "/service-sample-5.png",
+        src: "/icon-9.svg",
         lists: [],
         shortNote: "",
     },
@@ -107,7 +107,7 @@ export const teamDetails = [
     },
     {
         name: "Ms. Bharathy",
-        position: "Paralegal",
+        position: "Senior Paralegal",
         ref: "paralegal",
         img: "/bharathy.jpg",
         desc: [
@@ -116,15 +116,42 @@ export const teamDetails = [
         ],
     },
     {
-        name: "Mr Santhana Krishnan",
+        name: "Mr. Santhana Krishnan",
         position: "Accounts Executive",
         img: "/santhanam.jpg",
     },
     {
         name: "Mrs. Sunita S",
-        position: "Staff",
+        position: "Paralegal",
         img: "/sunita.jpg",
     },
     { name: "Mr. Vijay", position: "Staff", img: "/vijay.jpg" },
-    { name: "Mr. Dinesh", position: "Clerk", img: "/dinesh.jpg" },
+    { name: "Mr. Dinesh", position: "Clerk", img: "/dinesh.jpeg" },
+];
+
+export const dagaIcons = [
+    { icon: "/icon-1.svg", note: "Expertise and Specialization" },
+    { icon: "/icon-2.svg", note: "Transparent and Ethical Practices" },
+    { icon: "/icon-3.svg", note: "Diligence and Innovation" },
+];
+
+export const services = [
+    { icon: "/icon-4.svg", menu: "copyright", ref: "/services/copyright" },
+    {
+        icon: "/icon-5.svg",
+        menu: "industrial design",
+        ref: "/services/industrial_design",
+    },
+    { icon: "/icon-6.svg", menu: "patents", ref: "/services/patents" },
+    { icon: "/icon-7.svg", menu: "trademarks", ref: "/services/trademarks" },
+    {
+        icon: "/icon-8.svg",
+        menu: "commercial litigation",
+        ref: "/services/commercial_litigation",
+    },
+    {
+        icon: "/icon-9.svg",
+        menu: "dispute resolution",
+        ref: "/services/dispute_resolution",
+    },
 ];

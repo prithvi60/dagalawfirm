@@ -3,11 +3,12 @@ import { Montserrat, Merriweather } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import FloatingButton from "@/components/FloatingButton";
+import { Toaster } from "react-hot-toast";
 
 const merriWeather = Merriweather({
   subsets: ["latin"],
   variable: "--font-merriweather",
-  weight: ["700"],
+  weight: ["400", "300", "700"],
 });
 
 const montserrat = Montserrat({
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Toaster />
         <FloatingButton />
         <Footer />
       </body>

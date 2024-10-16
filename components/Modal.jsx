@@ -61,7 +61,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     onClick={() => setIsOpen(false)}
-                    className="fixed inset-0 z-[1000] grid p-8 overflow-y-scroll cursor-pointer bg-slate-900/20 backdrop-blur md:place-items-center"
+                    className="fixed inset-0 z-[1000] grid p-8 overflow-y-scroll cursor-pointer bg-slate-900/20 backdrop-blur md:place-items-center font-merriWeather"
                 >
                     <motion.div
                         initial={{ scale: 0, rotate: "12.5deg" }}
@@ -111,13 +111,13 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                                     onClick={handleGoBack}
                                     className="w-full py-2 font-semibold text-white transition-colors rounded bg-info hover:bg-info/50 "
                                 >
-                                    go back
+                                    Decline
                                 </button>
                                 <button
                                     onClick={handleUnderstood}
-                                    className="w-full py-2 font-semibold text-indigo-600 transition-opacity bg-white rounded hover:opacity-90"
+                                    className="w-full py-2 font-semibold text-white transition-opacity bg-green-600 rounded hover:opacity-90"
                                 >
-                                    Understood!
+                                    Accept
                                 </button>
                             </div>
                         </div>
