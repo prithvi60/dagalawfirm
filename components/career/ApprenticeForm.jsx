@@ -57,8 +57,7 @@ const ApprenticeForm = ({ type, desc, title }) => {
         setStatus(true);
         const emailFormData = {
             userEmail: formData.userEmail,
-            clientEmail: "prithvi@webibee.com",
-            // clientEmail: "rirowif189@hraifi.com",
+            clientEmail: "enquiry@dagaanddaga.com ",
             subject: `New User Data for Review - [${formData.userName}]`,
             message: formData.message,
             attachments: formData.attachments,

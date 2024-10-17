@@ -75,7 +75,7 @@ export const teamDetails = [
         name: "Mr. Ashok Kumar J. Daga",
         position: "Founder",
         ref: "founder",
-        img: "/daga-1.png",
+        img: "/daga-1.jpg",
         desc: [
             "A visionary leader and the guiding light behind Daga and Daga Intellectual Property Attorneys. Ashok Kumar J. Daga has been a cornerstone in shaping the firm&s legacy since its inception in 1994. Hailing from a family with deep ties to the jewellery industry, he set forth on a path to forge a legacy that was distinctly his own. As a first-generation lawyer, his unwavering zeal and entrepreneurial spirit fuelled his ambition to establish this remarkable empire. Driven by a deep-seated passion for law and a steadfast dedication to excellence, he has built Daga and Daga into one of the most respected names in the intellectual property realm.",
             "His journey began with a Bachelor of Arts (BA) degree in 1985, followed by a Bachelor of Law (BL) in 1988. His formative years in law were deeply influenced by his mentor, V. Veeraghavan, under whose guidance he honed his legal acumen and strategic thinking in Intellectual Property. The principles instilled in him during this time became the foundation of Daga and Daga’s core values.",
@@ -87,7 +87,7 @@ export const teamDetails = [
         name: "Mr. A. Jayesh Kumar Daga",
         position: "Head - Litigations",
         ref: "litigations",
-        img: "/daga-2.png",
+        img: "/daga-2.jpg",
         desc: [
             "Jayesh is a litigator, strategist, and counsellor specializing in Intellectual Property (IP), E- Commerce, Franchising, and Licensing. As the head of the Litigation team at Daga &amp; Daga, he leverages his extensive expertise and strategic acumen to navigate complex legal challenges. His unwavering commitment to IP law is driven by a passion for safeguarding the intangible assets that fuel innovation and creativity. Jayesh has successfully represented a diverse range of clients, from dynamic start-ups to established multinational conglomerates, providing practical and bespoke legal solutions tailored to their specific needs.",
             "Jayesh commenced his legal education at the esteemed School of Excellence in Law, Chennai. During this formative period, he received rigorous training under the Additional Government Pleader of the High Court of Judicature at Madras. Alongside the training, his active participation in about 16 national moot court competitions—where he earned several accolades, including the Best Student Advocate award—shaped his early career.",

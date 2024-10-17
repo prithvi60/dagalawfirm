@@ -7,9 +7,9 @@ const Page = ({ params }) => {
     return (
         <main>
             {type === "internship" ? (
-                <ApprenticeForm type={type} title={"the foundation for future success"} desc={"Interns are temporary team members who gain practical experience while contributing to projects under guidance."} />
+                <ApprenticeForm type={type} title={"Looking to Join Us?"} desc={"We are always on the lookout for talented, driven, and passionate legal professionals to join our team. If you're interested, we’d love to hear from you.Please fill in your details, and we will review your application. If there is a suitable vacancy, our team will get in touch with you."} />
             ) : (
-                <BusinessForm type={type} title={"Challenge yourself"} desc={"Choose a job you love, and you will never have to work a day in your life.Stay focused on your goals and keep pushing forward—your hard work will pay off."} />
+                <BusinessForm type={type} title={"Looking to Join Us?"} desc={"We are always on the lookout for talented, driven, and passionate legal professionals to join our team. If you're interested, we’d love to hear from you.Please fill in your details, and we will review your application. If there is a suitable vacancy, our team will get in touch with you."} />
             )}
         </main>
     );
