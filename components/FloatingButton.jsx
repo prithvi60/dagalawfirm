@@ -10,14 +10,14 @@ export default function FloatingButton() {
         target="_blank"
         rel="noopener noreferrer"
         title="whatsapp"
-        className="rounded-full shadow-lg hover:animate-pulse animate-bounce"
+        className="rounded-full shadow-xl hover:scale-125"
       >
         <img
           loading="lazy"
           src="/whatsapp_logo.png"
           alt="whatsapp logo"
           title="whatsapp logo"
-          className="w-10 h-10 md:h-12 md:w-12"
+          className="w-16 h-16 md:h-20 md:w-20"
         />
       </a>
     </div>

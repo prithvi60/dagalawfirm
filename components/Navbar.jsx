@@ -28,8 +28,8 @@ const Navbar = () => {
                         priority
                         alt="daga logo"
                         fill
-                        src={"/daga-logo.png"}
-                        className={"object-cover object-center"}
+                        src={"/logo.svg"}
+                        className={"object-contain object-center"}
                     />
                 </Link>
                 <Link

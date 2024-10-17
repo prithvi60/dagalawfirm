@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className="flex flex-col items-center justify-between p-5 mt-5 border-t-2 gap-7 font-merriWeather lg:gap-10 md:mt-0 sm:flex-row lg:px-16 lg:py-8 border-info">
             <div className="block space-y-5">
                 <div className={"w-48 h-10 relative overflow-hidden"}>
-                    <Image alt="daga logo" fill src={"/daga-logo.png"} className={"object-cover object-center"} />
+                    <Image alt="daga logo" fill src={"/logo.svg"} className={"object-contain object-center"} />
                 </div>
                 <div className="flex items-center gap-5 text-sm font-medium md:gap-10 md:text-base font-merriWeather">
                     <h4>enquiry@dagaanddaga.com</h4>
@@ -26,7 +26,7 @@ const Footer = () => {
                     </Link>
                 </div> */}
                 <div className="flex items-center gap-6 text-sm font-medium md:text-base font-merriWeather">
-                    <p>Copyrights © {new Date().getFullYear()}</p>
+                    <p>© Copyrights {new Date().getFullYear()}</p>
                     <p>All rights reserved</p>
                 </div>
             </div>

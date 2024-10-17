@@ -7,9 +7,9 @@ import { FaArrowRightLong } from 'react-icons/fa6'
 const PracticesComponent = () => {
     return (
         <>
-            <h2 className="px-5 text-2xl font-medium tracking-wide capitalize py-7 lg:px-16 lg:py-12 md:text-3xl text-info font-merriWeather">Practice areas where we excel</h2>
+            <h2 className="px-5 text-2xl font-medium tracking-wide capitalize py-7 lg:px-16 lg:py-12 md:text-3xl text-info font-merriWeather flex justify-center">Practice areas where we excel</h2>
             {services.map((item, idx) => (
-                <section key={idx} className={`font-merriWeather flex flex-col odd:md:flex-row-reverse justify-center items-center even:md:flex-row h-full border-2 border-info relative py-10`}>
+                <section key={idx} className={`font-merriWeather flex flex-col md:flex-row justify-center items-center  h-full border-2 border-info relative py-10`}>
                     <div className="relative m-auto overflow-hidden size-28 md:size-44 basis-full md:basis-1/2">
                         <Image alt="sample-image" src={item.icon} fill className="object-contain object-center" />
                     </div>

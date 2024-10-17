@@ -17,13 +17,13 @@ const TeamMates = () => {
                             <Link
                                 key={idx}
                                 href={`/team/${list.ref}`}
-                                className="relative w-full md:h-[280px] h-[250px] overflow-hidden group z-0 contrast-100 "
+                                className="relative w-full md:h-[280px] h-[250px] overflow-hidden group z-0 contrast-100 bg-[#454545]"
                             >
                                 <Image
                                     alt="sample-image"
                                     src={list.img}
                                     fill
-                                    className="object-cover object-top transition-all duration-200 ease-in-out group-hover:scale-110"
+                                    className="object-contain object-top transition-all duration-200 ease-in-out group-hover:scale-110"
                                 />
                                 <div className="absolute bottom-0 left-0 z-10 flex items-center justify-between w-full gap-4 pb-2 px-5 lg:px-8 backdrop-brightness-[0.70]">
                                     <div className="block">
@@ -42,13 +42,13 @@ const TeamMates = () => {
                         ) : (
                             <div
                                 key={idx}
-                                className="relative w-full md:h-[320px] h-[280px] overflow-hidden group z-0 contrast-100 "
+                                className="relative w-full md:h-[320px] h-[280px] overflow-hidden group z-0 contrast-100 bg-[#454545] "
                             >
                                 <Image
                                     alt="sample-image"
                                     src={list.img}
                                     fill
-                                    className="object-cover object-top transition-all duration-200 ease-in-out group-hover:scale-110"
+                                    className="object-contain object-top transition-all duration-200 ease-in-out group-hover:scale-110"
                                 />
                                 <div className="absolute left-0 z-10 flex items-center justify-between w-full gap-4 px-5 bottom-0 pb-2 lg:px-8 backdrop-brightness-[0.70]">
                                     <div className="block">

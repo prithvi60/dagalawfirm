@@ -18,9 +18,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "DAGA & DAGA",
+  title: "Daga & Daga Intellectual Property Attorneys",
   description:
-    "Trusted legal support for your important matters.Here to guide and protect you every step of the way.",
+    "Trusted legal support for your important matters. Here to guide and protect you every step of the way.",
+    image: "/path/to/logo.svg",
 };
 
 export default function RootLayout({ children }) {
