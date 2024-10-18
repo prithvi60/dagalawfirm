@@ -17,7 +17,7 @@ const TeamMates = () => {
                             <Link
                                 key={idx}
                                 href={`/team/${list.ref}`}
-                                className="relative w-full md:h-[280px] h-[250px] overflow-hidden group z-0 contrast-100 bg-[#454545]"
+                                className="relative w-full h-[280px] md:w-[320px] md:h-[320px] overflow-hidden group z-0 contrast-100 bg-info/60"
                             >
                                 <Image
                                     alt="sample-image"
@@ -25,9 +25,9 @@ const TeamMates = () => {
                                     fill
                                     className="object-contain object-top transition-all duration-200 ease-in-out group-hover:scale-110"
                                 />
-                                <div className="absolute bottom-0 left-0 z-10 flex items-center justify-between w-full gap-4 pb-2 px-5 lg:px-8 backdrop-brightness-[0.70]">
+                                <div className="absolute bottom-0 left-0 z-10 flex items-center justify-between w-full py-2 px-5 lg:px-8 backdrop-brightness-[0.60]">
                                     <div className="block">
-                                        <h3 className="mb-4 text-xl font-medium text-white md:text-xl font-merriWeather">
+                                        <h3 className="mb-4 text-lg font-medium text-white md:text-xl font-merriWeather">
                                             {list.name}
                                         </h3>
                                         <div className="px-4 py-2 text-sm font-normal tracking-wide bg-[#1a1a1a] text-primary font-merriWeather w-max">
@@ -42,7 +42,7 @@ const TeamMates = () => {
                         ) : (
                             <div
                                 key={idx}
-                                className="relative w-full md:h-[320px] h-[280px] overflow-hidden group z-0 contrast-100 bg-[#454545] "
+                                className="relative w-full md:h-[320px] h-[280px] overflow-hidden group z-0 contrast-100 bg-info/60 "
                             >
                                 <Image
                                     alt="sample-image"
@@ -50,9 +50,9 @@ const TeamMates = () => {
                                     fill
                                     className="object-contain object-top transition-all duration-200 ease-in-out group-hover:scale-110"
                                 />
-                                <div className="absolute left-0 z-10 flex items-center justify-between w-full gap-4 px-5 bottom-0 pb-2 lg:px-8 backdrop-brightness-[0.70]">
+                                <div className="absolute left-0 z-10 flex items-center justify-between w-full gap-4 pt-2 px-5 bottom-0 pb-2 lg:px-8 backdrop-brightness-[0.60]">
                                     <div className="block">
-                                        <h3 className="mb-4 text-xl font-medium text-white md:text-xl xl:text-2xl font-merriWeather">
+                                        <h3 className="mb-4 text-lg font-medium text-white md:text-xl font-merriWeather">
                                             {list.name}
                                         </h3>
                                         <div className="px-4 py-2 text-sm font-normal tracking-wide  bg-[#1a1a1a] text-primary font-merriWeather w-max">

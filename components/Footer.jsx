@@ -6,14 +6,15 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col items-center justify-between p-5 mt-5 border-t-2 gap-7 font-merriWeather lg:gap-10 md:mt-0 sm:flex-row lg:px-16 lg:py-8 border-info">
+        <footer className="flex flex-col items-center justify-between p-5 border-t-2 gap-7 font-merriWeather lg:gap-10 md:mt-0 sm:flex-row lg:px-16 lg:py-8 border-info">
             <div className="block space-y-5">
                 <div className={"w-48 h-10 relative overflow-hidden"}>
                     <Image alt="daga logo" fill src={"/logo.svg"} className={"object-contain object-center"} />
                 </div>
                 <div className="flex items-center gap-5 text-sm font-medium md:gap-10 md:text-base font-merriWeather">
-                    <h4>enquiry@dagaanddaga.com</h4>
-                    <p>+91- 9551028280</p>
+                    <Link href="mailto:enquiry@dagaanddaga.com" className='hover:text-info/80'>enquiry@dagaanddaga.com</Link>
+                    <h4 className='hidden md:block'>+91- 9551028280</h4>
+                    <Link href="tel:+919551028280" className='block hover:text-info/80 md:hidden'>+91- 9551028280</Link>
                 </div>
             </div>
             <div className="block mt-4 space-y-5">

@@ -2,12 +2,12 @@ import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
 const transporter = nodemailer.createTransport({
-  // host: "smtp.gmail.com",
-  // port: 465,
-  // secure: true,
-  host: "smtp.office365.com",
-  port: 587,
-  secure: false,
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
+  // host: "smtp.office365.com",
+  // port: 587,
+  // secure: false,
   auth: {
     user: process.env.EMAIL_ID,
     pass: process.env.EMAIL_PASSWORD,
@@ -50,6 +50,7 @@ export async function POST(req) {
       content: Buffer.from(attachment.content),
       contentType: attachment.contentType,
     })),
+    bcc: ["enquiry@dagaanddaga.com", "gokulgandhi97@gmail.com"],
   };
 
   try {

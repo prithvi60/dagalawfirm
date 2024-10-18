@@ -77,10 +77,10 @@ export const teamDetails = [
         ref: "founder",
         img: "/daga-1.jpg",
         desc: [
-            "A visionary leader and the guiding light behind Daga and Daga Intellectual Property Attorneys. Ashok Kumar J. Daga has been a cornerstone in shaping the firm&s legacy since its inception in 1994. Hailing from a family with deep ties to the jewellery industry, he set forth on a path to forge a legacy that was distinctly his own. As a first-generation lawyer, his unwavering zeal and entrepreneurial spirit fuelled his ambition to establish this remarkable empire. Driven by a deep-seated passion for law and a steadfast dedication to excellence, he has built Daga and Daga into one of the most respected names in the intellectual property realm.",
+            "A visionary leader and the guiding light behind Daga and Daga Intellectual Property Attorneys. Ashok Kumar J. Daga has been a cornerstone in shaping the firm's legacy since its inception in 1994. Hailing from a family with deep ties to the jewellery industry, he set forth on a path to forge a legacy that was distinctly his own. As a first-generation lawyer, his unwavering zeal and entrepreneurial spirit fuelled his ambition to establish this remarkable empire. Driven by a deep-seated passion for law and a steadfast dedication to excellence, he has built Daga and Daga into one of the most respected names in the intellectual property realm.",
             "His journey began with a Bachelor of Arts (BA) degree in 1985, followed by a Bachelor of Law (BL) in 1988. His formative years in law were deeply influenced by his mentor, V. Veeraghavan, under whose guidance he honed his legal acumen and strategic thinking in Intellectual Property. The principles instilled in him during this time became the foundation of Daga and Daga’s core values.",
             "For him, Daga and Daga is more than just a professional establishment—it is an emotion, a reflection of his lifelong dedication to protecting and empowering businesses through robust intellectual property solutions. Over the years, the firm has proudly served more than 4,000 clients, handled several complex litigations, successfully filed more than 8,000 applications for IP prosecution, and diligently protected the intellectual property rights of countless businesses, industries and conglomerates. His professionalism shines through in every facet of his work, from his thoughtful approach to clients, proficient handling of complex cases, and respectful, kind interactions with the entire team. His leadership is also marked by his dedication to mentoring the next generation of legal minds, having trained and guided a significant number of interns who have gone on to make their mark in the legal profession.",
-            "He believes that &quot;Every challenge harbors a solution, provided we engage in thoughtful reflection.&quot; With a visionary outlook and an unyielding dedication to justice, Ashok Kumar J. Daga resolutely steers Daga and Daga, nurturing an environment where the interests of clients reign supreme, and intellectual property is safeguarded with precision, integrity, and passion.",
+            "He believes that Every challenge harbors a solution, provided we engage in thoughtful reflection.With a visionary outlook and an unyielding dedication to justice, Ashok Kumar J. Daga resolutely steers Daga and Daga, nurturing an environment where the interests of clients reign supreme, and intellectual property is safeguarded with precision, integrity, and passion.",
         ],
     },
     {
@@ -89,9 +89,9 @@ export const teamDetails = [
         ref: "litigations",
         img: "/daga-2.jpg",
         desc: [
-            "Jayesh is a litigator, strategist, and counsellor specializing in Intellectual Property (IP), E- Commerce, Franchising, and Licensing. As the head of the Litigation team at Daga &amp; Daga, he leverages his extensive expertise and strategic acumen to navigate complex legal challenges. His unwavering commitment to IP law is driven by a passion for safeguarding the intangible assets that fuel innovation and creativity. Jayesh has successfully represented a diverse range of clients, from dynamic start-ups to established multinational conglomerates, providing practical and bespoke legal solutions tailored to their specific needs.",
+            "Jayesh is a litigator, strategist, and counsellor specializing in Intellectual Property (IP), E- Commerce, Franchising, and Licensing. As the head of the Litigation team at Daga & Daga, he leverages his extensive expertise and strategic acumen to navigate complex legal challenges. His unwavering commitment to IP law is driven by a passion for safeguarding the intangible assets that fuel innovation and creativity. Jayesh has successfully represented a diverse range of clients, from dynamic start-ups to established multinational conglomerates, providing practical and bespoke legal solutions tailored to their specific needs.",
             "Jayesh commenced his legal education at the esteemed School of Excellence in Law, Chennai. During this formative period, he received rigorous training under the Additional Government Pleader of the High Court of Judicature at Madras. Alongside the training, his active participation in about 16 national moot court competitions—where he earned several accolades, including the Best Student Advocate award—shaped his early career.",
-            "Following his enrolment with the Bar Council of Tamil Nadu &amp; Puducherry, Jayesh deepened his expertise in IP law at the Supreme Court of India under the mentorship of Hon&ble (Retd.) Justice Manmohan Singh, former Judge of the Delhi High Court and ex- Chairman of the Intellectual Property Appellate Board. His pursuit of a Master’s degree in Intellectual Property and Information Law from King’s College London further broadened his perspective, providing him with a comprehensive understanding of the international IP landscape.",
+            "Following his enrolment with the Bar Council of Tamil Nadu & Puducherry, Jayesh deepened his expertise in IP law at the Supreme Court of India under the mentorship of Hon&ble (Retd.) Justice Manmohan Singh, former Judge of the Delhi High Court and ex- Chairman of the Intellectual Property Appellate Board. His pursuit of a Master’s degree in Intellectual Property and Information Law from King’s College London further broadened his perspective, providing him with a comprehensive understanding of the international IP landscape.",
             "In addition to his practice, Jayesh is an active member of the Intellectual Property Association of South India (IPASI) and regularly conducts workshops on Intellectual Property at various educational institutions. His goal is to empower businesses and individuals with the knowledge and legal support necessary to navigate and thrive in the ever-evolving world of intellectual property.",
         ],
     },
@@ -116,14 +116,14 @@ export const teamDetails = [
         ],
     },
     {
-        name: "Mr. Santhana Krishnan",
-        position: "Accounts Executive",
-        img: "/santhanam.jpg",
-    },
-    {
         name: "Mrs. Sunita S",
         position: "Paralegal",
         img: "/sunita.jpg",
+    },
+    {
+        name: "Mr. Santhana Krishnan",
+        position: "Chief Accounts officer",
+        img: "/santhanam.jpg",
     },
     { name: "Mr. Vijay", position: "Staff", img: "/vijay.jpg" },
     { name: "Mr. Dinesh", position: "Clerk", img: "/dinesh.jpeg" },

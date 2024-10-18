@@ -25,20 +25,20 @@ const AboutUs = () => {
                         institutions in areas such as trademarks, copyrights, patents,
                         design protection, commercial litigation, and dispute resolution.
                         The firm represents clients before prominent forums including the
-                        Madras High Court, Delhi High Court, Intellectual Property Rights
+                        Madras High Court,the Delhi High Court,the Intellectual Property Rights
                         Tribunal, and several other legal bodies. Its vast expertise
                         encompasses not only the Indian legal system but also international
-                        jurisdictions, including China, Sri Lanka, Vietnam, The UAE,
-                        Singapore and other countries, providing a comprehensive global
-                        legal reach. It has successfully represented clients from multiple
+                        jurisdictions including China, Sri Lanka, Vietnam, the UAE,
+                        Singapore etc., providing a comprehensive global
+                        outreach. It has successfully represented clients from multiple
                         industries, such as technology, pharmaceuticals, fashion, media and
                         entertainment, among others.
                     </li>
                     <li>
                         The firm takes pride in staying ahead of the curve in the
-                        ever-evolving legal landscape, ensuring that clients&apos; interests
-                        are protected at every stage of the journey. End-to-end support is
-                        ensured at every stage from filing applications to defending
+                        ever-evolving legal landscape ensuring that its clients&apos; interests
+                        are protected at all times. End-to-end support is
+                        ensured at every stage of the journey from filing applications to defending
                         Intellectual Property Rights and navigating complex litigations with
                         efficiency and ease.
                     </li>

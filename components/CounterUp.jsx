@@ -7,7 +7,7 @@ export const CounterUp = () => {
         <div className="w-full h-full px-4 py-6 sm:pt-0 font-merriWeather">
             <div className="flex flex-col items-center justify-center w-full h-full gap-8 md:gap-10 xl:gap-14">
                 <Stat1
-                    num={8000}
+                    num={6451}
                     suffix="+"
                     subheading="Applications"
                 />
@@ -22,7 +22,7 @@ export const CounterUp = () => {
                 <Stat1
                     num={34}
                     suffix="+"
-                    subheading="years of Experience"
+                    subheading="Years of Experience"
                 />
             </div>
         </div>
@@ -52,7 +52,7 @@ const Stat1 = ({ num, suffix, decimals = 0, subheading, styles }) => {
                 <span ref={ref}></span>
                 <span className="text-lg lg:text-[48px]">{suffix}</span>
             </p>
-            <p className="text-center text-2xl md:text-3xl xl:text-[48px] text-info font-merriWeather">{subheading}</p>
+            <p className="text-center text-2xl md:text-3xl !leading-tight xl:text-[48px] text-info font-merriWeather">{subheading}</p>
         </div>
     );
 };

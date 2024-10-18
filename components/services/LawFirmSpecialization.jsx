@@ -6,7 +6,7 @@ import { FaArrowRightLong, FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
 
 const LawFirmSpecialization = () => {
     return (
-        <section className="relative flex flex-col px-5 border-t-2 font-merriWeather md:px-0 md:pl-5 lg:flex-row lg:pl-16 border-info">
+        <section className="relative flex flex-col px-5 border-t-2 font-merriWeather md:px-5 lg:px-0 lg:flex-row lg:pl-16 border-info">
             <div className="h-full p-5 space-y-4 lg:p-0 lg:pr-10 lg:pt-10 basis-2/5 lg:space-y-8 lg:sticky lg:top-20">
                 <h1 className="font-bold tracking-wide capitalize text-xl lg:text-2xl xl:text-[36px] font-merriWeather text-info">
                     Protecting Your Ideas, Innovations, and Brands.
@@ -30,7 +30,7 @@ const LawFirmSpecialization = () => {
                         className="flex flex-col w-full border sm:flex-row border-info"
                     >
                         <div className="m-auto basis-full md:basis-1/2">
-                            <div className="relative m-auto overflow-hidden size-28 md:size-44">
+                            <div className="relative w-32 m-auto overflow-hidden h-28 md:h-44 md:w-48">
                                 <Image
                                     alt="bg image"
                                     src={item.src}

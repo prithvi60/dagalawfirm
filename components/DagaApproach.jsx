@@ -12,7 +12,7 @@ const DagaApproach = () => {
                         <div className='relative mx-auto size-28 lg:size-32'>
                             <Image alt={`${list.note} icon`} src={list.icon} fill className='object-cover object-center' />
                         </div>
-                        <h4 className='text-base font-medium tracking-wide text-center capitalize md:text-lg lg:text-xl'>{list.note}</h4>
+                        <h4 className='text-base font-medium tracking-wide text-center md:text-lg lg:text-xl'>{list.note}</h4>
                     </div>
                 ))}
             </div>

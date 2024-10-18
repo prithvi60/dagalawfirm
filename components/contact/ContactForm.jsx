@@ -32,7 +32,7 @@ const ContactForm = () => {
         setStatus(true);
         const emailFormData = {
             userEmail: formData.userEmail,
-            clientEmail: "enquiry@dagaanddaga.com ",
+            clientEmail: "enquiry@dagaanddaga.com",
             subject: `New User Data for Review - [${formData.userName}]`,
             message: formData.message,
             attachments: formData.attachments,
@@ -95,11 +95,13 @@ const ContactForm = () => {
         <section className="px-5 py-8 lg:px-16 lg:py-12 font-merriWeather mt-14">
             <div className="flex flex-col gap-8 md:flex-row">
                 <div className="relative h-full space-y-5 md:space-y-10 lg:sticky lg:top-20 basis-full md:basis-2/5">
-                    <h4 className='text-lg font-semibold tracking-wide text-center capitalize sm:text-xl xl:text-2xl font-merriWeather text-info'>Have questions? We’re here to help</h4>
+                    <h4 className='text-lg font-semibold tracking-wide text-center capitalize sm:text-xl xl:text-2xl font-merriWeather text-info'>Have questions?
+                        <br />
+                        We’re here to help</h4>
                     <div className="relative w-full">
-                        <FaQuoteLeft className="absolute text-lg md:text-xl -left-2 -top-4 xl:-top-2 xl:-left-4 text-info" />
-                        <p className='text-sm font-normal tracking-wide text-center sm:text-base font-merriWeather text-info'>Our team is ready to help. Drop us a message, and we&apos;ll get back to you as soon as possible</p>
-                        <FaQuoteRight className="absolute text-lg md:text-xl -right-2 -bottom-3 xl:-right-0 xl:-bottom-4 text-info" />
+                        {/* <FaQuoteLeft className="absolute text-lg md:text-xl -left-2 -top-4 xl:-top-2 xl:-left-4 text-info" /> */}
+                        <p className='text-sm font-normal tracking-wide text-center sm:text-base font-merriWeather text-info'>Drop us a message, and we&apos;ll get back to you as soon as possible</p>
+                        {/* <FaQuoteRight className="absolute text-lg md:text-xl -right-2 -bottom-3 xl:-right-0 xl:-bottom-4 text-info" /> */}
                     </div>
                 </div>
                 <div className="flex flex-col items-center w-full gap-5 space-y-8 justify-normal lg:flex-row md:w-3/5">
@@ -120,7 +122,7 @@ const ContactForm = () => {
                                         value={formData.userName || ""}
                                         onChange={handleChange}
                                         required
-                                        placeholder="Enter your User Name"
+                                        placeholder="Enter your user name"
                                         className="w-full py-2 pl-6 pr-10 text-white bg-transparent border outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                                     />
                                     <FaRegUser className="absolute text-xl right-4 top-3 text-neutral-200" />
@@ -138,7 +140,7 @@ const ContactForm = () => {
                                         value={formData.userEmail || ""}
                                         onChange={handleChange}
                                         required
-                                        placeholder="Enter your User Name"
+                                        placeholder="Enter your email ID"
                                         className="w-full py-2 pl-6 pr-10 text-white bg-transparent border outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                                     />
                                     <BsEnvelopeAtFill className="absolute text-xl right-4 top-3 text-neutral-200" />
@@ -156,7 +158,7 @@ const ContactForm = () => {
                                         value={formData.phoneNo || ""}
                                         onChange={handleChange}
                                         required
-                                        placeholder="Enter your User Name"
+                                        placeholder="Enter your phone no."
                                         className="w-full py-2 pl-6 pr-10 text-white bg-transparent border outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                                     />
                                     <FaPhoneAlt className="absolute text-xl right-4 top-3 text-neutral-200" />
@@ -173,7 +175,7 @@ const ContactForm = () => {
                                         value={formData.message || ""}
                                         onChange={handleChange}
                                         required
-                                        placeholder="Enter Your Queries"
+                                        placeholder="Enter your queries"
                                         rows={3}
                                         className="w-full py-2 pl-6 pr-10 text-white bg-transparent border outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                                     />
