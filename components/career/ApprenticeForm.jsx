@@ -8,17 +8,17 @@ import toast from "react-hot-toast";
 
 const ApprenticeForm = ({ type, desc, title }) => {
     const initialFormData = {
-        userName: "",
-        phoneNo: "",
-        userEmail: "",
+        Name: "",
+        Phone: "",
+        Email: "",
         clientEmail: "",
         subject: "",
-        message: "",
+        Query: "",
         attachments: [],
     };
     const [formData, setFormData] = useState(initialFormData);
     const [status, setStatus] = useState(false);
-
+// Update form names in functions 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
@@ -56,9 +56,9 @@ const ApprenticeForm = ({ type, desc, title }) => {
         e.preventDefault();
         setStatus(true);
         const emailFormData = {
-            userEmail: formData.userEmail,
+            Email: formData.Email,
             clientEmail: "enquiry@dagaanddaga.com",
-            subject: `New User Data for Review - [${formData.userName}]`,
+            subject: `New User Data for Review - [${formData.Name}]`,
             message: formData.message,
             attachments: formData.attachments,
         };
@@ -139,17 +139,26 @@ const ApprenticeForm = ({ type, desc, title }) => {
                         <h3 className="w-full text-4xl font-normal text-center capitalize text-secondary font-libreCaslonDisplay">
                             Let’s Connect
                         </h3>
-                        <form onSubmit={handleSubmit}>
+                        <form 
+                        // onSubmit={handleSubmit}
+                                   action="https://public.herotofu.com/v1/9ff1e250-8df8-11ef-82c2-4bbcc1388e1d" method="post" accept-charset="UTF-8"
+                        >
                             {/* User Name */}
                             <div className="mb-4">
                                 <label className="mb-2.5 block font-medium text-white capitalize">
                                     Name
                                 </label>
+                                <input
+                                        type="text"
+                                        name="Page"
+                                        value={"Internship"}
+                                     className="hidden"
+                                    />
                                 <div className="relative">
                                     <input
                                         type="text"
-                                        name="userName"
-                                        value={formData.userName || ""}
+                                        name="Name"
+                                        value={formData.Name || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your user name"
@@ -166,8 +175,8 @@ const ApprenticeForm = ({ type, desc, title }) => {
                                 <div className="relative">
                                     <input
                                         type="email"
-                                        name="userEmail"
-                                        value={formData.userEmail || ""}
+                                        name="Email"
+                                        value={formData.Email || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your email ID"
@@ -184,8 +193,8 @@ const ApprenticeForm = ({ type, desc, title }) => {
                                 <div className="relative">
                                     <input
                                         type="text"
-                                        name="phoneNo"
-                                        value={formData.phoneNo || ""}
+                                        name="Phone"
+                                        value={formData.Phone || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your phone no."
@@ -195,7 +204,7 @@ const ApprenticeForm = ({ type, desc, title }) => {
                                 </div>
                             </div>
 
-                            <div className="mb-6">
+                            {/* <div className="mb-6">
                                 <label className="mb-2.5 block font-medium text-white capitalize">
                                     Upload Resume
                                 </label>
@@ -207,7 +216,7 @@ const ApprenticeForm = ({ type, desc, title }) => {
                                         className="p-1.5 outline-none text-primary   cursor-pointer w-full"
                                     />
                                 </div>
-                            </div>
+                            </div> */}
                             {/* Message */}
                             <div className="mb-6">
                                 <label className="mb-2.5 block font-medium text-white capitalize">
@@ -215,8 +224,8 @@ const ApprenticeForm = ({ type, desc, title }) => {
                                 </label>
                                 <div className="relative">
                                     <textarea
-                                        name="message"
-                                        value={formData.message || ""}
+                                        name="Query"
+                                        value={formData.Query || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your queries"

@@ -8,12 +8,12 @@ import toast from "react-hot-toast";
 
 const BusinessForm = ({ type, desc, title }) => {
     const initialFormData = {
-        userName: "",
-        phoneNo: "",
-        userEmail: "",
+        Name: "",
+        Phone: "",
+        Email: "",
         clientEmail: "",
         subject: "",
-        message: "",
+        Query: "",
         attachments: [],
     };
     const [formData, setFormData] = useState(initialFormData);
@@ -139,17 +139,27 @@ const BusinessForm = ({ type, desc, title }) => {
                         <h3 className="w-full text-4xl font-normal text-center capitalize text-secondary font-libreCaslonDisplay">
                             Let’s Connect
                         </h3>
-                        <form onSubmit={handleSubmit}>
+                        <form
+                        //  onSubmit={handleSubmit}
+                                   action="https://public.herotofu.com/v1/9ff1e250-8df8-11ef-82c2-4bbcc1388e1d" method="post" accept-charset="UTF-8"
+                        >
                             {/* User Name */}
                             <div className="mb-4">
                                 <label className="mb-2.5 block font-medium text-white capitalize">
                                     Name
                                 </label>
+                                <input
+                                        type="text"
+                                        name="Page"
+                                        value={"Job"}
+                                     className="hidden"
+                                     onChange={handleChange}
+                                    />
                                 <div className="relative">
                                     <input
                                         type="text"
-                                        name="userName"
-                                        value={formData.userName || ""}
+                                        name="Name"
+                                        value={formData.Name || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your user name"
@@ -166,8 +176,8 @@ const BusinessForm = ({ type, desc, title }) => {
                                 <div className="relative">
                                     <input
                                         type="email"
-                                        name="userEmail"
-                                        value={formData.userEmail || ""}
+                                        name="Email"
+                                        value={formData.Email || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your email ID"
@@ -184,8 +194,8 @@ const BusinessForm = ({ type, desc, title }) => {
                                 <div className="relative">
                                     <input
                                         type="text"
-                                        name="phoneNo"
-                                        value={formData.phoneNo || ""}
+                                        name="Phone"
+                                        value={formData.Phone || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your phone no."
@@ -195,7 +205,7 @@ const BusinessForm = ({ type, desc, title }) => {
                                 </div>
                             </div>
 
-                            <div className="mb-6">
+                            {/* <div className="mb-6">
                                 <label className="mb-2.5 block font-medium text-white capitalize">
                                     Upload Resume
                                 </label>
@@ -207,7 +217,7 @@ const BusinessForm = ({ type, desc, title }) => {
                                         className="p-1.5 outline-none text-primary   cursor-pointer w-full"
                                     />
                                 </div>
-                            </div>
+                            </div> */}
                             {/* Message */}
                             <div className="mb-6">
                                 <label className="mb-2.5 block font-medium text-white capitalize">
@@ -215,8 +225,8 @@ const BusinessForm = ({ type, desc, title }) => {
                                 </label>
                                 <div className="relative">
                                     <textarea
-                                        name="message"
-                                        value={formData.message || ""}
+                                        name="Query"
+                                        value={formData.Query || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your queries"

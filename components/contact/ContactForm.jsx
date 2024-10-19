@@ -8,12 +8,12 @@ import toast from "react-hot-toast";
 
 const ContactForm = () => {
     const initialFormData = {
-        userName: "",
-        phoneNo: "",
-        userEmail: "",
+        Name: "",
+        Phone: "",
+        Email: "",
         clientEmail: "",
         subject: "",
-        message: "",
+        Query: "",
         attachments: [],
     };
     const [formData, setFormData] = useState(initialFormData);
@@ -31,9 +31,9 @@ const ContactForm = () => {
         e.preventDefault();
         setStatus(true);
         const emailFormData = {
-            userEmail: formData.userEmail,
+            Email: formData.Email,
             clientEmail: "enquiry@dagaanddaga.com",
-            subject: `New User Data for Review - [${formData.userName}]`,
+            subject: `New User Data for Review - [${formData.Name}]`,
             message: formData.message,
             attachments: formData.attachments,
         };
@@ -109,17 +109,26 @@ const ContactForm = () => {
                         <h3 className="w-full text-4xl font-normal text-center capitalize text-secondary font-libreCaslonDisplay">
                             Let’s Connect
                         </h3>
-                        <form onSubmit={handleSubmit}>
+                        <form 
+                        // onSubmit={handleSubmit}
+                         action="https://public.herotofu.com/v1/9ff1e250-8df8-11ef-82c2-4bbcc1388e1d" method="post" accept-charset="UTF-8">
                             {/* User Name */}
                             <div className="mb-4">
                                 <label className="mb-2.5 block font-medium text-white capitalize">
                                     Name
                                 </label>
+                                <input
+                                        type="text"
+                                        name="Page"
+                                        value={"Contact Form"}
+                                     className="hidden"
+                                    />
                                 <div className="relative">
                                     <input
                                         type="text"
-                                        name="userName"
-                                        value={formData.userName || ""}
+                                        name="Name"
+                                        id="name"
+                                        value={formData.Name || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your user name"
@@ -136,8 +145,9 @@ const ContactForm = () => {
                                 <div className="relative">
                                     <input
                                         type="email"
-                                        name="userEmail"
-                                        value={formData.userEmail || ""}
+                                        id="email"
+                                        name="Email"
+                                        value={formData.Email || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your email ID"
@@ -154,8 +164,9 @@ const ContactForm = () => {
                                 <div className="relative">
                                     <input
                                         type="text"
-                                        name="phoneNo"
-                                        value={formData.phoneNo || ""}
+                                        name="Phone"
+                                        id="phone"
+                                        value={formData.Phone || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your phone no."
@@ -171,8 +182,9 @@ const ContactForm = () => {
                                 </label>
                                 <div className="relative">
                                     <textarea
-                                        name="message"
-                                        value={formData.message || ""}
+                                        name="Query"
+                                        id="query"
+                                        value={formData.Query || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your queries"
@@ -189,7 +201,8 @@ const ContactForm = () => {
                                     disabled={status ? true : false}
                                     className={`px-5 py-3 transition cursor-pointer rounded-xl w-max text-info hover:bg-opacity-90 bg-secondary disabled:cursor-not-allowed disabled:bg-opacity-80 ${status && "animate-pulse"}`}
                                 >
-                                    {status ? "Submitting..." : "Submit"}
+                                    {/* {status ? "Submitting..." : "Submit"} */}
+                                    Submit
                                 </button>
                             </div>
                         </form>
