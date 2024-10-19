@@ -53,7 +53,7 @@ const Navbar = () => {
                                         className={`${isActive === list.menu && pathname !== "/"
                                             ? "underline underline-offset-8 decoration-info"
                                             : ""
-                                            } text-sm lg:text-base font-medium uppercase font-libreCaslonDisplay hover:underline decoration-info underline-offset-4 transition-all duration-500 ease-linear hover:text-info hover:scale-105`}
+                                            } text-md lg:text-lg font-medium uppercase font-libreCaslonDisplay hover:underline decoration-info underline-offset-4 transition-all duration-500 ease-linear hover:text-info hover:scale-105`}
                                     >
                                         {list.menu}
                                     </h4>

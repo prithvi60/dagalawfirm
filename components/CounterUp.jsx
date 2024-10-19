@@ -37,7 +37,7 @@ const Stat1 = ({ num, suffix, decimals = 0, subheading, styles }) => {
         if (!isInView) return;
 
         animate(0, num, {
-            duration: 2.5,
+            duration: 0.8,
             onUpdate(value) {
                 if (!ref.current) return;
 
@@ -48,11 +48,11 @@ const Stat1 = ({ num, suffix, decimals = 0, subheading, styles }) => {
 
     return (
         <div className={`${styles} flex flex-col items-center w-full sm:w-3/5 bg-primary`}>
-            <p className="mb-2 text-center text-info text-2xl md:text-3xl xl:text-[48px] font-merriWeather">
+            <p className="mb-2 text-center text-info text-2xl md:text-3xl xl:text-[48px] font-merriWeather font-bold">
                 <span ref={ref}></span>
                 <span className="text-lg lg:text-[48px]">{suffix}</span>
             </p>
-            <p className="text-center text-2xl md:text-3xl !leading-tight xl:text-[48px] text-info font-merriWeather">{subheading}</p>
+            <p className="text-center text-2xl md:text-3xl !leading-tight xl:text-[48px] text-info font-merriWeather font-medium">{subheading}</p>
         </div>
     );
 };
