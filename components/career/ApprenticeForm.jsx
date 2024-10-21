@@ -58,7 +58,7 @@ const ApprenticeForm = ({ type, desc, title }) => {
             userEmail: formData.userEmail,
             phone: formData.phoneNo,
             clientEmail: "enquiry@dagaanddaga.com",
-            subject: `New User Form Submission - Internship Portal`,
+            subject: `New Form Submission - Internship Application`,
             message: formData.message,
             attachments: formData.attachments,
             type: "Internship",
@@ -82,7 +82,7 @@ const ApprenticeForm = ({ type, desc, title }) => {
 
             if (data.success) {
                 setStatus(false);
-                toast.success("Successfully Sent", {
+                toast.success("Your application has been submitted. We will back to your shortly!", {
                     position: "top-right",
                     duration: 3000,
                     style: {
@@ -101,7 +101,7 @@ const ApprenticeForm = ({ type, desc, title }) => {
         } catch (error) {
             console.error("Error sending emails:", error);
             setStatus(false);
-            toast.error(error.message, {
+            toast.error("We are unable to receive your info. Please try again.", {
                 position: "top-right",
                 duration: 3000,
                 style: {

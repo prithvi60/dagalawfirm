@@ -51,14 +51,14 @@ export async function POST(req) {
     html: `
             <div className="block space-y-10 font-merriWeather">
             <h4 className="!text-lg !capitalize">Hi,</h4>
-            <p>You have a new form submission for DagaandDaga ${type}</p>
+            <p>You have a new form submission for ${type}</p>
             <p className="!flex !items-center !justify-center !gap-3">
-            <span className="!capitalize !font-bold">userName:</span> 
+            <span className="!capitalize !font-bold">Name:</span> 
             ${userName}
             </p>
-            <p>userEmail: ${userEmail}</p>
-            <p>userEmail: ${phone}</p>
-            <p>message: ${message}</p>
+            <p>Email: ${userEmail}</p>
+            <p>Phone Number: ${phone}</p>
+            <p>Query: ${message}</p>
             <br/>
             <br/>
             <br/>
@@ -70,7 +70,7 @@ export async function POST(req) {
       content: Buffer.from(attachment.content),
       contentType: attachment.contentType,
     })),
-    bcc: ["enquiry@dagaanddaga.com", "gokulgandhi2301@gmail.com"],
+    bcc: ["enquiry@dagaanddaga.com"],
   };
 
   try {

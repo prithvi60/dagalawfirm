@@ -17,7 +17,7 @@ export default function FloatingButton() {
           src="/whatsapp_logo.png"
           alt="whatsapp logo"
           title="whatsapp logo"
-          className="w-16 h-16 md:h-20 md:w-20"
+          className="w-16 h-16 md:h-18 md:w-18"
         />
       </a>
     </div>

@@ -35,7 +35,7 @@ const ContactForm = () => {
             userEmail: formData.userEmail,
             phone: formData.phoneNo,
             clientEmail: "enquiry@dagaanddaga.com",
-            subject: `New User Form Submission - Contact Portal`,
+            subject: `New Form Submission - Customer Enquiry`,
             message: formData.message,
             attachments: formData.attachments,
             type: "Contact",
@@ -59,7 +59,7 @@ const ContactForm = () => {
 
             if (data.success) {
                 setStatus(false);
-                toast.success("Successfully Sent", {
+                toast.success("Thank you. We will get back to you shortly!", {
                     position: "top-right",
                     duration: 3000,
                     style: {
@@ -78,7 +78,7 @@ const ContactForm = () => {
         } catch (error) {
             console.error("Error sending emails:", error);
             setStatus(false);
-            toast.error(error.message, {
+            toast.error("We are unable to receive your details. Please try again.", {
                 position: "top-right",
                 duration: 3000,
                 style: {
