@@ -8,12 +8,12 @@ import toast from "react-hot-toast";
 
 const BusinessForm = ({ type, desc, title }) => {
     const initialFormData = {
-        Name: "",
-        Phone: "",
-        Email: "",
+        userName: "",
+        phoneNo: "",
+        userEmail: "",
         clientEmail: "",
         subject: "",
-        Query: "",
+        message: "",
         attachments: [],
     };
     const [formData, setFormData] = useState(initialFormData);
@@ -56,12 +56,16 @@ const BusinessForm = ({ type, desc, title }) => {
         e.preventDefault();
         setStatus(true);
         const emailFormData = {
+            userName: formData.userName,
             userEmail: formData.userEmail,
+            phone: formData.phoneNo,
             clientEmail: "enquiry@dagaanddaga.com",
-            subject: `New User Data for Review - [${formData.userName}]`,
+            subject: `New User Form Submission - Jobs Portal`,
             message: formData.message,
             attachments: formData.attachments,
+            type: "Jobs",
         };
+
 
         try {
             const response = await fetch("/api/sendMail", {
@@ -140,26 +144,25 @@ const BusinessForm = ({ type, desc, title }) => {
                             Let’s Connect
                         </h3>
                         <form
-                        //  onSubmit={handleSubmit}
-                                   action="https://public.herotofu.com/v1/9ff1e250-8df8-11ef-82c2-4bbcc1388e1d" method="post" accept-charset="UTF-8"
+                            onSubmit={handleSubmit}
+                        // action="https://public.herotofu.com/v1/9ff1e250-8df8-11ef-82c2-4bbcc1388e1d" method="post" accept-charset="UTF-8"
                         >
                             {/* User Name */}
                             <div className="mb-4">
                                 <label className="mb-2.5 block font-medium text-white capitalize">
                                     Name
                                 </label>
-                                <input
-                                        type="text"
-                                        name="Page"
-                                        value={"Job"}
-                                     className="hidden"
-                                     onChange={handleChange}
-                                    />
+                                {/* <input
+                                    type="text"
+                                    name="Page"
+                                    value={"Internship"}
+                                    className="hidden"
+                                /> */}
                                 <div className="relative">
                                     <input
                                         type="text"
-                                        name="Name"
-                                        value={formData.Name || ""}
+                                        name="userName"
+                                        value={formData.userName || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your user name"
@@ -176,8 +179,8 @@ const BusinessForm = ({ type, desc, title }) => {
                                 <div className="relative">
                                     <input
                                         type="email"
-                                        name="Email"
-                                        value={formData.Email || ""}
+                                        name="userEmail"
+                                        value={formData.userEmail || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your email ID"
@@ -194,8 +197,8 @@ const BusinessForm = ({ type, desc, title }) => {
                                 <div className="relative">
                                     <input
                                         type="text"
-                                        name="Phone"
-                                        value={formData.Phone || ""}
+                                        name="phoneNo"
+                                        value={formData.phoneNo || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your phone no."
@@ -204,8 +207,8 @@ const BusinessForm = ({ type, desc, title }) => {
                                     <FaPhoneAlt className="absolute text-xl right-4 top-3 text-neutral-200" />
                                 </div>
                             </div>
-
-                            {/* <div className="mb-6">
+                            {/* File Upload */}
+                            <div className="mb-6">
                                 <label className="mb-2.5 block font-medium text-white capitalize">
                                     Upload Resume
                                 </label>
@@ -217,7 +220,7 @@ const BusinessForm = ({ type, desc, title }) => {
                                         className="p-1.5 outline-none text-primary   cursor-pointer w-full"
                                     />
                                 </div>
-                            </div> */}
+                            </div>
                             {/* Message */}
                             <div className="mb-6">
                                 <label className="mb-2.5 block font-medium text-white capitalize">
@@ -225,8 +228,8 @@ const BusinessForm = ({ type, desc, title }) => {
                                 </label>
                                 <div className="relative">
                                     <textarea
-                                        name="Query"
-                                        value={formData.Query || ""}
+                                        name="message"
+                                        value={formData.message || ""}
                                         onChange={handleChange}
                                         required
                                         placeholder="Enter your queries"
