@@ -3,14 +3,14 @@ import React from 'react'
 
 export const PersonDescription = ({ data }) => {
     return (
-        <section className="relative flex flex-col gap-5 px-5 border-t-2 mt-14 md:mt-16 md:flex-row lg:pl-16 border-info font-merriWeather py-7 lg:px-16 lg:py-12 md:gap-0 md:h-[80vh]">
-            <div className='basis-full md:basis-2/5 flex  justify-center'>
-                <div className="relative  w-[280px] md:w-[360px] md:h-[480px] h-[380px]  overflow-hidden group z-0 contrast-100  md:sticky md:top-32">
+        <section className="relative flex flex-col gap-5 px-5 border-t-2 mt-14 md:mt-16 md:flex-row lg:pl-16 border-info font-merriWeather py-7 lg:px-16 lg:py-12 md:gap-8 xl:gap-14">
+            <div className='flex justify-center w-full md:w-2/5'>
+                <div className="relative w-[280px] md:size-[360px] xl:h-[480px] h-[380px]  overflow-hidden group z-0 contrast-100  md:sticky md:top-32">
                     <Image alt="sample-image" src={data.img} fill className="object-contain object-center transition-all duration-200 ease-in-out" />
                     <div className="absolute left-0 z-10 px-5 pt-2 bottom-0 lg:px-8 backdrop-brightness-[0.50] pb-2 w-full">
                         <div className="flex flex-col items-center justify-center w-full ">
                             <h3 className="mb-4 text-base font-medium text-white md:text-lg xl:text-xl font-merriWeather">{data.name}</h3>
-                            <div className='px-4  py-2 text-sm  tracking-wide  bg-info/70 font-bold text-primary font-merriWeather w-max'>{data.position}</div>
+                            <div className='px-4 py-2 text-sm font-bold tracking-wide bg-info/70 text-primary font-merriWeather w-max'>{data.position}</div>
                         </div>
                     </div>
                 </div>
