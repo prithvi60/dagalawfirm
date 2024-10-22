@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 
 const SpecializationHero = ({ name }) => {
-    const filteredName = name.replace(/_/g, " ")
+    const filteredName = decodeURIComponent(name)
     // console.log(filteredName);
 
     return (

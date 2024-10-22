@@ -6,18 +6,18 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const TeamMates = () => {
     return (
-        <section className="px-5 space-y-8 mt-14 py-7 lg:px-16 lg:py-12 font-merriWeather">
+        <section className="px-5 space-y-8 mt-14 py-7 lg:py-12 font-merriWeather">
             {/* <h4 className="font-bold tracking-wide capitalize text-xl lg:text-2xl xl:text-[36px] md:!leading-snug font-merriWeather text-info">
                 Our team comprises of the following individuals
             </h4> */}
-            <div className="grid grid-cols-1 gap-4 md:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center">
+            <div className="grid justify-center grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {teamDetails.map((list, idx) => (
                     <>
                         {list.ref ? (
                             <Link
                                 key={idx}
                                 href={`/team/${list.ref}`}
-                                className="relative w-[280px] md:w-[360px] md:h-[480px] h-[380px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-info mx-auto"
+                                className="relative w-full md:h-[480px] h-[380px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-info"
                             >
                                 <Image
                                     alt="sample-image"
@@ -30,7 +30,7 @@ const TeamMates = () => {
                                         <h3 className="mb-4 text-lg font-medium text-white md:text-xl font-merriWeather">
                                             {list.name}
                                         </h3>
-                                        <div className="px-4 py-2 text-sm fontboldl tracking-wide bg-info/70 text-primary font-merriWeather w-max">
+                                        <div className="px-4 py-2 text-sm tracking-wide fontboldl bg-info/70 text-primary font-merriWeather w-max">
                                             {list.position}
                                         </div>
                                     </div>
@@ -42,7 +42,7 @@ const TeamMates = () => {
                         ) : (
                             <div
                                 key={idx}
-                                className="relative w-[280px] md:w-[360px] md:h-[480px] h-[380px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-info mx-auto"
+                                className="relative w-full md:h-[480px] h-[380px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-info"
                             >
                                 <Image
                                     alt="sample-image"
@@ -55,7 +55,7 @@ const TeamMates = () => {
                                         <h3 className="mb-4 text-lg font-medium text-white md:text-xl font-merriWeather">
                                             {list.name}
                                         </h3>
-                                        <div className="px-4 py-2 text-sm font-bold tracking-wide  bg-info/70 text-primary font-merriWeather w-max">
+                                        <div className="px-4 py-2 text-sm font-bold tracking-wide bg-info/70 text-primary font-merriWeather w-max">
                                             {list.position}
                                         </div>
                                     </div>

@@ -85,7 +85,7 @@ const BusinessForm = ({ type, desc, title }) => {
 
             if (data.success) {
                 setStatus(false);
-                toast.success("Your application has been submitted. We will back to your shortly!", {
+                toast.success("Thank you for submitting your application. We will review it and get back to you shortly.", {
                     position: "top-right",
                     duration: 3000,
                     style: {

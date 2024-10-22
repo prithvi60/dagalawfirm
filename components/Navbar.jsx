@@ -71,7 +71,7 @@ const Navbar = () => {
                                             title={l.menu}
                                             className={`flex items-center gap-2 mb-2 text-primary text-sm cursor-pointer lg:text-lg w-full h-full font-semibold z-10 hover:text-white/80 capitalize`}
                                             key={index}
-                                            href={`${l.ref}`}
+                                            href={`${decodeURIComponent(l.ref)}`}
                                             onClick={() => setIsMenuOpen(false)}
                                         >
                                             <h4 className="hover:underline hover:underline-offset-8">

@@ -6,16 +6,16 @@ export const navbarLinks = [
         ref: "/services",
         subMenu: [
             { menu: "copyright", ref: "/services/copyright" },
-            { menu: "industrial design", ref: "/services/industrial_design" },
+            { menu: "industrial design", ref: "/services/industrial%20design" },
             { menu: "patents", ref: "/services/patents" },
             { menu: "trademarks", ref: "/services/trademarks" },
-            { menu: "commercial litigation", ref: "/services/commercial_litigation" },
-            { menu: "dispute resolution", ref: "/services/dispute_resolution" },
+            { menu: "commercial litigation", ref: "/services/commercial%20litigation" },
+            { menu: "dispute resolution", ref: "/services/dispute%20resolution" },
         ],
     },
     { menu: "Initiatives", ref: "/initiatives" },
     {
-        menu: "Career",
+        menu: "Careers",
         ref: "",
         subMenu: [
             { menu: "Internship", ref: "/career/internship" },
@@ -151,7 +151,7 @@ export const services = [
     },
     {
         icon: "/dispute.svg",
-        menu: "dispute resolution",
+        menu: "dispute resolution",
         ref: "/dispute_resolution",
     },
 ];

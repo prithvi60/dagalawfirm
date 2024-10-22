@@ -28,20 +28,20 @@ export async function POST(req) {
   } = await req.json();
 
   // !userEmail || !clientEmail
-  if (!clientEmail) {
+  if (!userEmail || !clientEmail) {
     return NextResponse.json(
       { success: false, message: "Recipient email(s) missing" },
       { status: 400 }
     );
   }
 
-  // // Email options for the user (acknowledgment)
-  // const userMailOptions = {
-  //   from: `"${clientEmail}" <${clientEmail}>`,
-  //   to: userEmail,
-  //   subject: "Acknowledgment: We received your submission",
-  //   html: `<p>Thank you for your submission! We’ll be in touch soon.</p>`,
-  // };
+  // Email options for the user (acknowledgment)
+  const userMailOptions = {
+    from: `"${clientEmail}" <${"support@webibee.com"}>`,
+    to: userEmail,
+    subject: "Acknowledgment: We received your submission",
+    html: `<p>Thank you for your submission! We’ll be in touch soon.</p>`,
+  };
 
   // Email options for the client (all user data and attachments)
   const clientMailOptions = {
@@ -61,7 +61,6 @@ export async function POST(req) {
             <p>Query: ${message}</p>
             <br/>
             <br/>
-            <br/>
             <p>Thanks</p>
             </div> 
             `,
@@ -75,7 +74,7 @@ export async function POST(req) {
 
   try {
     // Send acknowledgment email to the user
-    // await transporter.sendMail(userMailOptions);
+    await transporter.sendMail(userMailOptions);
     // console.log("Acknowledgment email sent to user.");
 
     // Send detailed email to the client

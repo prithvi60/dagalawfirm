@@ -35,7 +35,9 @@ export const ContactDetailsAddress = ({ title1, title2 }) => {
                     <h4 className="text-lg font-medium tracking-wide capitalize md:text-xl font-merriWeather text-info">{title1}</h4>
                     <ul className='space-y-2 text-sm font-normal list-inside w-max md:text-lg font-merriWeather'>
                         <h4 className='hidden md:block'>+91- 9551028280</h4>
+                        <h4 className='hidden md:block'>044-29550176</h4>
                         <Link href="tel:+919551028280" className='block hover:text-info/80 md:hidden'>+91- 9551028280</Link>
+                        <Link href="tel:044-29550176" className='block hover:text-info/80 md:hidden'>044-29550176</Link>
                     </ul>
                 </div>
                 <div className='flex flex-col items-center justify-center gap-5'>

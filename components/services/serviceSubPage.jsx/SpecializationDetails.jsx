@@ -6,7 +6,7 @@ export const SpecializationDetails = () => {
     return (
         <section className='flex flex-col gap-5 px-5 space-y-8 py-7 lg:px-16 lg:py-12 md:items-start md:flex-row md:gap-10 font-merriWeather'>
             <div className='space-y-10 basis-full md:basis-3/5 lg:sticky lg:top-28'>
-                <p className="font-bold tracking-wide capitalize text-xl lg:text-2xl xl:text-[36px] md:!leading-snug font-merriWeather text-info">Comprehensive Legal Solutions for Industrial Design Protection in India</p>
+                <p className="font-bold tracking-wide text-xl lg:text-2xl xl:text-[36px] md:!leading-snug font-merriWeather text-info">Comprehensive Legal Solutions for Industrial Design Protection in India</p>
                 <ul className='relative space-y-5 text-sm font-normal md:text-base xl:text-lg font-merriWeather'>
                     <FaQuoteLeft className="absolute text-lg md:text-xl lg:text-2xl -top-5 -left-4 lg:-left-10 text-info" />
                     <li>The objective of the Design law in India is to strike a balance between protection of registered designs and promotion of design activity. Design protection is granted to new or original designs which appeal to the eye. Registration of designs confers significant commercial advantage on the owner. Application for registration of a design must be filed before any commercialization or public display of the article. Prior public display or commercialization can disentitle the owner. </li>

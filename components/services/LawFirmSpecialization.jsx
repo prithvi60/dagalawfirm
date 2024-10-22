@@ -8,8 +8,8 @@ const LawFirmSpecialization = () => {
     return (
         <section className="relative flex flex-col px-5 border-t-2 font-merriWeather md:px-5 lg:px-0 lg:flex-row lg:pl-16 border-info">
             <div className="h-full p-5 space-y-4 lg:p-0 lg:pr-10 lg:pt-10 basis-2/5 lg:space-y-8 lg:sticky lg:top-20">
-                <h1 className="font-bold tracking-wide capitalize text-xl lg:text-2xl xl:text-[36px] font-merriWeather text-info">
-                    Protecting Your Ideas, Innovations, and Brands.
+                <h1 className="font-bold tracking-wide text-xl lg:text-2xl xl:text-[36px] font-merriWeather text-info">
+                    Protecting Your Ideas, Innovations, and Brands
                 </h1>
                 <div className="relative w-full">
                     <FaQuoteLeft className="absolute text-lg md:text-xl lg:text-2xl -top-3 -left-7 lg:-left-10 text-info" />
@@ -49,7 +49,7 @@ const LawFirmSpecialization = () => {
                                 </p>
                                 <div className="flex items-center justify-end gap-2">
                                     <Link
-                                        href={`/services/${item.specialize}`}
+                                        href={`/services/${encodeURIComponent(item.specialize)}`}
                                         className="text-sm font-normal tracking-wide underline hover:bg-opacity-70 text-info font-merriWeather underline-offset-4 decoration-info "
                                     >
                                         Learn more

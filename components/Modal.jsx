@@ -60,7 +60,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    onClick={() => setIsOpen(false)}
+                    // onClick={() => setIsOpen(false)}
                     className="fixed inset-0 z-[1000] grid p-8 overflow-y-scroll cursor-pointer bg-slate-900/20 backdrop-blur md:place-items-center font-merriWeather"
                 >
                     <motion.div
@@ -68,7 +68,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                         animate={{ scale: 1, rotate: "0deg" }}
                         exit={{ scale: 0, rotate: "0deg" }}
                         onClick={(e) => e.stopPropagation()}
-                        className="relative w-full max-w-4xl p-6 text-white shadow-xl cursor-default bg-secondary h-max md:h-auto"
+                        className="relative w-full max-w-4xl p-6 text-white shadow-xl cursor-pointer bg-secondary h-max md:h-auto"
                     >
                         <div className="relative z-10">
                             <div className="grid w-10 h-10 mx-auto mb-2 text-3xl text-white rounded-full md:h-16 md:w-16 bg-info place-items-center">
