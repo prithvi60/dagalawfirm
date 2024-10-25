@@ -4,7 +4,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 const EventLaw = ({ mainTitle, title, img, bgImg, data, styles }) => {
   return (
-    <section className="w-full h-full space-y-4 border border-info font-merriWeather">
+    <section className="w-full h-full space-y-4 border border-copy font-merriWeather">
       <div className="flex flex-col items-center justify-center gap-1 my-8 lg:items-start lg:flex-row text-info">
         <h1 className="px-3 text-3xl tracking-wider text-center uppercase md:text-4xl xl:text-6xl">
           {mainTitle}

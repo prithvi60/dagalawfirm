@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col items-center justify-between gap-4 p-5 border-t-2 sm:items-start font-merriWeather lg:gap-10 md:mt-0 sm:flex-row lg:px-16 lg:py-8 border-info">
+        <footer className="flex flex-col items-center justify-between gap-4 p-5 border-t-2 sm:items-start font-merriWeather lg:gap-10 md:mt-0 sm:flex-row lg:px-16 lg:py-8 border-copy">
 
             <div className="order-2 block space-y-5 md:order-1">
                 <div className="flex flex-col items-center justify-center gap-2 text-sm font-medium md:text-base font-merriWeather">

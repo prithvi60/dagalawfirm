@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutUs = () => {
     return (
-        <section className="w-full h-full px-5 border-t-2 border-info font-merriWeather">
+        <section className="w-full h-full px-5 border-t-2 border-copy font-merriWeather">
             <div
                 className={`flex flex-col justify-center md:justify-start items-start md:items-center md:flex-row h-full gap-10 px-5 py-8 md:gap-6 lg:px-16 lg:py-10`}
             >

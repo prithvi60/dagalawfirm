@@ -103,7 +103,7 @@ const ContactForm = () => {
                         We’re here to help</h4>
                     <div className="relative w-full">
                         {/* <FaQuoteLeft className="absolute text-lg md:text-xl -left-2 -top-4 xl:-top-2 xl:-left-4 text-info" /> */}
-                        <p className='text-sm font-normal tracking-wide text-center sm:text-base font-merriWeather text-info'>Drop us a message, and we&apos;ll get back to you as soon as possible</p>
+                        <p className='text-sm font-normal tracking-wide text-center sm:text-base font-merriWeather text-copy'>Drop us a message, and we&apos;ll get back to you as soon as possible</p>
                         {/* <FaQuoteRight className="absolute text-lg md:text-xl -right-2 -bottom-3 xl:-right-0 xl:-bottom-4 text-info" /> */}
                     </div>
                 </div>

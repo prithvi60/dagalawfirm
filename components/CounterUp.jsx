@@ -52,7 +52,7 @@ const Stat1 = ({ num, suffix, decimals = 0, subheading, styles }) => {
                 <span ref={ref}></span>
                 <span className="text-lg lg:text-[48px]">{suffix}</span>
             </p>
-            <p className="text-center text-2xl md:text-3xl !leading-tight xl:text-[48px] text-info font-merriWeather font-medium">{subheading}</p>
+            <p className="text-center text-2xl md:text-3xl !leading-tight xl:text-[48px] text-copy font-merriWeather font-medium">{subheading}</p>
         </div>
     );
 };

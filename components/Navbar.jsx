@@ -19,7 +19,7 @@ const Navbar = () => {
 
     return (
         <nav className="w-full h-full mx-auto">
-            <div className="flex items-center justify-between md:justify-start gap-3 sm:gap-8 lg:gap-16 px-5 lg:px-16 z-[999] shadow-sm border-b-2 border-info fixed bg-primary top-0 left-0 w-full font-merriWeather">
+            <div className="flex items-center justify-between md:justify-start gap-3 sm:gap-8 lg:gap-16 px-5 lg:px-16 z-[999] shadow-sm border-b-2 border-copy fixed bg-primary top-0 left-0 w-full font-merriWeather">
                 <Link
                     href="/"
                     className={"hidden md:block w-60 h-14 cursor-pointer relative overflow-hidden"}

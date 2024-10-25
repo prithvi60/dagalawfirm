@@ -122,17 +122,17 @@ const BusinessForm = ({ type, desc, title }) => {
 
     return (
         <section className="flex flex-col items-center justify-center gap-2 px-5 font-merriWeather mt-14 md:mt-16 md:gap-6 lg:px-16 lg:py-12">
-            <h1 className="py-6 text-2xl font-bold tracking-wider text-center uppercase lg:text-3xl xl:text-4xl font-merriWeather text-info">
+            <h1 className="py-6 text-2xl font-bold tracking-wider text-center uppercase lg:text-3xl xl:text-4xl font-merriWeather text-copy">
                 {type}
             </h1>
             <div className="flex flex-col gap-8 md:flex-row">
                 <div className="space-y-5 md:space-y-10 md:mt-16 basis-full md:basis-2/5">
-                    <h4 className="text-lg font-semibold tracking-wide text-center capitalize sm:text-xl xl:text-2xl font-merriWeather text-info">
+                    <h4 className="text-lg font-semibold tracking-wide text-center capitalize sm:text-xl xl:text-2xl font-merriWeather text-accent">
                         {title}
                     </h4>
                     <div className="relative w-full">
                         {/* <FaQuoteLeft className="absolute text-lg md:text-xl -left-2 -top-4 xl:-top-2 xl:-left-0 text-info" /> */}
-                        <p className="text-sm font-normal tracking-wide text-center sm:text-base font-merriWeather text-info">
+                        <p className="text-sm font-normal tracking-wide text-center sm:text-base font-merriWeather text-copy">
                             {desc}
                         </p>
                         {/* <FaQuoteRight className="absolute text-lg md:text-xl -right-2 -bottom-3 xl:-right-0 xl:-bottom-4 text-info" /> */}

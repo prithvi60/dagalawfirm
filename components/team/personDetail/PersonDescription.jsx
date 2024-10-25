@@ -3,7 +3,7 @@ import React from 'react'
 
 export const PersonDescription = ({ data }) => {
     return (
-        <section className="relative flex flex-col gap-5 px-5 border-t-2 mt-14 md:mt-16 md:flex-row lg:pl-16 border-info font-merriWeather py-7 lg:px-16 lg:py-12 md:gap-8 xl:gap-14">
+        <section className="relative flex flex-col gap-5 px-5 border-t-2 mt-14 md:mt-16 md:flex-row lg:pl-16 border-copy font-merriWeather py-7 lg:px-16 lg:py-12 md:gap-8 xl:gap-14">
             <div className='flex justify-center w-full md:w-2/5'>
                 <div className="relative w-[280px] md:size-[360px] xl:h-[480px] h-[380px]  overflow-hidden group z-0 contrast-100  md:sticky md:top-32">
                     <Image alt="sample-image" src={data.img} fill className="object-contain object-center transition-all duration-200 ease-in-out" />

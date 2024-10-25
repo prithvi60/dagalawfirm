@@ -17,7 +17,7 @@ const TeamMates = () => {
                             <Link
                                 key={idx}
                                 href={`/team/${list.ref}`}
-                                className="relative w-full md:h-[480px] h-[380px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-info"
+                                className="relative w-full md:h-[480px] h-[380px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-copy"
                             >
                                 <Image
                                     alt="sample-image"
@@ -35,14 +35,14 @@ const TeamMates = () => {
                                         </div>
                                     </div>
                                     <div className="p-1 transition-all duration-200 ease-in-out rounded-full bg-secondary w-max group-hover:scale-110 group-hover:animate-bounce">
-                                        <FaArrowRightLong className="text-xl -rotate-45 text-info" />
+                                        <FaArrowRightLong className="text-xl -rotate-45 text-accent" />
                                     </div>
                                 </div>
                             </Link>
                         ) : (
                             <div
                                 key={idx}
-                                className="relative w-full md:h-[480px] h-[380px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-info"
+                                className="relative w-full md:h-[480px] h-[380px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-copy"
                             >
                                 <Image
                                     alt="sample-image"

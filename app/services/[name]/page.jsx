@@ -8,7 +8,7 @@ const Page = ({ params }) => {
     return (
         <main>
             <SpecializationHero name={name} />
-            <SpecializationDetails />
+            <SpecializationDetails name={name} />
         </main>
     )
 }
