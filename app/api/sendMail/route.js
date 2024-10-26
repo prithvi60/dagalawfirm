@@ -37,10 +37,15 @@ export async function POST(req) {
 
   // Email options for the user (acknowledgment)
   const userMailOptions = {
-    from: `"${clientEmail}" <${"support@webibee.com"}>`,
+    from: `DAGA & DAGA - "${clientEmail}" <${"support@webibee.com"}>`,
     to: userEmail,
-    subject: "Acknowledgment: We received your submission",
-    html: `<p>Thank you for your submission! We’ll be in touch soon.</p>`,
+    subject: "Acknowledgment: We received your Application",
+    html: `<p>Dear Applicant,</p>
+           <p>Greetings from Daga and Daga!</p>
+           <p>We appreciate your interest in joining our team and acknowledge receipt of your application.</p>
+           <p>Your application will be shared with the relevant department for review. If your profile aligns with any suitable openings, we will contact you to discuss the opportunity further. Thank you once again for considering a career with us.</p>
+           <p>Best regards,<br>Daga and Daga</p>
+           <p>Thanks & Regards,<br>Jayesh Kumar A.<br>Advocate<br>+91- 9551028280</p>`,
   };
 
   // Email options for the client (all user data and attachments)

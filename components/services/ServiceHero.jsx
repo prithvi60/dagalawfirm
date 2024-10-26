@@ -20,7 +20,7 @@ const ServiceHero = () => {
                     {/* <h1 className='font-bold tracking-wide capitalize text-2xl lg:text-4xl xl:text-[48px] font-merriWeather text-info leading-8 lg:!leading-[42px]'>Experienced Legal Counsel for Every Step of the Way</h1> */}
                     <p className='text-sm font-normal md:text-base lg:text-lg font-merriWeather'>Whether you need guidance through complex litigation or personalized legal advice, our experienced attorneys are here to support you every step of the way</p>
                     <div>
-                        <Link href={""} className='p-2 text-sm font-normal tracking-wide hover:bg-opacity-70 rounded-xl md:p-3 bg-info text-primary md:text-lg font-merriWeather'>Get in Touch!</Link>
+                        <Link href={"/contact"} className='p-2 text-sm font-normal tracking-wide hover:bg-opacity-70 rounded-xl md:p-3 bg-info text-primary md:text-lg font-merriWeather'>Get in Touch!</Link>
                     </div>
                 </div>
             </div>

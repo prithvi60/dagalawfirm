@@ -17,7 +17,7 @@ export const PersonDescription = ({ data }) => {
             </div>
             <div className="h-full space-y-4 basis-3/5 md:space-y-8">
                 <div className='space-y-2'>
-                    <h1 className="font-bold tracking-wide capitalize text-xl lg:text-2xl xl:text-[36px] font-merriWeather text-info">
+                    <h1 className="font-bold tracking-wide capitalize text-xl lg:text-2xl xl:text-[36px] font-merriWeather text-copy">
                         About - {data.name}
                     </h1>
                     <p className="text-sm italic font-bold tracking-wide capitalize md:text-base font-merriWeather text-info">

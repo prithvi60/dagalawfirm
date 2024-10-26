@@ -41,13 +41,13 @@ const LawFirmSpecialization = () => {
                         </div>
                         <div className=" basis-full md:basis-1/2">
                             <div className="h-full p-6 space-y-4 text-center lg:p-10 sm:text-end lg:space-y-8">
-                                <h1 className="font-bold tracking-wide capitalize text-lg lg:text-xl font-merriWeather text-copy leading-8 lg:!leading-[50px]">
+                                <h1 className="font-bold tracking-wide capitalize text-lg lg:text-xl font-merriWeather text-copy leading-8 lg:!leading-[50px] text-start">
                                     {item.specialize}
                                 </h1>
-                                <p className="text-sm font-normal lg:text-base md:text-lg font-merriWeather">
+                                <p className="text-sm font-normal lg:text-base md:text-lg font-merriWeather text-start">
                                     {item.note}
                                 </p>
-                                <div className="flex items-center justify-end gap-2">
+                                <div className="flex items-center justify-start gap-2">
                                     <Link
                                         href={`/services/${encodeURIComponent(item.specialize)}`}
                                         className="text-sm font-normal tracking-wide underline hover:bg-opacity-70 text-accent font-merriWeather underline-offset-4 decoration-accent "

@@ -14,7 +14,7 @@ const PracticesComponent = () => {
                         <div className="relative w-full mx-auto overflow-hidden size-28 md:m-auto md:size-44 md:basis-1/2">
                             <Image alt="sample-image" src={item.icon} fill className="object-contain object-center" />
                         </div>
-                        <div className={`block px-5 py-5 space-y-2 md:space-y-5 w-full md:w-3/5 text-center md:text-start`}>
+                        <div className={`block px-5 py-5 space-y-2 md:space-y-5 w-full md:w-3/5 text-center md:text-start md:ml-8`}>
                             <h4 className="w-full text-lg font-medium tracking-wide capitalize md:text-xl font-merriWeather text-copy">{item.menu}</h4>
                             <div className="flex items-center justify-center gap-2 md:justify-start">
                                 <Link

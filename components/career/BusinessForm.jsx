@@ -85,7 +85,7 @@ const BusinessForm = ({ type, desc, title }) => {
 
             if (data.success) {
                 setStatus(false);
-                toast.success("Thank you for submitting your application. We will review it and get back to you shortly.", {
+                toast.success("Thank you for submitting your application. We will revert back shortly.", {
                     position: "top-right",
                     duration: 3000,
                     style: {
@@ -127,7 +127,7 @@ const BusinessForm = ({ type, desc, title }) => {
             </h1>
             <div className="flex flex-col gap-8 md:flex-row">
                 <div className="space-y-5 md:space-y-10 md:mt-16 basis-full md:basis-2/5">
-                    <h4 className="text-lg font-semibold tracking-wide text-center capitalize sm:text-xl xl:text-2xl font-merriWeather text-accent">
+                    <h4 className="text-lg font-semibold tracking-wide text-center capitalize sm:text-xl xl:text-2xl font-merriWeather text-info">
                         {title}
                     </h4>
                     <div className="relative w-full">

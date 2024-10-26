@@ -59,7 +59,7 @@ const ContactForm = () => {
 
             if (data.success) {
                 setStatus(false);
-                toast.success("Thank you. We will get back to you shortly!", {
+                toast.success("Thank you. We will revert back shortly!", {
                     position: "top-right",
                     duration: 3000,
                     style: {
