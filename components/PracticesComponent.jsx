@@ -18,7 +18,7 @@ const PracticesComponent = () => {
                             <h4 className="w-full text-lg font-medium tracking-wide capitalize md:text-xl font-merriWeather text-copy">{item.menu}</h4>
                             <div className="flex items-center justify-center gap-2 md:justify-start">
                                 <Link
-                                    href={`/services/${encodeURIComponent(item.ref)}`}
+                                    href={`/services/${item.ref}`}
                                     className="text-sm font-normal tracking-wide underline hover:bg-opacity-70 text-accent font-merriWeather underline-offset-4 decoration-accent "
                                 >
                                     Learn more
