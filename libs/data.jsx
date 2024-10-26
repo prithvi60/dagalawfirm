@@ -329,18 +329,18 @@ export const services = [
   {
     icon: "/design.svg",
     menu: "industrial design",
-    ref: "/industrial_design",
+    ref: "/industrial%20design",
   },
   { icon: "/patent.svg", menu: "patents", ref: "/patents" },
   { icon: "/trademarks.svg", menu: "trademarks", ref: "/trademarks" },
   {
     icon: "/litigation.svg",
     menu: "commercial litigation",
-    ref: "/commercial_litigation",
+    ref: "/commercial%20litigation",
   },
   {
     icon: "/dispute.svg",
     menu: "dispute resolution",
-    ref: "/dispute_resolution",
+    ref: "/dispute%20resolution",
   },
 ];
