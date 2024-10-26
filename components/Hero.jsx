@@ -6,7 +6,7 @@ import { CounterUp } from './CounterUp'
 const Hero = () => {
     return (
         <section className="relative flex flex-col w-full h-screen overflow-hidden border-b-2 font-merriWeather sm:flex-row border-copy mt-14">
-            <div className="z-0 w-full h-screen bg-fixed basis-full sm:basis-4/5 xl:basis-3/5 bg-top bg-contain md:bg-left bg-no-repeat md:bg-contain bg-[url('/heromob.png')] md:bg-[url('/herodes1.png')]" 
+            <div className="z-0 w-full h-screen bg-fixed basis-full sm:basis-4/5  bg-top bg-contain md:bg-right-top bg-no-repeat md:bg-cover bg-[url('/heromob.png')] md:bg-[url('/hero2.png')]" 
             // style={{
             //     backgroundImage: `url("/hero.webp")`,
             //      }
@@ -24,7 +24,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="basis-full sm:basis-1/5 xl:basis-2/5">
+            <div className="basis-full sm:basis-1/5 ">
                 <CounterUp />
             </div>
         </section>

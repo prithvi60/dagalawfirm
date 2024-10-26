@@ -16,7 +16,7 @@ const AboutUs = () => {
                     />
                 </div>
                 {/* <div className="w-full "> */}
-                <ul className="relative w-full mx-auto space-y-5 text-sm font-normal md:w-3/4 md:text-base text-justify font-merriWeather !leading-[32px]">
+                <ul className="relative w-full mx-auto space-y-5 text-base font-normal md:w-3/4 md:text-lg text-justify font-merriWeather !leading-[32px]">
                     {/* <FaQuoteLeft className="absolute text-xl -left-7 -top-3 lg:text-2xl xl:-top-2 xl:-left-10 text-info" /> */}
                     {/* {data.map((list, idx) => ( */}
                     <li>
