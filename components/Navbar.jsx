@@ -92,13 +92,13 @@ const Navbar = () => {
                     <GiHamburgerMenu className="text-2xl text-info" />
                 </div>
                 <div
-                    className={`w-full h-dvh z-[1000] border-2 bg-secondary flex flex-col justify-start pt-16 items-center fixed top-0 ${isMenuOpen
+                    className={`w-full h-dvh z-[1000] border-2 bg-primary flex flex-col justify-start pt-16 items-center fixed top-0 ${isMenuOpen
                         ? "right-0 transition-all duration-500 ease-linear"
                         : "opacity-0 right-[-100%] transition-all duration-500 ease-linear "
                         }`}
                 >
                     <div
-                        className="absolute block p-1 cursor-pointer w-max bg-secondary top-5 right-6"
+                        className="absolute block p-1 cursor-pointer w-max bg-primary top-5 right-6"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         <RiCloseLargeLine className="text-2xl text-info" />

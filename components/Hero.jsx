@@ -6,10 +6,12 @@ import { CounterUp } from './CounterUp'
 const Hero = () => {
     return (
         <section className="relative flex flex-col w-full h-screen overflow-hidden border-b-2 font-merriWeather sm:flex-row border-copy mt-14">
-            <div className="z-0 w-full h-screen md:bg-fixed basis-full sm:basis-4/5" style={{
-                backgroundImage: `url("/hero1.png")`,
-                backgroundSize: "cover",
-                 }}>
+            <div className="z-0 w-full h-screen bg-fixed basis-full sm:basis-4/5 bg-top bg-contain md:bg-left bg-no-repeat md:bg-contain bg-[url('/heromob.png')] md:bg-[url('/herodes.png')]" 
+            // style={{
+            //     backgroundImage: `url("/hero.webp")`,
+            //      }
+            //     }
+                 >
                 <div className="absolute top-[10vh] sm:top-1/2 md:-translate-y-1/2 left-0 flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-bold py-2 px-3.5 z-10 w-full sm:w-3/5 lg:w-3/5">
                     <div className='flex flex-col md:justify-between items-start gap-6 md:gap-10 p-2 w-full sm:w-[90%]'>
                         <h1 className='font-bold text-left tracking-wide text-2xl md:text-4xl lg:text-[48px] font-merriWeather text-secondary leading-8 lg:!leading-[50px]'>Transforming Ideas into Assets

@@ -16,7 +16,7 @@ export const SpecializationDetails = ({name}) => {
                     <FaQuoteLeft className="absolute text-lg md:text-xl lg:text-2xl -top-5 -left-4 lg:-left-10 text-info" />
                
                     {lists.map((item, index) => (
-            <li key={index}>{item.menu}</li>
+            <li key={index} dangerouslySetInnerHTML={{ __html: item.menu }}></li>
         ))}
                     <FaQuoteRight className="absolute text-lg md:text-xl lg:text-2xl -bottom-3 right-3 lg:-right-4 text-info" />
                 </ul>

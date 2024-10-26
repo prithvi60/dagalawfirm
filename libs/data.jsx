@@ -34,53 +34,56 @@ export const specializations = [
     note: "Safeguard your creative works with our expert copyright services, ensuring your intellectual property is protected against unauthorized use",
     src: "/copyright.svg",
     lists: [
-        {
-            menu: `Imagine you wrote a beautiful story, drew a stunning picture, or composed an amazing song.
+      {
+        menu: `Imagine you wrote a beautiful story, drew a stunning picture, or composed an amazing song.
 Copyright is like a magic shield that protects your work. This shield gives you control over
 how your work is shared with the world and ensures that you get credit for your creativity.
 Copyright protects the original works of authors, musicians, artists, and creators, ensuring
 that their work cannot be copied or used without their permission.`,
-          },
-          {
-            menu: `The Indian Copyright Act of 1957 lays out these rights, which cover
- literary,
- musical,
- artistic,
- cinematographic,
- software works and
- sound recordings.`,
-          },
-          {
-            menu: `When someone creates an original work, they automatically get copyright protection, which
-lasts for 60 years after the creator's death for most works. The registration of copyright is
+      },
+      {
+        menu: `The Indian Copyright Act of 1957 lays out these rights, which cover
+          
+<ol type="1"> 
+  </br>
+<li><strong>&bull; literary</strong></li>
+<li><strong>&bull; musical</strong></li>
+<li><strong>&bull; artistic</strong></li>
+<li><strong>&bull; cinematographic</strong></li>
+<li><strong>&bull; software works</strong></li>
+<li><strong>&bull; sound recordings</strong></li>
+</ol>`,
+      },
+      {
+        menu: `When someone creates an original work, they automatically get copyright protection, which
+lasts for <strong>60 years after the creator's death</strong> for most works. The registration of copyright is
 not mandatory however but obtaining formal registration is recommended for legal
 enforcement, as the registration certificate serves as primary evidence of copyright
 ownership.`,
-          },
-          {
-            menu: `The owner of the copyright can grant permission to someone else to use, reproduce, or
-modify their work under specific conditions through a legal agreement known as licensing.
+      },
+      {
+        menu: `The owner of the copyright can <strong>grant permission to someone else</strong> to use, reproduce, or
+modify their work under specific conditions through a legal agreement known as <strong>licensing</strong>.
 This allows the licensee to legally use the material while respecting the creator's rights. When
 someone uses another person's copyrighted material without obtaining permission, it results
 in copyright infringement, which can attract legal consequences.`,
-          },
-          {
-            menu: `India's Copyright Act of 1957, following its amendments in 1999, aligns with international
-standards outlined in the TRIPS Agreement. The Act fully incorporates the principles of the
-Berne Convention for the Protection of Literary and Artistic Works (1886) and the
-Universal Copyright Convention, both of which India is a signatory to. Additionally, India
-is a member of the Geneva Convention for the Protection of Producers' Rights in
+      },
+      {
+        menu: `India's Copyright Act of 1957, following its amendments in 1999, aligns with international
+standards outlined in the <strong>TRIPS Agreement</strong>. The Act fully incorporates the principles of the
+<strong>Berne Convention for the Protection of Literary and Artistic Works (1886)</strong> and the
+<strong>Universal Copyright Convention</strong>, both of which India is a signatory to. Additionally, India
+is a member of the <strong>Geneva Convention</strong> for the Protection of Producers' Rights in
 Phonograms and actively participates in global organizations like the World Intellectual
 Property Organization (WIPO) and UNESCO (United Nations Educational, Scientific and
 Cultural Organization).`,
-          },
-          {
-            menu: `Our firm serves a broad spectrum of creative stakeholders, from artists and authors to IT
+      },
+      {
+        menu: `Our firm serves a broad spectrum of creative stakeholders, from artists and authors to IT
 companies and broadcasters. Our copyright services encompass prosecution and registration,
 licensing and assignment, contract negotiation and drafting, due diligence, clearances, and
 regulatory compliance, as well as dispute resolution and enforcement.`,
-          },
-
+      },
     ],
     shortNote: "",
   },
@@ -89,37 +92,37 @@ regulatory compliance, as well as dispute resolution and enforcement.`,
     note: "Defend your unique designs with our comprehensive design rights services, helping you secure legal protection for your creative assets.",
     src: "/design.svg",
     lists: [
-        {
-            menu: `A design refers to the aesthetic aspects of a product, such as its shape, configuration, pattern,
+      {
+        menu: `A design refers to the aesthetic aspects of a product, such as its shape, configuration, pattern,
 ornamentation, or composition of lines and colors applied to any article, whether in two-
 dimensional or three-dimensional forms. The key distinction between a design and a
 trademark lies in their connection to the product. A design is an integral part of the
 manufactured article itself, while a trademark is not necessarily connected in the same way.`,
-          },
-          {
-            menu: `Designs in India are protected under the Designs Act, 2000, which aims to safeguard the
+      },
+      {
+        menu: `Designs in India are protected under the <strong>Designs Act, 2000</strong>, which aims to safeguard the
 visual appearance of products that are original, novel, and have industrial application. To
 qualify for protection under the Designs Act, the design before the date of its application
 should not have been disclosed to the public anywhere. By registering a design, the owner is
-granted exclusive rights to use it for a specific period, initially for 10 years, which can be
-extended for another 5 years.`,
-          },
-          {
-            menu: `The Act is primarily concerned with the exterior appearance or visual appeal of an article
-rather than its functional aspects. The registration process begins with the submission of an
-application to the Designs Wing of the Indian Patent Office, headquartered at Kolkatta
+granted exclusive rights to use it for a specific period, initially for <strong>10 years</strong>, which can be
+extended for another <strong>5 years.</strong>`,
+      },
+      {
+        menu: `The Act is primarily concerned with the exterior appearance or visual appeal of an article
+rather than its functional aspects. The <strong>registration process</strong> begins with the submission of an
+application to the <strong>Designs Wing of the Indian Patent Office</strong>, headquartered at Kolkatta
 accompanied by the necessary drawings and details of the design. After the application is
-scrutinized and no objections are found, the design is registered and published in the Designs
-Journal. Upon registration, the design holder obtains the right to prevent others from using,
+scrutinized and no objections are found, the design is registered and published in the <strong>Designs
+Journal</strong>. Upon registration, the design holder obtains the right to prevent others from using,
 copying, or imitating the design without permission.`,
-          },
-          {
-            menu: `The firm delivers a full suite of services, encompassing Prosecution, Enforcement, and
+      },
+      {
+        menu: `The firm delivers a full suite of services, encompassing Prosecution, Enforcement, and
 Advisory expertise. Our design prosecution practice is comprehensive, covering a broad
 spectrum of products, including industrial goods, handicrafts, technical and medical
 instruments, watches and jewelry, household items, electrical appliances, automotive
 products, and more.`,
-          },
+      },
     ],
     shortNote: "",
   },
@@ -127,16 +130,17 @@ products, and more.`,
     specialize: "patents",
     note: "Trust our experienced attorneys to represent you in legal disputes, offering strategic litigation solutions to defend your rights and interests.",
     src: "/patent.svg",
-    lists: [        {
+    lists: [
+      {
         menu: `Patent is a legal right given to an inventor by the government, which allows them exclusive
-rights to develop, use and sell their invention for 20 years. According to World Intellectual
-Property Organisation (WIPO), it is defined as an exclusive right granted for an invention,
+rights to develop, use and sell their invention for <strong>20 years</strong>. According to <strong>World Intellectual
+Property Organisation</strong> (WIPO), it is defined as an exclusive right granted for an invention,
 which is a product or a process which provides a new way of doing something, or offers a
 new technical solution to a problem.`,
       },
       {
         menu: `When can an invention be patented in India? When the invention fulfils the criteria of
-Novelty, Inventive step, and industrial applicability. This requires that the invention is
+<strong>Novelty, Inventive step, and industrial applicability</strong>. This requires that the invention is
 novel, not obvious to an ordinary person skilled in the art and useful for some industry. The
 process of getting a patent in India starts by filing the application in which technical
 information must be disclosed to the public for that particular invention with Indian Patent
@@ -145,7 +149,7 @@ requirements within several months. If successful, the patent is granted and pub
 Official Patent Journal.`,
       },
       {
-        menu: `In India, the law related to patents is Indian Patents Act 1970 only recognizes product
+        menu: `In India, the law related to patents is Indian <strong>Patents Act 1970</strong> only recognizes product
 patents. India is a signatory to key international agreements, including the Agreement on
 Trade-Related Aspects of Intellectual Property Rights (TRIPS), the Paris Convention, and the
 Patent Cooperation Treaty (PCT). These affiliations empower patent holders by facilitating
@@ -160,7 +164,7 @@ analyses to support our clients' strategic decisions, including Freedom to Opera
 searches, validity searches, white space analysis, risk assessments, and feasibility opinions.
 This comprehensive approach enables us to optimize patent protection and minimize
 potential risks for our clients across diverse industries.`,
-      }
+      },
     ],
     shortNote: "",
   },
@@ -169,37 +173,37 @@ potential risks for our clients across diverse industries.`,
     note: "Turn your inventions into protected assets with our patent services, guiding you through the complex filing process to secure your intellectual property.",
     src: "/trademarks.svg",
     lists: [
-        {
-          menu: `Trademarks are words, names, symbols, devices, designs, or other distinctive signs or marks
+      {
+        menu: `Trademarks are words, names, symbols, devices, designs, or other distinctive signs or marks
 which serve to identify the source of goods or services and distinguish them from those sold
 by others. A trademark is like a unique signature for a business. The function of the
 trademark is to distinguish the goods or services of one undertaking from those of other
 undertakings. Trademarks also symbolize the goodwill, that a company has established for a
 product or service, and provide protection for the company’s investment in that goodwill.`,
-        },
-        {
-          menu: `In India, trademark law is primarily governed by the Trade Marks Act of 1999, which offers
+      },
+      {
+        menu: `In India, trademark law is primarily governed by the <strong>Trade Marks Act of 1999</strong>, which offers
 extensive protection for registered trademarks and provides legal remedies in cases of
-infringement. The act uses the NICE classification system to classify trademarks under
-which CLASS 1-34 deals with goods and CLASS 35-45 deals with services.`,
-        },
-        {
-          menu: `This law grants trademark owners to take legal action against unauthorised usage and gives
+infringement. The act uses the <strong>NICE</strong> classification system to classify trademarks under
+which <strong>CLASS 1-34</strong> deals with goods and <strong>CLASS 35-45</strong> deals with <strong>services</strong>.`,
+      },
+      {
+        menu: `This law grants trademark owners to take legal action against unauthorised usage and gives
 them the sole right to use their marks. When a trademark is registered in India, the owner
 receives nationwide protection, and the trademark can be renewed indefinitely, as long as it is
 actively used and renewed every 10 years. India's trademark system aligns with international
-standards, and the country is a participant in several global agreements, including the Madrid
-Protocol. This protocol enables businesses to seek trademark protection in multiple countries
+standards, and the country is a participant in several global agreements, including the <strong>Madrid
+Protocol</strong>. This protocol enables businesses to seek trademark protection in multiple countries
 through a single application.`,
-        },
-        {
-            menu: `We understand that the filing and registration process forms the essential groundwork for
+      },
+      {
+        menu: `We understand that the filing and registration process forms the essential groundwork for
 robust brand protection. To achieve lasting impact, this initial phase requires brand owners to
 adopt a strategic, forward-looking approach that safeguards their brand comprehensively
 within an ever-evolving market landscape. By setting a solid foundation early, we empower
 clients to protect and enhance their brand equity effectively over the long term.`,
-          },
-      ],
+      },
+    ],
     shortNote: "",
   },
   {
@@ -242,7 +246,7 @@ outcomes efficiently.`,
         menu: "Intellectual property disputes often involve technical, complex issues and can be time consuming and expensive in courts. Our Firm offers Dispute Resolution which has become an essential tool in solving conflicts regarding Intellectual Property Rights offering a more flexible, time and cost-effective alternative to traditional litigation.",
       },
       {
-        menu: "We offer dispute resolution mechanisms such as Arbitration, Mediation, and Negotiation which allow parties to settle their differences amicably, while maintaining confidentiality and control over the outcome.",
+        menu: "We offer dispute resolution mechanisms such as <strong>Arbitration, Mediation,</strong> and <strong>Negotiation</strong> which allow parties to settle their differences amicably, while maintaining confidentiality and control over the outcome.",
       },
       {
         menu: "In mediation, a neutral third party helps the disputing parties reach a mutually agreeable solution. Arbitration, on the other hand, involves an arbitrator who hears both sides and delivers a binding decision. Negotiation is a process of discussion and communication between two or more parties with the aim of reaching an agreement or resolving a dispute.",
