@@ -70,16 +70,16 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                         onClick={(e) => e.stopPropagation()}
                         className="relative w-full max-w-4xl p-6 text-white shadow-xl cursor-pointer bg-secondary h-max md:h-auto"
                     >
-                        <div className="relative z-10">
+                        <div className="relative z-10  ">
                             <div className="grid w-10 h-10 mx-auto mb-2 text-3xl text-white rounded-full md:h-16 md:w-16 bg-info place-items-center">
                                 <FiAlertCircle />
                             </div>
                             <h3 className="mb-2 text-3xl font-bold text-center text-info">
                                 Disclaimer
                             </h3>
-                            <p className="py-3 text-base font-semibold text-black md:text-lg">By accessing or using this website, you acknowledge and agree
+                            <p className="py-3 text-base font-semibold text-black md:text-lg text-justify">By accessing or using this website, you acknowledge and agree
                                 to the following terms:</p>
-                            <ul className="mb-6 space-y-3 text-sm text-center text-black md:text-base max-h-[220px] md:max-h-[350px] overflow-scroll md:overflow-auto">
+                            <ul className="mb-6 space-y-3 text-sm text-justify text-black md:text-base max-h-[220px] md:max-h-[350px] overflow-scroll md:overflow-auto">
                                 {/* <li className="text-base font-semibold md:text-lg">
                                     By accessing or using this website, you acknowledge and agree
                                     to the following terms:

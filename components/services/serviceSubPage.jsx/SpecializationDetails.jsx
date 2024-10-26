@@ -8,6 +8,7 @@ export const SpecializationDetails = ({name}) => {
     // console.log("name",filteredName)
     const specialization = specializations.find(spec => spec.specialize === filteredName);
     const lists = specialization ? specialization.lists : []; 
+    const images = specialization ? specialization.images : []; 
     return (
         <section className='flex flex-col gap-5 px-5 space-y-8 py-7 lg:px-16 lg:py-12 md:items-start md:flex-row md:gap-10 font-merriWeather'>
             <div className='space-y-10 basis-full md:basis-3/5 lg:top-28 text-justify'>
@@ -22,30 +23,16 @@ export const SpecializationDetails = ({name}) => {
                 </ul>
             </div>
             <div className='basis-full md:basis-2/5'>
-                <div className="relative w-full h-[280px] md:h-[320px]">
+            {images.map((item, index) => ( <div className="relative w-full h-[280px] md:h-[320px]" key={index}>
                     <Image
                         alt="bg image"
-                        src={"/sample-1.jpeg"}
+                        src={item.src}
                         fill
                         className="object-cover object-center"
                     />
                 </div>
-                <div className="relative w-full h-[280px] md:h-[320px]">
-                    <Image
-                        alt="bg image"
-                        src={"/sample-2.jpeg"}
-                        fill
-                        className="object-cover object-center"
-                    />
-                </div>
-                <div className="relative w-full h-[280px] md:h-[320px]">
-                    <Image
-                        alt="bg image"
-                        src={"/sample-3.jpeg"}
-                        fill
-                        className="object-cover object-center"
-                    />
-                </div>
+            ))}
+               
             </div>
         </section>
     )
