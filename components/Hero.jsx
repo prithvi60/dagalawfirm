@@ -6,7 +6,7 @@ import { CounterUp } from './CounterUp'
 const Hero = () => {
     return (
         <section className="relative flex flex-col w-full h-screen overflow-hidden border-b-2 font-merriWeather sm:flex-row border-copy mt-14">
-            <div className="z-0 w-full h-screen bg-fixed basis-full sm:basis-4/5 bg-top bg-contain md:bg-left bg-no-repeat md:bg-contain bg-[url('/heromob.png')] md:bg-[url('/herodes.png')]" 
+            <div className="z-0 w-full h-screen bg-fixed basis-full sm:basis-4/5 xl:basis-3/5 bg-top bg-contain md:bg-left bg-no-repeat md:bg-contain bg-[url('/heromob.png')] md:bg-[url('/herodes1.png')]" 
             // style={{
             //     backgroundImage: `url("/hero.webp")`,
             //      }
@@ -16,7 +16,7 @@ const Hero = () => {
                     <div className='flex flex-col md:justify-between items-start gap-6 md:gap-10 p-2 w-full sm:w-[90%]'>
                         <h1 className='font-bold text-left tracking-wide text-2xl md:text-4xl lg:text-[48px] font-merriWeather text-secondary leading-8 lg:!leading-[50px]'>Transforming Ideas into Assets
                         </h1>
-                        <p className='font-normal text-md md:text-base lg:text-lg font-merriWeather text-secondary'>Trusted legal support for your important matters. Here to guide and protect you every step of the way.</p>
+                        <p className='font-normal text-md md:text-base lg:text-lg font-merriWeather text-secondary'>Reliable legal support for all your intellectual property needs—guiding and protecting you at every step.</p>
                         <div className='flex items-center justify-start gap-5 pb-3.5 w-full md:w-auto'>
                             <Link href={"/contact"} className='px-4 py-2 text-xs font-normal tracking-wide md:p-3 bg-info text-primary md:text-lg font-merriWeather hover:scale-105'>Contact us</Link>
                             <Link href={"/services"} className='px-4 py-2 text-xs font-normal tracking-wide bg-transparent border-2 text-s text-primary md:text-lg border-secondary font-merriWeather hover:scale-105'>Our Services</Link>
@@ -24,7 +24,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="basis-full sm:basis-1/5">
+            <div className="basis-full sm:basis-1/5 xl:basis-2/5">
                 <CounterUp />
             </div>
         </section>
