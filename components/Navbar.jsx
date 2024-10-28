@@ -54,13 +54,13 @@ const Navbar = () => {
                         <div key={idx} className="relative py-4 group">
                             <>
                                 {list.menu === "Careers" ? (
-                                    <div onClick={() => setIsActive(list.menu)}>
+                                    <div>
                                         <h4
                                             className={`${isActive === list.menu &&
-                                                pathname !== "/" &&
-                                                isActive !== "Careers"
-                                                ? "underline underline-offset-8 decoration-info"
-                                                : ""
+                                                    pathname !== "/" &&
+                                                    isActive !== "Careers"
+                                                    ? "underline underline-offset-8 decoration-info"
+                                                    : ""
                                                 } text-md lg:text-lg font-medium uppercase font-libreCaslonDisplay`}
                                         >
                                             {list.menu}
@@ -70,10 +70,10 @@ const Navbar = () => {
                                     <Link href={list.ref} onClick={() => setIsActive(list.menu)}>
                                         <h4
                                             className={`${isActive === list.menu &&
-                                                pathname !== "/" &&
-                                                isActive !== "Careers"
-                                                ? "underline underline-offset-8 decoration-info"
-                                                : ""
+                                                    pathname !== "/" &&
+                                                    isActive !== "Careers"
+                                                    ? "underline underline-offset-8 decoration-info"
+                                                    : ""
                                                 } text-md lg:text-lg font-medium uppercase font-libreCaslonDisplay  transition-all duration-500 ease-linear hover:text-info hover:scale-105 hover:underline decoration-info underline-offset-4`}
                                         >
                                             {list.menu}
@@ -84,8 +84,8 @@ const Navbar = () => {
                             {list.subMenu && (
                                 <div
                                     className={`absolute overflow-hidden hidden ${isMenuOpen === false
-                                        ? "hidden"
-                                        : "group-hover:block transition-all duration-500 ease-in-out"
+                                            ? "hidden"
+                                            : "group-hover:block transition-all duration-500 ease-in-out"
                                         } group-hover:block top-[56px] left-0 bg-info py-4 px-8 shadow-md font-merriWeather`}
                                 >
                                     {list?.subMenu?.map((l, index) => (
@@ -116,8 +116,8 @@ const Navbar = () => {
                 </div>
                 <div
                     className={`w-full h-dvh z-[1000] border-2 bg-primary flex flex-col justify-start pt-16 items-center fixed top-0 ${isMenuOpen
-                        ? "right-0 transition-all duration-500 ease-linear"
-                        : "opacity-0 right-[-100%] transition-all duration-500 ease-linear "
+                            ? "right-0 transition-all duration-500 ease-linear"
+                            : "opacity-0 right-[-100%] transition-all duration-500 ease-linear "
                         }`}
                 >
                     <div
@@ -130,16 +130,37 @@ const Navbar = () => {
                         <ul className="relative flex md:hidden flex-col gap-3.5 px-10 font-normal w-full py-6 font-merriWeather ">
                             {navbarLinks.map((list, idx) => (
                                 <div key={idx}>
-                                    <Link href={list.ref} onClick={() => handleClick(list.menu)}>
-                                        <h4
-                                            className={` ${isActive === list.menu && pathname !== "/"
-                                                ? "underline underline-offset-8 decoration-[#c20003]"
-                                                : ""
-                                                } text-base font-medium uppercase font-libreCaslonDisplay`}
+                                    {list.menu === "Careers" ? (
+                                        <div>
+                                            <h4
+                                                className={` ${isActive === list.menu &&
+                                                        pathname !== "/" &&
+                                                        isActive !== "Careers"
+                                                        ? "underline underline-offset-8 decoration-[#c20003]"
+                                                        : ""
+                                                    } text-base font-medium uppercase font-libreCaslonDisplay`}
+                                            >
+                                                {list.menu}
+                                            </h4>
+                                        </div>
+                                    ) : (
+                                        <Link
+                                            href={list.ref}
+                                            onClick={() => handleClick(list.menu)}
                                         >
-                                            {list.menu}
-                                        </h4>
-                                    </Link>
+                                            <h4
+                                                className={` ${isActive === list.menu &&
+                                                        pathname !== "/" &&
+                                                        isActive !== "Careers"
+                                                        ? "underline underline-offset-8 decoration-[#c20003]"
+                                                        : ""
+                                                    } text-base font-medium uppercase font-libreCaslonDisplay`}
+                                            >
+                                                {list.menu}
+                                            </h4>
+                                        </Link>
+                                    )}
+
                                     {list.subMenu && (
                                         <>
                                             {list?.subMenu?.map((l, index) => (
