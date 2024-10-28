@@ -7,7 +7,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { MdOutlineArrowRight } from "react-icons/md";
-import { motion } from "framer-motion";
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isActive, setIsActive] = useState("");
@@ -16,45 +15,6 @@ const Navbar = () => {
     const handleClick = (val) => {
         setIsActive(val);
         setIsMenuOpen(false);
-    };
-
-    const parentVariant = {
-        initial: {
-            opacity: 0,
-            y: -50,
-        },
-        animate: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.8,
-                staggerChildren: 0.5,
-                delayChildren: 0.8,
-            },
-        },
-    };
-    const parentVariantMobile = {
-        animate: {
-            transition: {
-                duration: 0.8,
-                staggerChildren: 0.5,
-                delayChildren: 0.8,
-            },
-        },
-    };
-    const variant2 = {
-        initial: {
-            opacity: 0,
-            x: -50,
-        },
-        animate: (index) => ({
-            opacity: 1,
-            x: 0,
-            transition: {
-                duration: 0.8,
-                delay: 0.05 * index,
-            },
-        }),
     };
 
     return (
@@ -104,21 +64,14 @@ const Navbar = () => {
                                 </Link>
                             </>
                             {list.subMenu && (
-                                <motion.div
-                                    variants={parentVariant}
-                                    initial="initial"
-                                    whileInView="animate"
+                                <div
                                     className={`absolute overflow-hidden hidden ${isMenuOpen === false
                                         ? "hidden"
                                         : "group-hover:block transition-all duration-500 ease-in-out"
                                         } group-hover:block top-[56px] left-0 bg-info py-4 px-8 shadow-md font-merriWeather`}
                                 >
                                     {list?.subMenu?.map((l, index) => (
-                                        <motion.div
-                                            variants={variant2}
-                                            initial="initial"
-                                            whileInView="animate"
-                                            custom={index}
+                                        <div
                                             key={index}
                                         >
                                             <Link
@@ -131,9 +84,9 @@ const Navbar = () => {
                                                     {l.menu}
                                                 </h4>
                                             </Link>
-                                        </motion.div>
+                                        </div>
                                     ))}
-                                </motion.div>
+                                </div>
                             )}
                         </div>
                     ))}
@@ -158,18 +111,11 @@ const Navbar = () => {
                         <RiCloseLargeLine className="text-2xl text-info" />
                     </div>
                     {isMenuOpen && (
-                        <motion.ul
-                            variants={parentVariant}
-                            initial="initial"
-                            whileInView="animate"
+                        <ul
                             className="relative flex md:hidden flex-col gap-3.5 px-10 font-normal w-full py-6 font-merriWeather "
                         >
                             {navbarLinks.map((list, idx) => (
-                                <motion.div variants={variant2}
-                                    initial="initial"
-                                    whileInView="animate"
-                                    custom={idx}
-                                    viewport={{ once: true }}
+                                <div
                                     key={idx}>
                                     <Link href={list.ref} onClick={() => handleClick(list.menu)}>
                                         <h4
@@ -201,9 +147,9 @@ const Navbar = () => {
                                             ))}
                                         </>
                                     )}
-                                </motion.div>
+                                </div>
                             ))}
-                        </motion.ul>
+                        </ul>
                     )}
                 </div>
             </div>

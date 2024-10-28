@@ -7,7 +7,7 @@ const Contact = () => {
     const variants = {
         initial: {
             opacity: 0,
-            x: -100,
+            x: -50,
         },
         animate: {
             opacity: 1,
@@ -16,7 +16,7 @@ const Contact = () => {
                 staggerChildren: 0.3,
                 delayChildren: 0.5,
                 ease: "easeIn",
-                duration: 0.6,
+                duration: 0.3,
             },
         },
     };
@@ -29,7 +29,7 @@ const Contact = () => {
             opacity: 1,
             x: 0,
             transition: {
-                duration: 0.8,
+                // duration: 0.8,
             },
         },
     };
@@ -38,7 +38,7 @@ const Contact = () => {
             variants={variants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }} className="px-5 space-y-8 py-7 lg:px-16 lg:py-12 font-merriWeather">
+            viewport={{ once: true }} className="px-5 space-y-8 overflow-hidden py-7 lg:px-16 lg:py-12 font-merriWeather">
             <motion.h4
                 variants={childVariants} className="text-xl font-medium tracking-wide capitalize font-merriWeather text-info sm:text-2xl lg:text-3xl">Ready to Take the Next Step? Reach Out Today!</motion.h4>
             <motion.div variants={childVariants} className="flex flex-col items-start md:gap-32 md:flex-row gap-9">

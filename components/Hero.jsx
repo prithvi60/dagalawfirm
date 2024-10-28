@@ -8,14 +8,14 @@ const Hero = () => {
     const variant1 = {
         initial: {
             opacity: 0,
-            x: -100,
+            x: -50,
         },
         animate: {
             opacity: 1,
             x: 0,
             transition: {
                 ease: "easeIn",
-                duration: 0.6,
+                duration: 0.3,
             },
         },
     };

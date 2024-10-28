@@ -15,16 +15,16 @@ const DagaApproach = () => {
             y: 0,
             transition: {
                 ease: "easeIn",
-                duration: 0.8,
+                duration: 0.4,
             },
         },
     };
     const parentVariant = {
         animate: {
             transition: {
-                duration: 1.5,
+                duration: 0.6,
                 staggerChildren: 0.5,
-                delayChildren: 0.8,
+                delayChildren: 0.4,
             },
         },
     };
@@ -37,7 +37,7 @@ const DagaApproach = () => {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 1.5,
+                duration: 0.6,
                 delay: 0.08 * index,
             },
         }),

@@ -7,7 +7,7 @@ export const PersonDescription = ({ data }) => {
     const variant1 = {
         initial: {
             opacity: 0,
-            x: -100,
+            x: -50,
         },
         animate: {
             opacity: 1,
@@ -28,13 +28,13 @@ export const PersonDescription = ({ data }) => {
             y: 0,
             transition: {
                 ease: "easeOut",
-                duration: 0.6,
+                duration: 0.3,
                 delay: 0.5
             },
         },
     };
     return (
-        <section className="relative flex flex-col gap-5 px-5 border-t-2 mt-14 md:mt-16 md:flex-row lg:pl-16 border-copy font-merriWeather py-7 lg:px-16 lg:py-12 md:gap-8 xl:gap-14">
+        <section className="relative flex flex-col gap-5 px-5 overflow-hidden border-t-2 mt-14 md:mt-16 md:flex-row lg:pl-16 border-copy font-merriWeather py-7 lg:px-16 lg:py-12 md:gap-8 xl:gap-14">
             <motion.div
                 variants={variant1}
                 initial="initial"

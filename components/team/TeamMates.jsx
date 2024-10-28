@@ -31,7 +31,7 @@ const TeamMates = () => {
         }),
     };
     return (
-        <section className="px-5 space-y-8 mt-14 py-7 lg:py-12 font-merriWeather">
+        <section className="px-5 space-y-8 overflow-hidden mt-14 py-7 lg:py-12 font-merriWeather">
             <motion.div
                 variants={parentVariant}
                 viewport={{ amount: 0.4, once: true }}
