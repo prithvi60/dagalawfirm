@@ -3,49 +3,14 @@ import { dagaIcons } from "@/libs/data";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import { parentVariant, variant1, variantGrid, variantTitle } from "@/libs/Variants";
 
 const DagaApproach = () => {
-    const variant1 = {
-        initial: {
-            opacity: 0,
-            y: -50,
-        },
-        animate: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                ease: "easeIn",
-                duration: 0.4,
-            },
-        },
-    };
-    const parentVariant = {
-        animate: {
-            transition: {
-                duration: 0.6,
-                staggerChildren: 0.5,
-                delayChildren: 0.4,
-            },
-        },
-    };
-    const variant2 = {
-        initial: {
-            opacity: 0,
-            y: -100,
-        },
-        animate: (index) => ({
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.6,
-                delay: 0.08 * index,
-            },
-        }),
-    };
+
     return (
         <section className="w-full h-full font-merriWeather">
             <motion.h1
-                variants={variant1}
+                variants={variantTitle}
                 viewport={{ amount: 0.3, once: true }}
                 initial="initial"
                 whileInView="animate"
@@ -62,7 +27,7 @@ const DagaApproach = () => {
             >
                 {dagaIcons.map((list, idx) => (
                     <motion.div
-                        variants={variant2}
+                        variants={variantGrid}
                         initial="initial"
                         whileInView="animate"
                         custom={idx}

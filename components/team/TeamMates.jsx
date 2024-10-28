@@ -5,31 +5,10 @@ import Link from "next/link";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { parentVariant, variantGrid } from "@/libs/Variants";
 
 const TeamMates = () => {
-    const parentVariant = {
-        animate: {
-            transition: {
-                duration: 1.5,
-                staggerChildren: 0.5,
-                delayChildren: 0.8,
-            },
-        },
-    };
-    const variant1 = {
-        initial: {
-            opacity: 0,
-            y: -100,
-        },
-        animate: (index) => ({
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 1.5,
-                delay: 0.08 * index,
-            },
-        }),
-    };
+
     return (
         <section className="px-5 space-y-8 overflow-hidden mt-14 py-7 lg:py-12 font-merriWeather">
             <motion.div
@@ -43,7 +22,7 @@ const TeamMates = () => {
                     <>
                         {list.ref ? (
                             <motion.div
-                                variants={variant1}
+                                variants={variantGrid}
                                 initial="initial"
                                 whileInView="animate"
                                 custom={idx}
@@ -77,7 +56,7 @@ const TeamMates = () => {
                             </motion.div>
                         ) : (
                             <motion.div
-                                variants={variant1}
+                                variants={variantGrid}
                                 initial="initial"
                                 whileInView="animate"
                                 custom={idx}

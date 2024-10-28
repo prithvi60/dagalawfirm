@@ -2,37 +2,10 @@
 import Link from 'next/link'
 import React from "react";
 import { motion } from "framer-motion";
+import { childVariants, variants } from '@/libs/Variants';
 
 const Contact = () => {
-    const variants = {
-        initial: {
-            opacity: 0,
-            x: -50,
-        },
-        animate: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                staggerChildren: 0.3,
-                delayChildren: 0.5,
-                ease: "easeIn",
-                duration: 0.3,
-            },
-        },
-    };
-    const childVariants = {
-        initial: {
-            opacity: 0,
-            x: -50,
-        },
-        animate: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                // duration: 0.8,
-            },
-        },
-    };
+
     return (
         <motion.section
             variants={variants}

@@ -3,22 +3,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import { CounterUp } from "./CounterUp";
+import { variants } from "@/libs/Variants";
 
 const Hero = () => {
-    const variant1 = {
-        initial: {
-            opacity: 0,
-            x: -50,
-        },
-        animate: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                ease: "easeIn",
-                duration: 0.3,
-            },
-        },
-    };
     return (
         <section className="relative flex flex-col w-full h-screen overflow-hidden border-b-2 font-merriWeather sm:flex-row border-copy mt-14">
             <div
@@ -30,7 +17,7 @@ const Hero = () => {
             >
                 <div className="absolute top-[10vh] sm:top-1/2 md:-translate-y-1/2 left-0 flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-bold py-2 px-3.5 z-10 w-full sm:w-3/5 lg:w-3/5">
                     <motion.div
-                        variants={variant1}
+                        variants={variants}
                         viewport={{ once: true }}
                         initial="initial"
                         whileInView="animate"

@@ -1,39 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
+import { variant1, variant2 } from "@/libs/Variants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Team = () => {
-    const variant1 = {
-        initial: {
-            opacity: 0,
-            x: -50,
-        },
-        animate: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                ease: "easeIn",
-                duration: 0.3,
-            },
-        },
-    };
-    const variant2 = {
-        initial: {
-            opacity: 0,
-            x: 50,
-        },
-        animate: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                ease: "easeIn",
-                duration: 0.3,
-            },
-        },
-    };
     return (
         <section className="flex flex-col items-center justify-center gap-5 overflow-hidden md:gap-8 py-7 lg:py-12 md:flex-row font-merriWeather">
             <motion.div

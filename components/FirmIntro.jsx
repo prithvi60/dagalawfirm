@@ -1,36 +1,10 @@
 "use client";
+import { childVariants, variants } from "@/libs/Variants";
 import { motion } from "framer-motion";
 import React from "react";
 
 const FirmIntro = () => {
-    const variants = {
-        initial: {
-            opacity: 0,
-            x: -50,
-        },
-        animate: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                staggerChildren: 0.3,
-                delayChildren: 0.3,
-                ease: "easeIn",
-            },
-        },
-    };
-    const childVariants = {
-        initial: {
-            opacity: 0,
-            x: -50,
-        },
-        animate: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                duration: 0.3,
-            },
-        },
-    };
+
     return (
         <motion.section
             variants={variants}

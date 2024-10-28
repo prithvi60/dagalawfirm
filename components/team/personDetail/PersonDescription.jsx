@@ -1,23 +1,10 @@
 "use client";
+import { variant1 } from "@/libs/Variants";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 export const PersonDescription = ({ data }) => {
-    const variant1 = {
-        initial: {
-            opacity: 0,
-            x: -50,
-        },
-        animate: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                ease: "easeIn",
-                duration: 0.8,
-            },
-        },
-    };
     const variant2 = {
         initial: {
             opacity: 0,
@@ -40,7 +27,7 @@ export const PersonDescription = ({ data }) => {
                 initial="initial"
                 whileInView="animate"
                 viewport={{ once: true }}
-                className="flex justify-center w-full md:w-2/5"
+                className="flex justify-center w-full md:w-2/5 h-fit"
             >
                 <div className="relative w-[280px] md:size-[360px] xl:h-[480px] h-[380px]  overflow-hidden group z-0 contrast-100  md:sticky md:top-32">
                     <Image
@@ -74,7 +61,7 @@ export const PersonDescription = ({ data }) => {
                     variants={variant2}
                     initial="initial"
                     whileInView="animate"
-                    viewport={{ once: true }}
+                    viewport={{ amount: 0.2, once: true }}
                     className="space-y-5 text-sm font-normal md:text-base md:space-y-10 font-merriWeather"
                 >
                     {data.desc.map((list, idx) => (

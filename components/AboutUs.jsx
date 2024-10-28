@@ -1,37 +1,11 @@
 "use client";
+import { variant1, variant2 } from "@/libs/Variants";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 const AboutUs = () => {
-    const variant1 = {
-        initial: {
-            opacity: 0,
-            x: -50,
-        },
-        animate: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                ease: "easeIn",
-                duration: 0.3,
-            },
-        },
-    };
-    const variant2 = {
-        initial: {
-            opacity: 0,
-            x: 50,
-        },
-        animate: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                ease: "easeIn",
-                duration: 0.3,
-            },
-        },
-    };
+
     return (
         <section className="w-full h-full px-5 overflow-hidden border-t-2 border-copy font-merriWeather">
             <div

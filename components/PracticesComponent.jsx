@@ -1,53 +1,17 @@
 "use client";
+import { motion } from "framer-motion";
 import { services } from "@/libs/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { motion } from "framer-motion";
+import { parentVariant, variant1, variantGrid, variantTitle } from "@/libs/Variants";
 
 const PracticesComponent = () => {
-    const variant1 = {
-        initial: {
-            opacity: 0,
-            y: -50,
-        },
-        animate: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                ease: "easeIn",
-                duration: 0.4,
-            },
-        },
-    };
-    const parentVariant = {
-        animate: {
-            transition: {
-                duration: 0.4,
-                staggerChildren: 0.5,
-                delayChildren: 0.4,
-            },
-        },
-    };
-    const variant2 = {
-        initial: {
-            opacity: 0,
-            y: -100,
-        },
-        animate: (index) => ({
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.4,
-                delay: 0.05 * index,
-            },
-        }),
-    };
     return (
         <>
             <motion.h2
-                variants={variant1}
+                variants={variantTitle}
                 viewport={{ amount: 0.3, once: true }}
                 initial="initial"
                 whileInView="animate"
@@ -64,7 +28,7 @@ const PracticesComponent = () => {
             >
                 {services.map((item, idx) => (
                     <motion.div
-                        variants={variant2}
+                        variants={variantGrid}
                         initial="initial"
                         whileInView="animate"
                         custom={idx}

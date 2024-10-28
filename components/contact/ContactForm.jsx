@@ -1,10 +1,12 @@
 "use client";
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { BsEnvelopeAtFill } from "react-icons/bs";
 import { FaPhoneAlt, FaRegUser } from "react-icons/fa";
 import { MdOutlineMessage } from "react-icons/md";
 import toast from "react-hot-toast";
 import Link from "next/link";
+import { childVariants, variant1, variant2, variants } from "@/libs/Variants";
 
 const ContactForm = ({ title1, title2 }) => {
     const initialFormData = {
@@ -97,19 +99,28 @@ const ContactForm = ({ title1, title2 }) => {
     return (
         <section className="px-5 py-8 lg:px-16 lg:py-12 font-merriWeather mt-14">
             <div className="flex flex-col gap-8 md:flex-row">
-                <div className="relative h-full space-y-5 md:space-y-7 lg:sticky lg:top-20 basis-full md:basis-2/5">
+                <motion.div
+                    variants={variants}
+                    viewport={{ amount: 0.3, once: true }}
+                    initial="initial"
+                    whileInView="animate"
+                    className="relative h-full space-y-5 md:space-y-7 lg:sticky lg:top-20 basis-full md:basis-2/5"
+                >
                     <h4 className="text-lg font-semibold tracking-wide text-center capitalize md:text-left sm:text-xl xl:text-2xl font-merriWeather text-info">
                         Have questions?
                         <br />
                         We’re here to help
                     </h4>
-                    <div className="relative w-full">
+                    <motion.div variants={childVariants} className="relative w-full">
                         <p className="text-sm font-normal tracking-wide text-center md:text-justify sm:text-base font-merriWeather text-copy">
                             Drop us a message, and we&apos;ll get back to you as soon as
                             possible
                         </p>
-                    </div>
-                    <div className="hidden md:flex flex-col gap-2.5 ">
+                    </motion.div>
+                    <motion.div
+                        variants={childVariants}
+                        className="hidden md:flex flex-col gap-2.5 "
+                    >
                         <h4 className="text-lg font-medium tracking-wide capitalize md:text-xl font-merriWeather text-info">
                             Office Address
                         </h4>
@@ -120,8 +131,11 @@ const ContactForm = ({ title1, title2 }) => {
                             <li>Chennai - 600001,</li>
                             <li>Tamil Nadu, India.</li>
                         </ul>
-                    </div>
-                    <div className="hidden md:flex flex-col  gap-2.5">
+                    </motion.div>
+                    <motion.div
+                        variants={childVariants}
+                        className="hidden md:flex flex-col  gap-2.5"
+                    >
                         <h4 className="text-lg font-medium tracking-wide capitalize md:text-xl font-merriWeather text-info">
                             {title2}
                         </h4>
@@ -133,8 +147,11 @@ const ContactForm = ({ title1, title2 }) => {
                                 enquiry@dagaanddaga.com
                             </Link>
                         </ul>
-                    </div>
-                    <div className="flex-col hidden gap-3 md:flex">
+                    </motion.div>
+                    <motion.div
+                        variants={childVariants}
+                        className="flex-col hidden gap-3 md:flex"
+                    >
                         <h4 className="text-lg font-medium tracking-wide capitalize md:text-xl font-merriWeather text-info">
                             {title1}
                         </h4>
@@ -154,10 +171,16 @@ const ContactForm = ({ title1, title2 }) => {
                                 044-29550176
                             </Link>
                         </ul>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
                 <div className="flex flex-col items-center w-full gap-5 space-y-8 justify-normal lg:flex-row md:w-3/5">
-                    <div className="w-full px-6 py-8 mx-auto space-y-4 bg-info/80">
+                    <motion.div
+                        variants={variant2}
+                        viewport={{ amount: 0.3, once: true }}
+                        initial="initial"
+                        whileInView="animate"
+                        className="w-full px-6 py-8 mx-auto space-y-4 bg-info/80"
+                    >
                         <h3 className="w-full text-4xl font-normal text-center capitalize text-secondary font-libreCaslonDisplay">
                             Let’s Connect
                         </h3>
@@ -254,7 +277,7 @@ const ContactForm = ({ title1, title2 }) => {
                                 </button>
                             </div>
                         </form>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
