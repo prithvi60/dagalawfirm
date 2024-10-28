@@ -16,7 +16,7 @@ const Team = () => {
             x: 0,
             transition: {
                 ease: "easeIn",
-                duration: 1.2,
+                duration: 0.6,
             },
         },
     };
@@ -30,7 +30,7 @@ const Team = () => {
             x: 0,
             transition: {
                 ease: "easeIn",
-                duration: 1.2,
+                duration: 0.6,
             },
         },
     };

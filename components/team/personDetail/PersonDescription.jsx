@@ -28,7 +28,7 @@ export const PersonDescription = ({ data }) => {
             y: 0,
             transition: {
                 ease: "easeOut",
-                duration: 1.2,
+                duration: 0.6,
                 delay: 0.5
             },
         },

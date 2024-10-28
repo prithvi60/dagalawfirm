@@ -36,7 +36,7 @@ const Navbar = () => {
     const parentVariantMobile = {
         animate: {
             transition: {
-                duration: 1.5,
+                duration: 0.8,
                 staggerChildren: 0.5,
                 delayChildren: 0.8,
             },
@@ -51,7 +51,7 @@ const Navbar = () => {
             opacity: 1,
             x: 0,
             transition: {
-                duration: 1.8,
+                duration: 0.8,
                 delay: 0.05 * index,
             },
         }),
@@ -159,7 +159,7 @@ const Navbar = () => {
                     </div>
                     {isMenuOpen && (
                         <motion.ul
-                            variants={parentVariantMobile}
+                            variants={parentVariant}
                             initial="initial"
                             whileInView="animate"
                             className="relative flex md:hidden flex-col gap-3.5 px-10 font-normal w-full py-6 font-merriWeather "

@@ -13,9 +13,8 @@ const FirmIntro = () => {
             x: 0,
             transition: {
                 staggerChildren: 0.3,
-                delayChildren: 0.5,
+                delayChildren: 0.3,
                 ease: "easeIn",
-                duration: 1.2,
             },
         },
     };
@@ -28,7 +27,7 @@ const FirmIntro = () => {
             opacity: 1,
             x: 0,
             transition: {
-                duration: 0.8,
+                duration: 0.6,
             },
         },
     };
