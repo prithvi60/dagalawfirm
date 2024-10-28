@@ -7,7 +7,7 @@ const Page = () => {
     return (
         <main>
             {/* <ContactHero /> */}
-            <ContactForm />
+            <ContactForm title1={"phone"} title2={"Email"} />
             <ContactDetailsAddress data1={phoneNo} data2={emails} title1={"phone"} title2={"Email"} />
         </main>
     );

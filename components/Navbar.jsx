@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { MdOutlineArrowRight } from "react-icons/md";
+import { motion } from "framer-motion";
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isActive, setIsActive] = useState("");
@@ -17,12 +18,53 @@ const Navbar = () => {
         setIsMenuOpen(false);
     };
 
+    const parentVariant = {
+        initial: {
+            opacity: 0,
+            y: -50,
+        },
+        animate: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.8,
+                staggerChildren: 0.5,
+                delayChildren: 0.8,
+            },
+        },
+    };
+    const parentVariantMobile = {
+        animate: {
+            transition: {
+                duration: 1.5,
+                staggerChildren: 0.5,
+                delayChildren: 0.8,
+            },
+        },
+    };
+    const variant2 = {
+        initial: {
+            opacity: 0,
+            x: -50,
+        },
+        animate: (index) => ({
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 1.8,
+                delay: 0.05 * index,
+            },
+        }),
+    };
+
     return (
         <nav className="w-full h-full mx-auto">
             <div className="flex items-center justify-between md:justify-start gap-3 sm:gap-8 lg:gap-16 px-5 lg:px-16 z-[999] shadow-sm border-b-2 border-copy fixed bg-primary top-0 left-0 w-full font-merriWeather">
                 <Link
                     href="/"
-                    className={"hidden md:block w-60 h-14 cursor-pointer relative overflow-hidden"}
+                    className={
+                        "hidden md:block w-60 h-14 cursor-pointer relative overflow-hidden"
+                    }
                 >
                     <Image
                         priority
@@ -34,7 +76,9 @@ const Navbar = () => {
                 </Link>
                 <Link
                     href="/"
-                    className={"block md:hidden w-10 h-14 sm:ml-0 cursor-pointer relative overflow-hidden"}
+                    className={
+                        "block md:hidden w-10 h-14 sm:ml-0 cursor-pointer relative overflow-hidden"
+                    }
                 >
                     <Image
                         priority
@@ -47,7 +91,7 @@ const Navbar = () => {
                 <div className="relative items-center hidden gap-6 p-1 font-bold lg:gap-8 md:flex xl:gap-14 w-max font-merriWeather">
                     {navbarLinks.map((list, idx) => (
                         <div key={idx} className="relative py-4 group">
-                            <div>
+                            <>
                                 <Link href={list.ref} onClick={() => setIsActive(list.menu)}>
                                     <h4
                                         className={`${isActive === list.menu && pathname !== "/"
@@ -58,28 +102,38 @@ const Navbar = () => {
                                         {list.menu}
                                     </h4>
                                 </Link>
-                            </div>
+                            </>
                             {list.subMenu && (
-                                <div
-                                    className={`absolute hidden ${isMenuOpen === false
+                                <motion.div
+                                    variants={parentVariant}
+                                    initial="initial"
+                                    whileInView="animate"
+                                    className={`absolute overflow-hidden hidden ${isMenuOpen === false
                                         ? "hidden"
                                         : "group-hover:block transition-all duration-500 ease-in-out"
                                         } group-hover:block top-[56px] left-0 bg-info py-4 px-8 shadow-md font-merriWeather`}
                                 >
                                     {list?.subMenu?.map((l, index) => (
-                                        <Link
-                                            title={l.menu}
-                                            className={`flex items-center gap-2 mb-2 text-primary text-sm cursor-pointer lg:text-lg w-full h-full font-semibold z-10 hover:text-white/80 capitalize`}
+                                        <motion.div
+                                            variants={variant2}
+                                            initial="initial"
+                                            whileInView="animate"
+                                            custom={index}
                                             key={index}
-                                            href={`${decodeURIComponent(l.ref)}`}
-                                            onClick={() => setIsMenuOpen(false)}
                                         >
-                                            <h4 className="hover:underline hover:underline-offset-8">
-                                                {l.menu}
-                                            </h4>
-                                        </Link>
+                                            <Link
+                                                title={l.menu}
+                                                className={`flex items-center gap-2 mb-2 text-primary text-sm cursor-pointer lg:text-lg w-full h-full font-semibold z-10 hover:text-white/80 capitalize`}
+                                                href={`${decodeURIComponent(l.ref)}`}
+                                                onClick={() => setIsMenuOpen(false)}
+                                            >
+                                                <h4 className="hover:underline hover:underline-offset-8">
+                                                    {l.menu}
+                                                </h4>
+                                            </Link>
+                                        </motion.div>
                                     ))}
-                                </div>
+                                </motion.div>
                             )}
                         </div>
                     ))}
@@ -104,9 +158,19 @@ const Navbar = () => {
                         <RiCloseLargeLine className="text-2xl text-info" />
                     </div>
                     {isMenuOpen && (
-                        <ul className="relative flex md:hidden flex-col gap-3.5 px-10 font-normal w-full py-6 font-merriWeather ">
+                        <motion.ul
+                            variants={parentVariantMobile}
+                            initial="initial"
+                            whileInView="animate"
+                            className="relative flex md:hidden flex-col gap-3.5 px-10 font-normal w-full py-6 font-merriWeather "
+                        >
                             {navbarLinks.map((list, idx) => (
-                                <div key={idx}>
+                                <motion.div variants={variant2}
+                                    initial="initial"
+                                    whileInView="animate"
+                                    custom={idx}
+                                    viewport={{ once: true }}
+                                    key={idx}>
                                     <Link href={list.ref} onClick={() => handleClick(list.menu)}>
                                         <h4
                                             className={` ${isActive === list.menu && pathname !== "/"
@@ -137,9 +201,9 @@ const Navbar = () => {
                                             ))}
                                         </>
                                     )}
-                                </div>
+                                </motion.div>
                             ))}
-                        </ul>
+                        </motion.ul>
                     )}
                 </div>
             </div>
