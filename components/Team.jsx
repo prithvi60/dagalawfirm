@@ -8,6 +8,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Team = () => {
     return (
+
         <section className="flex flex-col items-center justify-center gap-5 overflow-hidden md:gap-8 py-7 lg:py-12 md:flex-row font-merriWeather">
             <motion.div
                 variants={variant1}
@@ -35,6 +36,7 @@ const Team = () => {
                         <div className="p-1 transition-all duration-200 ease-in-out rounded-full bg-secondary w-max group-hover:scale-110 group-hover:animate-bounce">
                             <FaArrowRightLong className="text-xl -rotate-45 text-accent" />
                         </div>
+
                     </div>
                 </Link>
             </motion.div>
@@ -65,8 +67,11 @@ const Team = () => {
                             <FaArrowRightLong className="text-xl -rotate-45 text-accent" />
                         </div>
                     </div>
+
                 </Link>
             </motion.div>
+
+
         </section>
     );
 };
