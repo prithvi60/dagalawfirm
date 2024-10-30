@@ -2,7 +2,7 @@
 export default function FloatingButton() {
   return (
     <div
-      className="fixed flex items-center justify-center gap-3 bottom-8 right-4"
+      className="fixed flex items-center justify-center gap-3 bottom-8 md:bottom-24 right-4"
       style={{ zIndex: "1000" }}
     >
       <a
