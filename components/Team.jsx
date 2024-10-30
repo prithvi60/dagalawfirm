@@ -15,7 +15,7 @@ const Team = () => {
                 viewport={{ amount: 0.3, once: true }}
                 initial="initial"
                 whileInView="animate"
-                className="relative w-[320px] md:w-[460px] md:h-[620px] h-[440px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-copy"
+                className="relative w-[220px] md:w-[360px] md:h-[520px] h-[340px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-copy"
             >
                 <Link href={"/team/founder"}>
                     <Image
@@ -45,7 +45,7 @@ const Team = () => {
                 viewport={{ amount: 0.3, once: true }}
                 initial="initial"
                 whileInView="animate"
-                className="relative w-[320px] md:w-[460px] md:h-[620px] h-[440px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-copy"
+                className="relative w-[220px] md:w-[360px] md:h-[520px] h-[340px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-copy"
             >
                 <Link href={"/team/litigations"}>
                     <Image
@@ -57,7 +57,7 @@ const Team = () => {
                     <div className="absolute bottom-0 left-0 z-10 flex items-center justify-center gap-6 xl:gap-16 w-full py-2 px-5 lg:px-8 backdrop-brightness-[0.60]">
                         <div className="block">
                             <h3 className="mb-4 text-lg font-medium text-white md:text-xl font-merriWeather">
-                                Mr. Jayesh Kumar Daga
+                                Mr. A. Jayesh Kumar Daga
                             </h3>
                             <div className="px-4 py-2 text-sm font-bold tracking-wide bg-info/70 text-primary font-merriWeather w-max">
                                 Head - Litigations
