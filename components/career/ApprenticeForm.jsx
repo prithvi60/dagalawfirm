@@ -1,10 +1,12 @@
 "use client";
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { BsEnvelopeAtFill } from "react-icons/bs";
 import { FaPhoneAlt, FaRegUser } from "react-icons/fa";
 import { MdOutlineMessage } from "react-icons/md";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import toast from "react-hot-toast";
+import { variant1, variant2, variantTitle } from "@/libs/Variants";
 
 const ApprenticeForm = ({ type, desc, title }) => {
     const initialFormData = {
@@ -82,19 +84,22 @@ const ApprenticeForm = ({ type, desc, title }) => {
 
             if (data.success) {
                 setStatus(false);
-                toast.success("Thank you for submitting your application. We will revert back shortly.", {
-                    position: "top-right",
-                    duration: 3000,
-                    style: {
-                        border: "1px solid #65a34e",
-                        padding: "16px",
-                        color: "#65a34e",
-                    },
-                    iconTheme: {
-                        primary: "#65a34e",
-                        secondary: "#FFFAEE",
-                    },
-                });
+                toast.success(
+                    "Thank you for submitting your application. We will revert back shortly.",
+                    {
+                        position: "top-right",
+                        duration: 3000,
+                        style: {
+                            border: "1px solid #65a34e",
+                            padding: "16px",
+                            color: "#65a34e",
+                        },
+                        iconTheme: {
+                            primary: "#65a34e",
+                            secondary: "#FFFAEE",
+                        },
+                    }
+                );
                 setFormData(initialFormData);
                 e.target.reset();
             }
@@ -118,12 +123,24 @@ const ApprenticeForm = ({ type, desc, title }) => {
     };
 
     return (
-        <section className="flex flex-col items-center justify-center gap-2 px-5 font-merriWeather mt-14 md:mt-16 md:gap-6 lg:px-16 lg:py-12">
-            <h1 className="py-6 text-2xl font-bold tracking-wider text-center uppercase lg:text-3xl xl:text-4xl font-merriWeather text-copy">
+        <section className="flex flex-col items-center justify-center gap-2 px-5 overflow-hidden font-merriWeather mt-14 md:mt-16 md:gap-6 lg:px-16 lg:py-12">
+            <motion.h1
+                variants={variantTitle}
+                viewport={{ once: true }}
+                initial="initial"
+                whileInView="animate"
+                className="py-6 text-2xl font-bold tracking-wider text-center uppercase lg:text-3xl xl:text-4xl font-merriWeather text-copy"
+            >
                 {type}
-            </h1>
+            </motion.h1>
             <div className="flex flex-col gap-8 md:flex-row">
-                <div className="space-y-5 md:space-y-10 md:mt-16 basis-full md:basis-2/5">
+                <motion.div
+                    variants={variant1}
+                    viewport={{ amount: 0.3, once: true }}
+                    initial="initial"
+                    whileInView="animate"
+                    className="space-y-5 md:space-y-10 md:mt-16 basis-full md:basis-2/5"
+                >
                     <h4 className="text-lg font-semibold tracking-wide text-center capitalize sm:text-xl xl:text-2xl font-merriWeather text-info">
                         {title}
                     </h4>
@@ -134,9 +151,15 @@ const ApprenticeForm = ({ type, desc, title }) => {
                         </p>
                         {/* <FaQuoteRight className="absolute text-lg -right-2 -bottom-3 xl:-right-0 xl:-bottom-4 text-info" /> */}
                     </div>
-                </div>
+                </motion.div>
                 <div className="flex flex-col items-center w-full gap-5 space-y-8 justify-normal lg:flex-row md:w-3/5 py-7">
-                    <div className="w-full px-6 py-8 mx-auto space-y-4 bg-info/80">
+                    <motion.div
+                        variants={variant2}
+                        viewport={{ amount: 0.3, once: true }}
+                        initial="initial"
+                        whileInView="animate"
+                        className="w-full px-6 py-8 mx-auto space-y-4 bg-info/80"
+                    >
                         <h3 className="w-full text-4xl font-normal text-center capitalize text-secondary font-libreCaslonDisplay">
                             Let’s Connect
                         </h3>
@@ -247,7 +270,7 @@ const ApprenticeForm = ({ type, desc, title }) => {
                                 </button>
                             </div>
                         </form>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

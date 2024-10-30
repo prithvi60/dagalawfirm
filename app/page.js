@@ -15,7 +15,6 @@ export default function Home() {
       <AboutUs />
       <DagaApproach />
       <PracticesComponent />
-      {/* <Testimonial /> */}
       <Team />
       <Contact />
       <Modal />

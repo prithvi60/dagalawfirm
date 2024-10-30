@@ -21,14 +21,14 @@ export const metadata = {
   title: "Daga & Daga Intellectual Property Attorneys",
   description:
     "Trusted legal support for your important matters. Here to guide and protect you every step of the way.",
-    image: "/path/to/logo.svg",
+  image: "/path/to/logo.svg",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${merriWeather.variable} ${montserrat.variable} antialiased`}
+        className={`${merriWeather.variable} ${montserrat.variable} antialiased select-none focus:outline-none`}
       >
         <Navbar />
         {children}
