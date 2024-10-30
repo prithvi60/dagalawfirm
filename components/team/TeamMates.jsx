@@ -10,24 +10,24 @@ const TeamMates = () => {
             {/* <h4 className="font-bold tracking-wide capitalize text-xl lg:text-2xl xl:text-[36px] md:!leading-snug font-merriWeather text-info">
                 Our team comprises of the following individuals
             </h4> */}
-            <div className="grid justify-center grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="grid justify-center  place-items-center  grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {teamDetails.map((list, idx) => (
                     <>
                         {list.ref ? (
                             <Link
                                 key={idx}
                                 href={`/team/${list.ref}`}
-                                className="relative w-full md:h-[480px] h-[380px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-copy"
+                                className="relative w-[200px] md:w-[230px] md:h-[280px] h-[280px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-copy"
                             >
                                 <Image
                                     alt="sample-image"
                                     src={list.img}
                                     fill
-                                    className="object-contain object-bottom transition-all duration-200 ease-in-out scale-105 group-hover:scale-110"
+                                    className="object-contain object-bottom transition-all duration-200 ease-in-out scale-110 group-hover:scale-125"
                                 />
-                                <div className="absolute bottom-0 left-0 z-10 flex items-center justify-between w-full py-2 px-5 lg:px-8 backdrop-brightness-[0.60]">
+                                <div className="absolute bottom-0 left-0 z-10 flex items-center justify-between w-full py-2 px-2 lg:px-2 backdrop-brightness-[0.60]">
                                     <div className="block">
-                                        <h3 className="mb-4 text-lg font-medium text-white md:text-xl font-merriWeather">
+                                        <h3 className="mb-1 text-lg font-medium text-white md:text-xl font-merriWeather">
                                             {list.name}
                                         </h3>
                                         <div className="px-4 py-2 text-sm tracking-wide fontboldl bg-info/70 text-primary font-merriWeather w-max">
@@ -42,7 +42,7 @@ const TeamMates = () => {
                         ) : (
                             <div
                                 key={idx}
-                                className="relative w-full md:h-[480px] h-[380px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-copy"
+                                className="relative w-[200px] md:w-[230px] md:h-[280px] h-[280px] overflow-hidden group z-0 contrast-100 bg-white border-2 border-copy"
                             >
                                 <Image
                                     alt="sample-image"
@@ -50,12 +50,12 @@ const TeamMates = () => {
                                     fill
                                     className="object-contain object-bottom transition-all duration-200 ease-in-out scale-105 group-hover:scale-110"
                                 />
-                                <div className="absolute left-0 z-10 flex items-center justify-between w-full gap-4 pt-2 px-5 bottom-0 pb-2 lg:px-8 backdrop-brightness-[0.60]">
+                                <div className="absolute left-0 z-10 flex items-center justify-between w-full gap-4 pt-2 px-2 bottom-0 pb-2 lg:px-2 backdrop-brightness-[0.60]">
                                     <div className="block">
-                                        <h3 className="mb-4 text-lg font-medium text-white md:text-xl font-merriWeather">
+                                        <h3 className="mb-1 text-lg font-medium text-white md:text-xl font-merriWeather">
                                             {list.name}
                                         </h3>
-                                        <div className="px-4 py-2 text-sm font-bold tracking-wide bg-info/70 text-primary font-merriWeather w-max">
+                                        <div className="px-4 py-2 text-sm font-bold tracking-wide bg-info/70 text-primary font-merriWeather max-w-[150px] overflow-wrap break-word">
                                             {list.position}
                                         </div>
                                     </div>
