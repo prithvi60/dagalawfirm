@@ -41,8 +41,20 @@ export default function Home() {
               "department": {
                 "@type": "LegalService",
                 "name": "Intellectual Property Law",
-                "serviceType": "IPR Services"
-              }
+                "serviceType": "IPR Services",
+                "serviceArea": {
+                  "@type": "Place",
+                  "name": "India"
+                },
+                "additionalType": "https://schema.org/Service",
+                "serviceType": "Contact",
+                "url": "https://dagaanddaga.com/contact",
+                "description": "Get in touch with our team for any enquiries."
+              },
+              "additionalType": "https://schema.org/Service",
+              "serviceType": "Legal Services",
+              "url": "https://dagaanddaga.com/services",
+              "description": "Reliable legal services for all your intellectual property needs."
             }
             `}
         </script>
