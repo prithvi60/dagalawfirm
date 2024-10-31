@@ -60,7 +60,7 @@ export async function POST(req) {
         {
           filename: "daga-new-logo.png", // Ensure the filename matches the logo file
           content: Buffer.from(
-        await fs.promises.readFile(process.cwd() + "/public/daga-new-logo.png")
+        await fs.promises.readFile("https://dagaanddaga.com/daga-new-logo.png")
           ),
           contentType: "image/png",
           cid: "daga-new-logo", // This cid should match the one used in the email body
@@ -91,7 +91,7 @@ export async function POST(req) {
         {
           filename: "daga-new-logo.png", // Ensure the filename matches the logo file
           content: Buffer.from(
-        await fs.promises.readFile(process.cwd() + "/public/daga-new-logo.png")
+        await fs.promises.readFile("https://dagaanddaga.com/daga-new-logo.png")
           ),
           contentType: "image/png",
           cid: "daga-new-logo", // This cid should match the one used in the email body
