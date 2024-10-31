@@ -9,7 +9,8 @@ import { Toaster } from "react-hot-toast";
 export async function generateMetadata() {
   return {
     title: "Daga & Daga Intellectual Property Attorneys",
-    description: "Trusted legal support for your important matters. Here to guide and protect you every step of the way.",
+    description:
+      "Trusted legal support for your important matters. Here to guide and protect you every step of the way.",
     robots: "index, follow",
     applicationName: "Daga & Daga Intellectual Property Attorneys",
     authors: [{ name: "Webibee" }],
@@ -36,7 +37,8 @@ export async function generateMetadata() {
       type: "website",
       url: `https://dagaanddaga.com/`,
       title: "Daga & Daga Intellectual Property Attorneys",
-      description: "Trusted legal support for your important matters. Here to guide and protect you every step of the way.",
+      description:
+        "Trusted legal support for your important matters. Here to guide and protect you every step of the way.",
       siteName: "Daga & Daga",
       images: [
         {
@@ -61,9 +63,7 @@ export async function generateMetadata() {
         areaServed: "IN",
         availableLanguage: "English",
       },
-      sameAs: [
-        "https://www.linkedin.com/company/daga-daga"
-      ],
+      sameAs: ["https://www.linkedin.com/company/daga-daga"],
       department: {
         "@type": "LegalService",
         name: "Intellectual Property Law",
@@ -72,6 +72,14 @@ export async function generateMetadata() {
           "@type": "Place",
           name: "India",
         },
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Swarna Shree Complex, 3rd Floor, 36, Veerappan St",
+          addressLocality: "Sowcarpet",
+          addressRegion: "Tamil Nadu, Chennai",
+          postalCode: "600001",
+          addressCountry: "IN",
+        },
         additionalType: "https://schema.org/Service",
         url: "https://dagaanddaga.com/contact",
         description: "Get in touch with our team for any enquiries.",
@@ -79,7 +87,8 @@ export async function generateMetadata() {
       additionalType: "https://schema.org/Service",
       serviceType: "Legal Services",
       url: "https://dagaanddaga.com/services",
-      description: "Reliable legal services for all your intellectual property needs.",
+      description:
+        "Reliable legal services for all your intellectual property needs.",
     },
   };
 }
