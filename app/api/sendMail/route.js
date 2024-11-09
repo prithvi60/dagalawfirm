@@ -121,11 +121,13 @@ export async function POST(req) {
             <p>Thanks</p>
             </div> 
             `,
-    attachments: attachments.map((attachment) => ({
-      filename: attachment.filename,
-      content: Buffer.from(attachment.content),
-      contentType: attachment.contentType,
-    })),
+            attachments: attachments.map((attachment) => ({
+              filename: attachment.filename,
+              content: Buffer.from(attachment.content, "base64"), // Decode from base64 if it's uploaded in base64
+              contentType: attachment.contentType || "application/pdf", // Set default content type if not provided
+              encoding: "base64", // Set encoding explicitly for PDF
+            })),
+        
     bcc: ["enquiry@dagaanddaga.com"],
   };
 
