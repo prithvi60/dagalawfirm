@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { BsEnvelopeAtFill } from "react-icons/bs";
 import { FaPhoneAlt, FaRegUser } from "react-icons/fa";
 import { MdOutlineMessage } from "react-icons/md";
@@ -19,6 +19,7 @@ const BusinessForm = ({ type, desc, title }) => {
     };
     const [formData, setFormData] = useState(initialFormData);
     const [status, setStatus] = useState(false);
+    const fileInputRef = useRef(null);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -30,21 +31,44 @@ const BusinessForm = ({ type, desc, title }) => {
 
     const handleFileChange = async (e) => {
         const files = Array.from(e.target.files);
-        const filePromises = files.map((file) => {
-            return new Promise((resolve) => {
-                const reader = new FileReader();
-                reader.onload = (event) => {
-                    const arrayBuffer = event.target.result; // This is the ArrayBuffer
-                    const buffer = Buffer.from(arrayBuffer); // Convert ArrayBuffer to Buffer
-                    resolve({
-                        filename: file.name,
-                        content: buffer, // Send Buffer here
-                        contentType: file.type,
+        const validFiles = [];
+        const filePromises = files
+            .filter((file) => {
+                if (file.size <= 5 * 1024 * 1024) { // Check if file size is under 5MB
+                    validFiles.push(file);
+                    return true;
+                } else {
+                    toast.error(`${file.name} is too large. Please upload file under 5mb.`, {
+                        position: "top-right",
+                        duration: 3000,
+                        style: {
+                            border: "1px solid #EB1C23",
+                            padding: "16px",
+                            color: "#EB1C23",
+                        },
+                        iconTheme: {
+                            primary: "#EB1C23",
+                            secondary: "#FFFAEE",
+                        },
                     });
-                };
-                reader.readAsArrayBuffer(file); // Read file as ArrayBuffer
+                    // Clear the file input field if file size exceeds the limit
+                    e.target.value = null;
+                    return false;
+                }
+            })
+            .map((file) => {
+                return new Promise((resolve) => {
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                        resolve({
+                            filename: file.name,
+                            content: event.target.result.split(",")[1], // Extract base64 string
+                            contentType: file.type,
+                        });
+                    };
+                    reader.readAsDataURL(file); // Use readAsDataURL to get base64
+                });
             });
-        });
 
         const attachments = await Promise.all(filePromises);
         setFormData((prev) => ({
@@ -52,6 +76,7 @@ const BusinessForm = ({ type, desc, title }) => {
             attachments,
         }));
     };
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -235,10 +260,11 @@ const BusinessForm = ({ type, desc, title }) => {
                                 </label>
                                 <div className="relative">
                                     <input
+                                        ref={fileInputRef}
                                         type="file"
                                         multiple
                                         onChange={handleFileChange}
-                                        className="p-1.5 outline-none text-primary   cursor-pointer w-full"
+                                        className="p-1.5 outline-none text-primary   cursor-pointer w-max"
                                     />
                                 </div>
                             </div>

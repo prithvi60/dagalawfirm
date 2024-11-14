@@ -17,6 +17,7 @@ const transporter = nodemailer.createTransport({
 
 export async function POST(req) {
   // const { recipientEmail, subject, message, attachments } = await req.json();
+
   const {
     userName,
     userEmail,
