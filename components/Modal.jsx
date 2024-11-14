@@ -68,7 +68,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                         animate={{ scale: 1, rotate: "0deg" }}
                         exit={{ scale: 0, rotate: "0deg" }}
                         onClick={(e) => e.stopPropagation()}
-                        className="relative w-full max-w-4xl p-6 text-white shadow-xl cursor-pointer bg-secondary h-max md:h-auto"
+                        className="relative w-full max-w-4xl p-6 text-white shadow-xl cursor-pointer bg-white h-max md:h-auto"
                     >
                         <div className="relative z-10  ">
                             <div className="grid w-10 h-10 mx-auto mb-2 text-3xl text-white rounded-full md:h-16 md:w-16 bg-info place-items-center">
