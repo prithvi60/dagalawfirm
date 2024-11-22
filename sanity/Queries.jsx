@@ -6,7 +6,8 @@ export const POSTS_QUERY = `
   publishedAt,
   body,
   "imageUrl": image.asset->url,
-  "imageAlt": image.alt
+  "imageAlt": image.alt,
+  "plainBody": body[].children[].text
 }`;
 
 
