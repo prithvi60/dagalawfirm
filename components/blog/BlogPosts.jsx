@@ -40,7 +40,6 @@ const Blog = ({ post }) => {
     return (
         <Link
             href={`/blog/${post.slug.current}`}
-            key={idx}
             className="relative w-full max-w-sm border-2 rounded-lg xl:max-w-md border-info md:mt-6 font-Montserrat bg-primary group "
         >
             <div className="w-full p-5 space-y-5 md:p-6">
