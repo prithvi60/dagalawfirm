@@ -40,7 +40,7 @@ const Blog = ({ post }) => {
     return (
         <Link
             href={`/blog/${post.slug.current}`}
-            className="relative w-full max-w-sm border-2 rounded-lg xl:max-w-md border-info md:mt-6 font-Montserrat bg-primary group "
+            className="relative w-full max-w-sm border-2 rounded-lg xl:max-w-md border-info md:mt-6 font-Montserrat bg-primary group"
         >
             <div className="w-full p-5 space-y-5 md:p-6">
                 <div className="relative w-full h-64 overflow-hidden">
@@ -51,12 +51,13 @@ const Blog = ({ post }) => {
                         className="object-cover object-center"
                     />
                 </div>
+                <h4 className="text-lg font-semibold tracking-wide md:text-xl">{post.title}</h4>
                 <p className="w-full text-sm leading-tight md:text-base line-clamp-3">
                     {post.blogShortRead}
                 </p>
 
                 <div className="flex items-center justify-between">
-                    <h4 className="flex items-center gap-2 text-sm capitalize"><span><FaRegClock className="text-base text-white" /></span>{readingTime} min{readingTime > 1 ? "s" : ""} Read</h4>
+                    <h4 className="flex items-center gap-2 text-sm capitalize"><span><FaRegClock className="text-base text-info" /></span>{readingTime} min{readingTime > 1 ? "s" : ""} Read</h4>
                     <div className="text-xs tracking-wide underline capitalize transition-all ease-linear underline-offset-2 decoration-white group-hover:scale-125 duration-400">
                         view
                     </div>
