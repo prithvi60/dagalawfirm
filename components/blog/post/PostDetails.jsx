@@ -10,7 +10,7 @@ const PostDetails = ({ post }) => {
                 variants={variantTitle}
                 viewport={{ once: true }}
                 initial="initial"
-                whileInView="animate"
+                animate="animate"
                 className="py-6 text-2xl font-bold tracking-wider text-center uppercase lg:text-3xl xl:text-4xl font-merriWeather text-copy"
             >
                 {post.title}
@@ -19,7 +19,7 @@ const PostDetails = ({ post }) => {
                 variants={variant1}
                 viewport={{ amount: 0.3, once: true }}
                 initial="initial"
-                whileInView="animate"
+                animate="animate"
                 className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20"
             >
                 <PortableText value={post.body} components={customComponents} />
