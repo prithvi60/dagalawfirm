@@ -26,6 +26,7 @@ export const navbarLinks = [
     ],
   },
   { menu: "Contact us", ref: "/contact" },
+  { menu: "Blog", ref: "/blog" },
 ];
 
 export const specializations = [
@@ -86,7 +87,7 @@ regulatory compliance, as well as dispute resolution and enforcement.`,
       },
     ],
     shortNote: "",
-    images:[{src:"/copy2.jpg"},{src:"/copy3.jpg"},{src:"/copy1.jpg"}]
+    images: [{ src: "/copy2.jpg" }, { src: "/copy3.jpg" }, { src: "/copy1.jpg" }]
   },
   {
     specialize: "industrial design",
@@ -126,7 +127,7 @@ products, and more.`,
       },
     ],
     shortNote: "",
-    images:[{src:"/indus3.jpg"},{src:"/indus1.jpg"},{src:"/indus2.jpg"}]
+    images: [{ src: "/indus3.jpg" }, { src: "/indus1.jpg" }, { src: "/indus2.jpg" }]
   },
   {
     specialize: "patents",
@@ -169,7 +170,7 @@ potential risks for our clients across diverse industries.`,
       },
     ],
     shortNote: "",
-    images:[{src:"/patent3.jpg"},{src:"/patent1.jpg"},{src:"/patent2.jpg"}]
+    images: [{ src: "/patent3.jpg" }, { src: "/patent1.jpg" }, { src: "/patent2.jpg" }]
   },
   {
     specialize: "trademarks",
@@ -208,7 +209,7 @@ clients to protect and enhance their brand equity effectively over the long term
       },
     ],
     shortNote: "",
-    images:[{src:"/trade2.jpg"},{src:"/trade1.jpg"},{src:"/trade3.jpg"}]
+    images: [{ src: "/trade2.jpg" }, { src: "/trade1.jpg" }, { src: "/trade3.jpg" }]
   },
   {
     specialize: "commercial litigation",
@@ -240,7 +241,7 @@ outcomes efficiently.`,
       },
     ],
     shortNote: "",
-    images:[{src:"/liti1.jpg"},{src:"/liti3.jpg"},{src:"/liti2.jpg"}]
+    images: [{ src: "/liti1.jpg" }, { src: "/liti3.jpg" }, { src: "/liti2.jpg" }]
   },
   {
     specialize: "dispute resolution",
@@ -261,7 +262,7 @@ outcomes efficiently.`,
       },
     ],
     shortNote: "",
-    images:[{src:"/sample-1.jpeg"},{src:"/sample-2.jpeg"},{src:"/dis1.jpg"}]
+    images: [{ src: "/sample-1.jpeg" }, { src: "/sample-2.jpeg" }, { src: "/dis1.jpg" }]
   },
 ];
 
