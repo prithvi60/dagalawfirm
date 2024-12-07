@@ -5,10 +5,12 @@ import { FaRegClock } from "react-icons/fa6";
 import { POSTS_QUERY } from "@/sanity/Queries";
 import { client } from "@/sanity/lib/client";
 
-const options = { next: { revalidate: 60 } };
+// const options = { next: { revalidate: 20 } };
 
 const BlogPosts = async () => {
-    const posts = await client.fetch(POSTS_QUERY, {}, options);
+    const posts = await client.fetch(POSTS_QUERY, {
+        next: { revalidate: 20 }
+    });
 
     return (
         <section className="px-5 py-7 lg:py-12">
