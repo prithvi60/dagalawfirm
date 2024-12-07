@@ -11,7 +11,7 @@ const PostDetails = ({ post }) => {
                 viewport={{ once: true }}
                 initial="initial"
                 animate="animate"
-                className="py-6 text-xl font-bold tracking-wider text-center uppercase lg:text-2xl xl:text-3xl font-merriWeather text-copy"
+                className="px-8 py-6 text-2xl font-bold tracking-wider text-left uppercase lg:text-3xl xl:text-4xl font-merriWeather text-copy"
             >
                 {post.title}
             </motion.h1>
