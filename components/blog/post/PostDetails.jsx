@@ -63,7 +63,7 @@ const customComponents = {
             </h6>
         ),
         normal: ({ children }) => (
-            <p className="ml-10 text-lg font-Montserrat lg:text-2xl mb-4 mt-4">{children}</p>
+            <p className="ml-10 text-lg font-Montserrat lg:text-2xl mb-4 mt-4 leading-relaxed ">{children}</p>
         ),
     },
     list: {
