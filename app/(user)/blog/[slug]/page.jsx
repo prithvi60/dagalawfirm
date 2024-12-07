@@ -7,7 +7,7 @@ import React from 'react'
 const Page = async ({ params }) => {
     const { slug } = params
 
-    const post = await client.fetch(POST_QUERY, { slug });
+    const post = await client.fetch(POST_QUERY, { slug,next: { revalidate: 20 } });
     return (
         <main>
             <PostDetails post={post} />
