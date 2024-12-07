@@ -11,7 +11,7 @@ const PostDetails = ({ post }) => {
                 viewport={{ once: true }}
                 initial="initial"
                 animate="animate"
-                className="py-6 text-2xl font-bold tracking-wider text-center uppercase lg:text-3xl xl:text-4xl font-merriWeather text-copy"
+                className="py-6 text-xl font-bold tracking-wider text-center uppercase lg:text-2xl xl:text-3xl font-merriWeather text-copy"
             >
                 {post.title}
             </motion.h1>
@@ -33,53 +33,53 @@ export default PostDetails;
 const customComponents = {
     block: {
         h1: ({ children }) => (
-            <h1 className="flex items-center w-full gap-5 my-6 text-4xl font-bold tracking-wider font-Montserrat xl:text-5xl mb-4 mt-4">
+            <h1 className="flex items-center w-full gap-5 my-6 text-3.5xl font-bold tracking-wider font-Montserrat xl:text-5xl mb-4 mt-4">
                 {children}
             </h1>
         ),
         h2: ({ children }) => (
-            <h2 className="flex items-center w-full gap-5 my-6 text-3.5xl font-bold tracking-wider font-Montserrat xl:text-4.5xl mb-4 mt-4">
+            <h2 className="flex items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-4.5xl mb-4 mt-4">
                 {children}
             </h2>
         ),
         h3: ({ children }) => (
-            <h3 className="flex items-center w-full gap-5 my-6 text-3xl font-bold tracking-wider font-Montserrat xl:text-4xl mb-4 mt-4">
+            <h3 className="flex items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl mb-4 mt-4">
                 {children}
             </h3>
         ),
         h4: ({ children }) => (
-            <h4 className="flex items-center w-full gap-5 my-6 text-3xl font-bold tracking-wider font-Montserrat xl:text-4xl mb-4 mt-4">
+            <h4 className="flex items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl mb-4 mt-4">
                 {children}
             </h4>
         ),
         h5: ({ children }) => (
-            <h5 className="flex items-center w-full gap-5 my-6 text-3xl font-bold tracking-wider font-Montserrat xl:text-4xl mb-4 mt-4">
+            <h5 className="flex items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl mb-4 mt-4">
                 {children}
             </h5>
         ),
         h6: ({ children }) => (
-            <h6 className="flex items-center w-full gap-5 my-6 text-3xl font-bold tracking-wider font-Montserrat xl:text-4xl mb-4 mt-4">
+            <h6 className="flex items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl mb-4 mt-4">
                 {children}
             </h6>
         ),
         normal: ({ children }) => (
-            <p className="ml-10 text-lg font-Montserrat lg:text-2xl mb-4 mt-4 leading-relaxed ">{children}</p>
+            <p className="ml-10 text-lg font-Montserrat lg:text-xl mb-4 mt-4 leading-relaxed ">{children}</p>
         ),
         blockquote: ({ children }) => (
-            <p className="ml-10 text-lg font-Montserrat lg:text-2xl mb-4 mt-4 leading-relaxed ">{children}</p>
+            <p className="ml-10 text-lg font-Montserrat lg:text-xl mb-4 mt-4 leading-relaxed ">{children}</p>
         ),
     },
     list: {
         bullet: ({ children }) => (
-            <ul className="ml-10 space-y-2 list-disc text-lg lg:text-2xl mt-4">{children}</ul>
+            <ul className="ml-10 space-y-2 list-disc text-lg lg:text-xl mt-4">{children}</ul>
         ),
         number: ({ children }) => (
-            <ol className="ml-10 space-y-2 list-decimal text-lg lg:text-2xl mt-4">{children}</ol>
+            <ol className="ml-10 space-y-2 list-decimal text-lg lg:text-xl mt-4">{children}</ol>
         ),
     },
     listItem: {
-        bullet: ({ children }) => <li className="ml-5 text-lg lg:text-2xl mt-4">{children}</li>,
-        number: ({ children }) => <li className="ml-5 text-lg lg:text-2xl mt-4">{children}</li>,
+        bullet: ({ children }) => <li className="ml-5 text-lg lg:text-xl mt-4">{children}</li>,
+        number: ({ children }) => <li className="ml-5 text-lg lg:text-xl mt-4">{children}</li>,
     },
     types: {
         image: ({ value }) => (
