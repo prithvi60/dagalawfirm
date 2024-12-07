@@ -65,6 +65,9 @@ const customComponents = {
         normal: ({ children }) => (
             <p className="ml-10 text-lg font-Montserrat lg:text-2xl mb-4 mt-4 leading-relaxed ">{children}</p>
         ),
+        blockquote: ({ children }) => (
+            <p className="ml-10 text-lg font-Montserrat lg:text-2xl mb-4 mt-4 leading-relaxed ">{children}</p>
+        ),
     },
     list: {
         bullet: ({ children }) => (
