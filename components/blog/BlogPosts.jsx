@@ -5,7 +5,7 @@ import { FaRegClock } from "react-icons/fa6";
 import { POSTS_QUERY } from "@/sanity/Queries";
 import { client } from "@/sanity/lib/client";
 
-const options = { next: { revalidate: 20 } };
+const options = { next: { revalidate: 10 } };
 
 const BlogPosts = async () => {
     const posts = await client.fetch(POSTS_QUERY, {}, options);
@@ -37,6 +37,7 @@ const Blog = ({ post }) => {
 
     const blogContent = readableTime || "";
     const readingTime = calculateReadTime(blogContent);
+    console.log("da",post)
     return (
         <Link
             href={`/blog/${post.slug.current}`}
