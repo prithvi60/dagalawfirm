@@ -33,37 +33,37 @@ export default PostDetails;
 const customComponents = {
     block: {
         h1: ({ children }) => (
-            <h1 className="flex items-center w-full gap-5 my-6 text-3xl font-semibold tracking-wider font-Montserrat xl:text-4xl">
+            <h1 className="flex items-center w-full gap-5 my-6 text-4xl font-bold tracking-wider font-Montserrat xl:text-5xl mb-4">
                 {children}
             </h1>
         ),
         h2: ({ children }) => (
-            <h2 className="flex items-center w-full gap-5 my-6 text-3xl font-semibold tracking-wider font-Montserrat xl:text-4xl">
+            <h2 className="flex items-center w-full gap-5 my-6 text-3.5xl font-bold tracking-wider font-Montserrat xl:text-4.5xl mb-4">
                 {children}
             </h2>
         ),
         h3: ({ children }) => (
-            <h3 className="flex items-center w-full gap-5 my-6 text-3xl font-semibold tracking-wider font-Montserrat xl:text-4xl">
+            <h3 className="flex items-center w-full gap-5 my-6 text-3xl font-bold tracking-wider font-Montserrat xl:text-4xl mb-4">
                 {children}
             </h3>
         ),
         h4: ({ children }) => (
-            <h4 className="flex items-center w-full gap-5 my-6 text-3xl font-semibold tracking-wider font-Montserrat xl:text-4xl">
+            <h4 className="flex items-center w-full gap-5 my-6 text-3xl font-bold tracking-wider font-Montserrat xl:text-4xl mb-4">
                 {children}
             </h4>
         ),
         h5: ({ children }) => (
-            <h5 className="flex items-center w-full gap-5 my-6 text-3xl font-semibold tracking-wider font-Montserrat xl:text-4xl">
+            <h5 className="flex items-center w-full gap-5 my-6 text-3xl font-bold tracking-wider font-Montserrat xl:text-4xl mb-4">
                 {children}
             </h5>
         ),
         h6: ({ children }) => (
-            <h6 className="flex items-center w-full gap-5 my-6 text-3xl font-semibold tracking-wider font-Montserrat xl:text-4xl">
+            <h6 className="flex items-center w-full gap-5 my-6 text-3xl font-bold tracking-wider font-Montserrat xl:text-4xl mb-4">
                 {children}
             </h6>
         ),
         normal: ({ children }) => (
-            <p className="ml-10 text-base font-Montserrat lg:text-xl">{children}</p>
+            <p className="ml-10 text-lg font-Montserrat lg:text-2xl mb-4">{children}</p>
         ),
     },
     list: {
