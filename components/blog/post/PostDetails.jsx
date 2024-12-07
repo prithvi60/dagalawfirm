@@ -68,15 +68,15 @@ const customComponents = {
     },
     list: {
         bullet: ({ children }) => (
-            <ul className="ml-10 space-y-2 list-disc text-lg mt-4">{children}</ul>
+            <ul className="ml-10 space-y-2 list-disc text-lg lg:text-2xl mt-4">{children}</ul>
         ),
         number: ({ children }) => (
-            <ol className="ml-10 space-y-2 list-decimal text-lg mt-4">{children}</ol>
+            <ol className="ml-10 space-y-2 list-decimal text-lg lg:text-2xl mt-4">{children}</ol>
         ),
     },
     listItem: {
-        bullet: ({ children }) => <li className="ml-5 text-lg mt-4">{children}</li>,
-        number: ({ children }) => <li className="ml-5 text-lg mt-4">{children}</li>,
+        bullet: ({ children }) => <li className="ml-5 text-lg lg:text-2xl mt-4">{children}</li>,
+        number: ({ children }) => <li className="ml-5 text-lg lg:text-2xl mt-4">{children}</li>,
     },
     types: {
         image: ({ value }) => (
