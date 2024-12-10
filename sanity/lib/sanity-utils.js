@@ -1,7 +1,6 @@
-import ImageUrlBuilder from "@sanity/image-url";
-// import { postQuery, postQueryBySlug } from "./sanity-query";
+
 import { POST_QUERY, POSTS_QUERY } from "../Queries";
-import { client } from "../client";
+import { client } from "./client";
 
 
 // export function imageBuilder(source) {
