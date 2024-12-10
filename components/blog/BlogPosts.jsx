@@ -2,16 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaRegClock } from "react-icons/fa6";
-import { POSTS_QUERY } from "@/sanity/Queries";
-import { client } from "@/sanity/lib/client";
 
-// const options = { next: { revalidate: 20 } };
+import { getPosts } from "@/sanity/lib/sanity-utils";
+
+
 
 const BlogPosts = async () => {
-    const posts = await client.fetch(POSTS_QUERY, {
-        next: { revalidate: 20 }
-    });
-
+    const posts = await getPosts();
     return (
         <section className="px-5 py-7 lg:py-12">
             <div className="grid w-full grid-cols-1 gap-4 place-content-center place-items-center lg:grid-cols-3 md:grid-cols-2">
