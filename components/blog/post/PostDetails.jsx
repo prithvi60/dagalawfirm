@@ -33,50 +33,53 @@ export default PostDetails;
 const customComponents = {
     block: {
         h1: ({ children }) => (
-            <h1 className="flex items-center w-full gap-5 my-6 text-3xl font-semibold tracking-wider font-Montserrat xl:text-4xl">
+            <h1 className="flex items-center w-full gap-5 my-6 text-3.5xl font-bold tracking-wider font-Montserrat xl:text-5xl mb-4 mt-4 justify-center md:justify-start">
                 {children}
             </h1>
         ),
         h2: ({ children }) => (
-            <h2 className="flex items-center w-full gap-5 my-6 text-3xl font-semibold tracking-wider font-Montserrat xl:text-4xl">
+            <h2 className="flex justify-center md:justify-start items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-4.5xl mb-4 mt-4">
                 {children}
             </h2>
         ),
         h3: ({ children }) => (
-            <h3 className="flex items-center w-full gap-5 my-6 text-3xl font-semibold tracking-wider font-Montserrat xl:text-4xl">
+            <h3 className="flex items-center justify-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider md:justify-start font-Montserrat xl:text-3xl">
                 {children}
             </h3>
         ),
         h4: ({ children }) => (
-            <h4 className="flex items-center w-full gap-5 my-6 text-3xl font-semibold tracking-wider font-Montserrat xl:text-4xl">
+            <h4 className="flex items-center justify-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider text-center md:text-left md:justify-start font-Montserrat xl:text-3xl">
                 {children}
             </h4>
         ),
         h5: ({ children }) => (
-            <h5 className="flex items-center w-full gap-5 my-6 text-3xl font-semibold tracking-wider font-Montserrat xl:text-4xl">
+            <h5 className="flex items-center justify-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider md:justify-start font-Montserrat xl:text-3xl">
                 {children}
             </h5>
         ),
         h6: ({ children }) => (
-            <h6 className="flex items-center w-full gap-5 my-6 text-3xl font-semibold tracking-wider font-Montserrat xl:text-4xl">
+            <h6 className="flex items-center justify-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider md:justify-start font-Montserrat xl:text-3xl">
                 {children}
             </h6>
         ),
         normal: ({ children }) => (
-            <p className="ml-10 text-base font-Montserrat lg:text-xl">{children}</p>
+            <p className="mt-4 mb-4 text-lg leading-relaxed text-center md:ml-10 md:text-left font-Montserrat lg:text-xl ">{children}</p>
+        ),
+        blockquote: ({ children }) => (
+            <p className="mt-4 mb-4 text-lg leading-relaxed text-center md:ml-10 md:text-left font-Montserrat lg:text-xl ">{children}</p>
         ),
     },
     list: {
         bullet: ({ children }) => (
-            <ul className="ml-10 space-y-2 list-disc">{children}</ul>
+            <ul className="mt-4 space-y-2 text-lg list-disc md:ml-10 lg:text-xl">{children}</ul>
         ),
         number: ({ children }) => (
-            <ol className="ml-10 space-y-2 list-decimal">{children}</ol>
+            <ol className="mt-4 space-y-2 text-lg list-decimal md:ml-10 lg:text-xl">{children}</ol>
         ),
     },
     listItem: {
-        bullet: ({ children }) => <li className="ml-5">{children}</li>,
-        number: ({ children }) => <li className="ml-5">{children}</li>,
+        bullet: ({ children }) => <li className="mt-4 ml-5 text-lg lg:text-xl">{children}</li>,
+        number: ({ children }) => <li className="mt-4 ml-5 text-lg lg:text-xl">{children}</li>,
     },
     types: {
         image: ({ value }) => (
@@ -89,3 +92,6 @@ const customComponents = {
         ),
     },
 };
+
+
+// className="mx-auto mt-10 prose max-w-screen-2xl prose-blue prose-h1:text-3xl md:prose-h1:text-4xl prose-h2:text-3xl md:prose-h2:text-4xl prose-h4:text-3xl md:prose-h4:text-4xl prose-h4:font-bold prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-base lg:prose-blockquote:!text-xl prose-p:font-normal prose-p:not-italic prose-p:text-base lg:prose-p:!text-xl prose-p:leading-relaxed prose-blockquote:!leading-relaxed"
