@@ -11,7 +11,7 @@ const PostDetails = ({ post }) => {
                 viewport={{ once: true }}
                 initial="initial"
                 animate="animate"
-                className="py-6 text-2xl font-bold tracking-wider text-center uppercase lg:text-3xl xl:text-4xl font-merriWeather text-copy"
+                className="px-8 py-6 text-2xl font-bold tracking-wider text-left uppercase lg:text-3xl xl:text-4xl font-merriWeather text-copy text-info"
             >
                 {post.title}
             </motion.h1>
@@ -33,40 +33,40 @@ export default PostDetails;
 const customComponents = {
     block: {
         h1: ({ children }) => (
-            <h1 className="flex items-center w-full gap-5 my-6 text-3.5xl font-bold tracking-wider font-Montserrat xl:text-5xl mb-4 mt-4 justify-center md:justify-start">
+            <h1 className="flex items-center w-full gap-5 my-6 text-3.5xl font-bold tracking-wider font-Montserrat xl:text-5xl mb-4 mt-4">
                 {children}
             </h1>
         ),
         h2: ({ children }) => (
-            <h2 className="flex justify-center md:justify-start items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-4.5xl mb-4 mt-4">
+            <h2 className="flex items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-4.5xl mb-4 mt-4">
                 {children}
             </h2>
         ),
         h3: ({ children }) => (
-            <h3 className="flex items-center justify-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider md:justify-start font-Montserrat xl:text-3xl">
+            <h3 className="flex items-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl">
                 {children}
             </h3>
         ),
         h4: ({ children }) => (
-            <h4 className="flex items-center justify-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider text-center md:text-left md:justify-start font-Montserrat xl:text-3xl">
+            <h4 className="flex items-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl">
                 {children}
             </h4>
         ),
         h5: ({ children }) => (
-            <h5 className="flex items-center justify-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider md:justify-start font-Montserrat xl:text-3xl">
+            <h5 className="flex items-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl">
                 {children}
             </h5>
         ),
         h6: ({ children }) => (
-            <h6 className="flex items-center justify-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider md:justify-start font-Montserrat xl:text-3xl">
+            <h6 className="flex items-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl">
                 {children}
             </h6>
         ),
         normal: ({ children }) => (
-            <p className="mt-4 mb-4 text-lg leading-relaxed text-center md:ml-10 md:text-left font-Montserrat lg:text-xl ">{children}</p>
+            <p className="mt-4 mb-4 text-lg leading-relaxed text-justify md:ml-10 md:text-left font-Montserrat lg:text-xl ">{children}</p>
         ),
         blockquote: ({ children }) => (
-            <p className="mt-4 mb-4 text-lg leading-relaxed text-center md:ml-10 md:text-left font-Montserrat lg:text-xl ">{children}</p>
+            <p className="mt-4 mb-4 text-lg leading-relaxed text-justify md:ml-10 md:text-left font-Montserrat lg:text-xl ">{children}</p>
         ),
     },
     list: {

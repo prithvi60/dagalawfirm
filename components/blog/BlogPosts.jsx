@@ -32,6 +32,7 @@ const Blog = ({ post }) => {
 
     const blogContent = readableTime || "";
     const readingTime = calculateReadTime(blogContent);
+    // console.log("da",post)
     return (
         <Link
             href={`/blog/${post.slug.current}`}
