@@ -292,14 +292,9 @@ export const teamDetails = [
     ],
   },
   {
-    name: "Mrs. Pavithra K",
+    name: " Ms. Vanshika Vassireddy",
     position: "Associate",
-    ref: "associate",
-    img: "/pavithra.png",
-    desc: [
-      "She holds a B.C.A. and an LL.B. (Hons.) from the esteemed School of Excellence in Law and has been an enrolled advocate with the Bar Council of Tamil Nadu since 2022. Prior to her enrollment, she gained invaluable legal experience through internships at a prominent law firm specializing in civil litigation and family law. She further broadened her legal acumen by working with the State Human Rights Commission, where she deepened her understanding of human rights law, adding a critical dimension to her legal expertise.",
-      "Fuelled by a passion for Intellectual Property (IP) law, she joined Daga and Daga in 2023, where she has since built a solid foundation in IP prosecution, with a specialization in trademarks and copyrights. She has successfully handled numerous trademark matters, earning a commendable success rate at the Hon'ble Trade Marks Registry. Her growing expertise and dedication have positioned her as a promising advocate in the field of IP law.",
-    ],
+    img: "/vanshika.png",
   },
   {
     name: "Ms. Bharathy",
@@ -312,9 +307,9 @@ export const teamDetails = [
     ],
   },
   {
-    name: "Mrs. Sunita S",
+    name: "Mrs. Maheshwari",
     position: "Paralegal",
-    img: "/sunita.png",
+    img: "/maheshwari.png",
   },
   {
     name: "Mr. Santhana Krishnan",
