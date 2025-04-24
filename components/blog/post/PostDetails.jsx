@@ -11,7 +11,7 @@ const PostDetails = ({ post }) => {
                 viewport={{ once: true }}
                 initial="initial"
                 animate="animate"
-                className="px-8 py-6 text-2xl font-bold tracking-wider text-left uppercase lg:text-3xl xl:text-4xl font-merriWeather text-copy"
+                className="px-8 py-6 text-2xl font-bold tracking-wider text-left uppercase lg:text-3xl xl:text-4xl font-merriWeather text-copy text-info"
             >
                 {post.title}
             </motion.h1>
@@ -20,7 +20,7 @@ const PostDetails = ({ post }) => {
                 viewport={{ amount: 0.3, once: true }}
                 initial="initial"
                 animate="animate"
-                className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20"
+                className="max-w-7xl prose prose-blue mx-auto prose-h1:text-3.5xl prose-h1:font-bold prose-h2:text-2xl prose-h2:font-bold prose-h3:text-2xl prose-h3:font-bold prose-h4:text-2xl prose-h4:font-bold prose-p:leading-relaxed prose-p:text-lg lg:prose-p:text-xl prose-p:mt-4 prose-p:mb-4 prose-blockquote:leading-relaxed prose-blockquote:text-lg lg:prose-blockquote:text-xl prose-list:list-disc prose-list-decimal"
             >
                 <PortableText value={post.body} components={customComponents} />
             </motion.div>
@@ -31,64 +31,82 @@ const PostDetails = ({ post }) => {
 export default PostDetails;
 
 const customComponents = {
-    block: {
-        h1: ({ children }) => (
-            <h1 className="flex items-center w-full gap-5 my-6 text-3.5xl font-bold tracking-wider font-Montserrat xl:text-5xl mb-4 mt-4">
-                {children}
-            </h1>
-        ),
-        h2: ({ children }) => (
-            <h2 className="flex items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-4.5xl mb-4 mt-4">
-                {children}
-            </h2>
-        ),
-        h3: ({ children }) => (
-            <h3 className="flex items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl mb-4 mt-4">
-                {children}
-            </h3>
-        ),
-        h4: ({ children }) => (
-            <h4 className="flex items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl mb-4 mt-4">
-                {children}
-            </h4>
-        ),
-        h5: ({ children }) => (
-            <h5 className="flex items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl mb-4 mt-4">
-                {children}
-            </h5>
-        ),
-        h6: ({ children }) => (
-            <h6 className="flex items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl mb-4 mt-4">
-                {children}
-            </h6>
-        ),
-        normal: ({ children }) => (
-            <p className="ml-10 text-lg font-Montserrat lg:text-xl mb-4 mt-4 leading-relaxed ">{children}</p>
-        ),
-        blockquote: ({ children }) => (
-            <p className="ml-10 text-lg font-Montserrat lg:text-xl mb-4 mt-4 leading-relaxed ">{children}</p>
-        ),
-    },
-    list: {
-        bullet: ({ children }) => (
-            <ul className="ml-10 space-y-2 list-disc text-lg lg:text-xl mt-4">{children}</ul>
-        ),
-        number: ({ children }) => (
-            <ol className="ml-10 space-y-2 list-decimal text-lg lg:text-xl mt-4">{children}</ol>
-        ),
-    },
-    listItem: {
-        bullet: ({ children }) => <li className="ml-5 text-lg lg:text-xl mt-4">{children}</li>,
-        number: ({ children }) => <li className="ml-5 text-lg lg:text-xl mt-4">{children}</li>,
-    },
     types: {
         image: ({ value }) => (
             // eslint-disable-next-line @next/next/no-img-element
             <img
                 src={value?.imageUrl} // Use the resolved `imageUrl` from GROQ
                 alt={value?.alt || "Image"}
-                className="w-full h-full max-w-md max-h-full my-8"
+                className="w-full h-full max-w-md max-h-full mx-auto mt-12 mb-12 md:mt-20 md:mb-10"
             />
         ),
     },
 };
+
+// const customComponents = {
+//     block: {
+//         h1: ({ children }) => (
+//             <h1 className="flex items-center w-full gap-5 my-6 text-3.5xl font-bold tracking-wider font-Montserrat xl:text-5xl mb-4 mt-4">
+//                 {children}
+//             </h1>
+//         ),
+//         h2: ({ children }) => (
+//             <h2 className="flex items-center w-full gap-5 my-6 text-2xl font-bold tracking-wider font-Montserrat xl:text-4.5xl mb-4 mt-4">
+//                 {children}
+//             </h2>
+//         ),
+//         h3: ({ children }) => (
+//             <h3 className="flex items-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl">
+//                 {children}
+//             </h3>
+//         ),
+//         h4: ({ children }) => (
+//             <h4 className="flex items-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl">
+//                 {children}
+//             </h4>
+//         ),
+//         h5: ({ children }) => (
+//             <h5 className="flex items-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl">
+//                 {children}
+//             </h5>
+//         ),
+//         h6: ({ children }) => (
+//             <h6 className="flex items-center w-full gap-5 my-6 mt-4 mb-4 text-2xl font-bold tracking-wider font-Montserrat xl:text-3xl">
+//                 {children}
+//             </h6>
+//         ),
+//         normal: ({ children }) => (
+//             <p className="mt-4 mb-4 text-lg leading-relaxed text-justify md:ml-10 md:text-left font-Montserrat lg:text-xl ">{children}</p>
+//         ),
+//         blockquote: ({ children }) => (
+//             <p className="mt-4 mb-4 text-lg leading-relaxed text-justify md:ml-10 md:text-left font-Montserrat lg:text-xl ">{children}</p>
+//         ),
+//     },
+//     list: {
+//         bullet: ({ children }) => (
+//             <ul className="mt-4 space-y-2 text-lg list-disc md:ml-10 lg:text-xl">{children}</ul>
+//         ),
+//         number: ({ children }) => (
+//             <ol className="mt-4 space-y-2 text-lg list-decimal md:ml-10 lg:text-xl">{children}</ol>
+//         ),
+//     },
+//     listItem: {
+//         bullet: ({ children }) => <li className="mt-4 ml-5 text-lg lg:text-xl">{children}</li>,
+//         number: ({ children }) => <li className="mt-4 ml-5 text-lg lg:text-xl">{children}</li>,
+//     },
+//     types: {
+//         image: ({ value }) => (
+//             // eslint-disable-next-line @next/next/no-img-element
+//             <img
+//                 src={value?.imageUrl} // Use the resolved `imageUrl` from GROQ
+//                 alt={value?.alt || "Image"}
+//                 className="w-full h-full max-w-md max-h-full my-8"
+//             />
+//         ),
+//     },
+// };
+
+
+// className="prose prose-blue mx-auto px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 prose-h1:text-3.5xl prose-h1:font-bold prose-h2:text-2xl prose-h2:font-bold prose-h3:text-2xl prose-h3:font-bold prose-h4:text-2xl prose-h4:font-bold prose-p:leading-relaxed prose-p:text-lg lg:prose-p:text-xl prose-p:mt-4 prose-p:mb-4 prose-blockquote:leading-relaxed prose-blockquote:text-lg lg:prose-blockquote:text-xl prose-list:list-disc prose-list-decimal"
+
+// className="mx-auto mt-10 prose max-w-screen-2xl prose-blue prose-h1:text-3xl md:prose-h1:text-4xl prose-h2:text-3xl md:prose-h2:text-4xl prose-h4:text-3xl md:prose-h4:text-4xl prose-h4:font-bold prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-base lg:prose-blockquote:!text-xl prose-p:font-normal prose-p:not-italic prose-p:text-base lg:prose-p:!text-xl prose-p:leading-relaxed prose-blockquote:!leading-relaxed"

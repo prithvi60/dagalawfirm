@@ -3,12 +3,8 @@ import Link from "next/link";
 import React from "react";
 import { FaRegClock } from "react-icons/fa6";
 
-import { getPosts } from "@/sanity/lib/sanity-utils";
+const BlogPosts = async ({ posts }) => {
 
-
-
-const BlogPosts = async () => {
-    const posts = await getPosts();
     return (
         <section className="px-5 py-7 lg:py-12">
             <div className="grid w-full grid-cols-1 gap-4 place-content-center place-items-center lg:grid-cols-3 md:grid-cols-2">
