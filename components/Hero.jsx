@@ -47,9 +47,9 @@ const Hero = () => {
                     </motion.div>
                 </div>
             </div>
-            <div className="basis-full sm:basis-1/5 ">
+            {/* <div className="basis-full sm:basis-1/5 ">
                 <CounterUp />
-            </div>
+            </div> */}
         </section>
     );
 };
