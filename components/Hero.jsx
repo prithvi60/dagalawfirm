@@ -15,7 +15,7 @@ const Hero = () => {
             //      }
             //     }
             >
-                <div className="absolute top-[10vh]  left-0 flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-bold py-2 px-3.5 z-10 w-full">
+                <div className="absolute top-[10vh] sm:top-1/2 md:-translate-y-1/2  left-0 flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-bold py-2 px-3.5 z-10 w-full">
                     <motion.div
                         variants={variants}
                         viewport={{ once: true }}
