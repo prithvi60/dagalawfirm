@@ -7,15 +7,15 @@ import { variants } from "@/libs/Variants";
 
 const Hero = () => {
     return (
-        <section className="relative flex flex-col w-full h-screen overflow-hidden border-b-2 font-merriWeather sm:flex-row border-copy mt-14">
+        <section className="relative flex flex-col w-full h-[460px] md:h-screen overflow-hidden border-b-2 font-merriWeather sm:flex-row border-copy mt-14">
             <div
-                className="z-0 w-full h-screen bg-fixed sm:w-4/5  bg-top bg-contain md:bg-right-top bg-no-repeat md:bg-cover bg-[url('/heromob.png')] md:bg-[url('/hero2.png')]"
+                className="z-0 w-full h-[460px] md:h-screen bg-fixed  bg-top bg-contain md:bg-right-top bg-no-repeat md:bg-cover bg-[url('/heromob.png')] md:bg-[url('/hero2.png')]"
             // style={{
             //     backgroundImage: `url("/hero.webp")`,
             //      }
             //     }
             >
-                <div className="absolute top-[10vh] sm:top-1/2 md:-translate-y-1/2 left-0 flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-bold py-2 px-3.5 z-10 w-full sm:w-3/5 lg:w-3/5">
+                <div className="absolute top-[10vh]  left-0 flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-bold py-2 px-3.5 z-10 w-full">
                     <motion.div
                         variants={variants}
                         viewport={{ once: true }}
