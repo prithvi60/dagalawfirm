@@ -292,9 +292,9 @@ export const teamDetails = [
     ],
   },
   {
-    name: " Ms. Vanshika Vassireddy",
-    position: "Associate",
-    img: "/vanshika.png",
+    name: " Ms.Anjali Viswanaathan",
+    position: "Junior Associate",
+    img: "/Anjali Viswanaathan.jpg",
   },
   {
     name: "Ms. Bharathy",
@@ -307,16 +307,15 @@ export const teamDetails = [
     ],
   },
   {
-    name: "Mrs. Maheshwari",
+    name: "Mrs. Sunita",
     position: "Paralegal",
-    img: "/maheshwari.png",
+    img: "/sunita.jpg",
   },
   {
     name: "Mr. Santhana Krishnan",
     position: "Chief Accounts officer",
     img: "/santhanam.png",
   },
-  { name: "Mr. Vijay", position: "Staff", img: "/vijay.png" },
   { name: "Mr. Dinesh", position: "Clerk", img: "/dinesh.png" },
 ];
 
