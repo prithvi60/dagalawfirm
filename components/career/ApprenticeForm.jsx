@@ -275,7 +275,7 @@ const ApprenticeForm = ({ type, desc, title }) => {
                             {/* Preferred Period of Internship */}
                             <div className="mb-6">
                                 <label className="mb-2.5 block font-medium text-white">
-                                Preferred Period of Internship <span className="text-red-500">*</span>
+                                Preferred Period of Internship
                                 </label>
                                 <div className="relative">
                                     <input

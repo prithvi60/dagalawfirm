@@ -292,7 +292,7 @@ export const teamDetails = [
     ],
   },
   {
-    name: " Ms. Anjali Viswanaathan",
+    name: " Ms.Anjali Viswanaathan",
     position: "Junior Associate",
     img: "/Anjali Viswanaathan.jpg",
   },
