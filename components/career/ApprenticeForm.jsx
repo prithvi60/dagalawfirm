@@ -87,6 +87,7 @@ const ApprenticeForm = ({ type, desc, title }) => {
             phone: formData.phoneNo,
             clientEmail: "enquiry@dagaanddaga.com",
             subject: `New Form Submission - Internship Application`,
+            internshipPeriod: formData.internshipPeriod,
             message: formData.message,
             attachments: formData.attachments,
             type: "Internship",
@@ -268,6 +269,23 @@ const ApprenticeForm = ({ type, desc, title }) => {
                                         multiple
                                         onChange={handleFileChange}
                                         className="p-1.5 outline-none text-primary   cursor-pointer w-max"
+                                    />
+                                </div>
+                            </div>
+                            {/* Preferred Period of Internship */}
+                            <div className="mb-6">
+                                <label className="mb-2.5 block font-medium text-white">
+                                Preferred Period of Internship <span className="text-red-500">*</span>
+                                </label>
+                                <div className="relative">
+                                    <input
+                                    type="text"
+                                    name="internshipPeriod"
+                                    value={formData.internshipPeriod || ""}
+                                    onChange={handleChange}
+                                    required
+                                    placeholder="e.g., January 2027 - June 2027"
+                                    className="w-full py-2 pl-6 pr-10 text-white bg-transparent border outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                                     />
                                 </div>
                             </div>
