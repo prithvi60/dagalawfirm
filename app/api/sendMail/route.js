@@ -22,6 +22,7 @@ export async function POST(req) {
     userName,
     userEmail,
     phone,
+    internshipPeriod,
     clientEmail,
     subject,
     message,
@@ -117,6 +118,7 @@ export async function POST(req) {
             <p>Email: ${userEmail}</p>
             <p>Phone Number: ${phone}</p>
             <p>Query: ${message}</p>
+            <p>Internship Period: ${internshipPeriod}</p>
             <br/>
             <br/>
             <p>Thanks</p>
