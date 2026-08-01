@@ -16,6 +16,7 @@ const ApprenticeForm = ({ type, desc, title }) => {
         clientEmail: "",
         subject: "",
         message: "",
+        internshipPeriod: "",
         attachments: [],
     };
     const [formData, setFormData] = useState(initialFormData);
